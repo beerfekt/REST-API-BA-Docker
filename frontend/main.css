@@ -1,0 +1,20 @@
+h1   {
+    text-align: center;
+}
+
+.container {
+    margin-top: 50px;
+}
+
+.events {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.events li {
+    margin-left: 10px;
+}
+
+.event {
+    text-align: center;
+}

@@ -1,0 +1,70 @@
+
+### backend reinkopieren 	
+
+###0  Vorarbeiten
+
+#0.1 docker-compose.yml - database konfigurieren
+  mysql 5.7 einstellen
+
+  //(da mysql 8.0 authentifizierungsprobleme erzeugt)
+
+  #0.1.3 im symfony backend ordner .env file konfigurieren
+DATABASE_URL=mysql://homestead:secret@mysql:3306/rest-backend                      
+
+   // ( besser @docker-service-name da ip adressen der docker-container jedesmal neu vergeben werden (außer bei depends-on regel in docker-compose.yml)
+
+ #0.1.4 symfony-backend: doctrine.yml
+ mysql->server version auf 5.7 stellen
+
+
+###1 Rechteproblem lösen ""Failed to open Stream... permission denied"""
+
+#1.1 Container rausfinden:
+docker ps
+
+#1.2 In Container einloggen
+docker exec -it docker-symfony4-php-fpm bash
+
+#1.3 Rechte in Rootverzeichnis setzen
+chown -R www-data:www-data application
+
+
+
+###2 Nacharbeiten Symfony4
+
+ #2.1.1 laufende Container auflisten
+ docker ps
+
+ #2.1.2 datenbank generieren:
+ docker-compose exec php-fpm php bin/console doctrine:schema:update --force
+
+ #2.1.3 Dummy einträge erstellen:
+  docker-compose exec php-fpm php bin/console doctrine:fixtures:load
+
+
+
+
+
+
+
+
+
+
+
+
+
+###3 allgemeine Infos:
+
+#3.1 Rechte aufbohren:
+sudo chmod -R 777 ./backend
+
+#3.2 Nutzer ändern:
+chown -R www-data:www-data application
+
+
+
+
+###### FAZIT
+
+volles automatisieren bringts nicht, da es schwer ist datenbank  zu prüfen
+-> ausblick : watiforit.sh einsetzen

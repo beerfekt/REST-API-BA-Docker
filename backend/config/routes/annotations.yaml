@@ -1,0 +1,13 @@
+
+###  We want that create Rest controllers by using annotations
+###  We defined that all our REST actions are on /api
+### We also separate our controllers between Web and Rest
+
+#web_controller:
+#    resource: ../../src/Controller/Web/
+#    type: annotation
+
+rest_controller:
+    resource: ../../src/Controller/Rest/
+    type: annotation
+    prefix: /api
