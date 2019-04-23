@@ -37,7 +37,7 @@
         function showEvents(){
                 $http({
                     method : "GET",
-                    url : "http://rest-backend.test/api/events/list"
+                    url : "http://docker-backend.test/api/events/list"
                 }).then(function mySuccess(response) {
                     console.log('receive data');
                     $scope.events = response.data;
@@ -51,7 +51,7 @@
         function showEventDetails($eventId){
             $http({
                 method : "GET",
-                url : "http://rest-backend.test/api/events/list/" + $eventId
+                url : "http://docker-backend.test/api/events/list/" + $eventId
             }).then(function mySuccess(response) {
                 $scope.event = response.data;
             }, function myError(response) {
@@ -75,7 +75,7 @@
 
             $http({
                 method : "POST",
-                url : 'http://rest-backend.test/api/events',
+                url : 'http://docker-backend.test/api/events',
                 headers: {
                     'Content-Type': 'application/json'
                 },
@@ -111,7 +111,7 @@
             //TODO: neue get url api/events/search/+$searchstring   ??? mal sehen
             $http({
                 method : "GET",
-                url : "http://rest-backend.test/api/events/list"
+                url : "http://docker-backend.test/api/events/list"
             }).then(function mySuccess(response) {
                 $scope.events = response.data;
             }, function myError(response) {
