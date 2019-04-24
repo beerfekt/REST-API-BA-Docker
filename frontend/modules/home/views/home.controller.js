@@ -12,7 +12,7 @@ function HomeController($state){
 
     //Go to courses
     function goToEvents(){
-        $state.go('events');
+        $state.go('app.events.list');
     }
 
 };

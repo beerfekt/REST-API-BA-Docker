@@ -1,17 +1,23 @@
 <div class="jumbotron text-center">
     <h1> Fortbildung </h1>
     <p>Hier sehen Sie die kommenden Fortbildungen </p>
-    <a ui-sref=".list" ng-click="vm.showEvents()"  class="btn btn-primary">Fortbildungen auflisten</a>
-    <button class="btn btn-info" ng-click="vm.createNewEvent()" >Fortbildungen eintragen</button>
+
+    <a class="btn btn-primary"
+       ui-sref="events.create"
+         >Fortbildung eintragen</a>
+
+    <a class="btn btn-primary"
+       ui-sref="events.list"
+       ng-click="vm.showEvents()"  >Fortbildungen auflisten</a>
 </div>
 
 
 
 <!-- Nested-view:
      injection -->
-<section id="events" ng-if="events">
+
    <div ui-view></div>
-</section>
+
 
 
 

@@ -29,11 +29,13 @@ function config($stateProvider, $urlRouterProvider) {
         .state('events.list', {
             url: '/list',
             templateUrl: 'modules/events/views/events/list.html',
+            controller:'EventsController as vm'
         })
 
         .state('events.create', {
             url: '/create',
-            templateUrl: 'modules/events/views/event/event.html',
+            templateUrl: 'modules/events/views/event/create.html',
+            controller:'EventController as vm'
         })
 
 

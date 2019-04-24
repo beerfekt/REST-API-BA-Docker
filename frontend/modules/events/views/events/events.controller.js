@@ -8,7 +8,7 @@
     'use strict';
 
     angular
-        .module('app')
+        .module('app.events')
         .controller('EventsController', EventsController);
 
     /** @ngInject */
@@ -18,10 +18,11 @@
         vm.goHome = goHome;
         vm.createNewEvent = createNewEvent;
         vm.showEvents = showEvents;
+        /*
         vm.showEventDetails = showEventDetails;
         vm.addEvent = addEvent;
         vm.searchEvent = searchEvent;
-
+        */
 
         //Go to home
         function goHome(){
@@ -35,6 +36,7 @@
 
 
         function showEvents(){
+            console.log('EVENTsCONTROLLER.showEvents()');
                 $http({
                     method : "GET",
                     url : "http://docker-backend.test/api/events/list"
@@ -45,7 +47,7 @@
                     $scope.events = [{"title":"keine Events vorhanden!"}];
                 });
         }
-
+/*
         //TODO
         //Click Detail of Event
         function showEventDetails($eventId){
@@ -145,7 +147,7 @@
 
 
 
-
+*/
 
 
     }
