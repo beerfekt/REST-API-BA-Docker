@@ -2,13 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a80c4c59-88e8-4169-adb3-71fa4e6d3270" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/profiler/index.csv" beforeDir="false" afterPath="$PROJECT_DIR$/backend/var/cache/dev/profiler/index.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/var/log/dev.log" beforeDir="false" afterPath="$PROJECT_DIR$/backend/var/log/dev.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/modules/events/views/events/events.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/modules/events/views/events/events.controller.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/modules/events/views/events/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/modules/events/views/events/list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/modules/home/views/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/modules/home/views/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -44,7 +40,7 @@
     <session id="-613543551">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
+          <entry key="project.closed" value="3" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.37" value="1" />
@@ -60,7 +56,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="1584" />
+          <entry key="HTML" value="1622" />
           <entry key="JavaScript" value="1278" />
         </counts>
       </usages-collector>
@@ -89,8 +85,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/frontend/modules/events/views/events/list.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="349">
-              <caret line="57" column="65" lean-forward="true" selection-start-line="57" selection-start-column="65" selection-end-line="57" selection-end-column="65" />
+            <state relative-caret-position="360">
+              <caret line="24" column="42" selection-start-line="24" selection-start-column="42" selection-end-line="24" selection-end-column="42" />
             </state>
           </provider>
         </entry>
@@ -683,16 +679,15 @@
       <workItem from="1556019040766" duration="366000" />
       <workItem from="1556095320553" duration="1724000" />
       <workItem from="1556097182814" duration="11492000" />
-      <workItem from="1556110491072" duration="3154000" />
+      <workItem from="1556110491072" duration="3411000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20783000" />
+    <option name="totallyTimeSpent" value="21040000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="-11" width="1602" height="912" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.19111969" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -829,8 +824,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/frontend/modules/events/views/events/list.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="349">
-          <caret line="57" column="65" lean-forward="true" selection-start-line="57" selection-start-column="65" selection-end-line="57" selection-end-column="65" />
+        <state relative-caret-position="360">
+          <caret line="24" column="42" selection-start-line="24" selection-start-column="42" selection-end-line="24" selection-end-column="42" />
         </state>
       </provider>
     </entry>
