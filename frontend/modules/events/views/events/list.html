@@ -22,16 +22,23 @@
                     <strong>Enddatum</strong>
                 </div>
                 <div class="col-sm"></div>
-                <div class="col-sm"></div>
+
             </div>
         </div>
 
     <div class="accordion"  id="event-list">
-        <div class="card" dir-paginate="event in events | itemsPerPage: 5" >
+        <div  class="card" dir-paginate="event in events | itemsPerPage: 5" >
             <div class="card-header " id="heading{{event.id}}">
                 <div class="row">
                     <div class="col-sm">
-                       {{event.title}}
+                        <button class="btn btn-link" type="button"
+                                data-toggle="collapse"
+                                data-target="#collapse{{event.id}}"
+                                aria-expanded="{{expandedValue}}"
+                                aria-controls="collapse{{event.id}}">
+                            {{event.title}}
+                        </button>
+
                     </div>
                     <div class="col-sm mx-auto">
                         {{event.startDate | date:'dd.MM.yyyy  '}}
@@ -48,23 +55,13 @@
                         <button class="btn btn-link float-right toggleDetails{{event.id}}"
                                 type="button" data-toggle="collapse"
                                 data-target="#collapse{{event.id}}"
-                                aria-expanded="true"
+                                aria-expanded="{{expandedValue}}"
                                 aria-controls="collapse{{event.id}}"
-                                ng-click="open = !open"   >
-                            <i class="fas fa-pencil-alt"></i>
+                                ng-click="toggle(event.id)"   >
+                            <i  class="fas fa-pencil-alt"></i>
                         </button>
                     </div>
 
-                    <div class="col-sm">
-                         <button class="btn btn-link float-right toggleDetails{{event.id}}"
-                                 type="button" data-toggle="collapse"
-                                 data-target="#collapse{{event.id}}"
-                                 aria-expanded="true"
-                                 aria-controls="collapse{{event.id}}"
-                                 ng-click="open = !open"   >
-                            <i class="fa" ng-class="!open ? 'fa-plus' : 'fa-minus'"></i>
-                         </button>
-                    </div>
                 </div>
             </div>
 
@@ -81,80 +78,3 @@
 </events>
 
 
-
-
-
-
-<!-- TODO Style auslagen -->
-<style>
-    .content-header {
-        width:100%;
-        padding-top:0px;
-        padding-bottom:30px;
-    }
-
-    .content-header h2 {
-        text-align: center;
-    }
-
-    .fit {
-        margin-left:0;
-        margin-right:0;
-    }
-
-    pagination li {
-        display: inline;
-    }
-</style>
-
-
-
-
-<!--
-TODO Aufräumen
-    //TOGGLE Articles, if you want to show and hide, set this
-
- <div ng-class="visibility ? 'visible' : 'hidden'" >
-    <ul>
-        <li ng-repeat="article in articles" ng-click="vm.showArticleDetails(article.id)">{{ article.title }}</li>
-    </ul>
-    <div>
-        <h3>{{ article.title}} </h3>
-        <p> {{ article.content}}</p>
-    </div>
-</div>
-
-
-
-
-
-
-
-
-
-
-    <div class="accordion"  id="event-list">
-        <div class="card" dir-paginate="event in events | itemsPerPage: 5" >
-            <div class="card-header" id="heading{{event.id}}">
-
-                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse{{event.id}}" aria-expanded="true" aria-controls="collapse{{event.id}}">
-                        {{event.title}} {{1554990928000 | date:'dd.MM.yyyy HH:mm:ss '}}
-                    </button>
-
-            </div>
-
-            <div id="collapse{{event.id}}" class="collapse" aria-labelledby="heading{{event.id}}" data-parent="#event-list">
-                <div class="card-body">
-                    {{event.description}}
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <dir-pagination-controls></dir-pagination-controls>
-
-
-
-
-
- -->

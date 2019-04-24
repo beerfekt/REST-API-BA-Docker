@@ -9,15 +9,25 @@
 
     angular
         .module('app.events')
+        /*
+        .directive('isolate', function() {
+            return {scope: true};
+        })
+        */
         .controller('EventsController', EventsController);
+
 
     /** @ngInject */
     function EventsController($state, $scope, $http){
         var vm = this;
 
+
         vm.goHome = goHome;
         vm.createNewEvent = createNewEvent;
         vm.showEvents = showEvents;
+
+        vm.toggleIcon = toggleIcon;
+
         /*
         vm.showEventDetails = showEventDetails;
         vm.addEvent = addEvent;
@@ -47,6 +57,43 @@
                     $scope.events = [{"title":"keine Events vorhanden!"}];
                 });
         }
+
+        function toggleIcon($elementID) {
+
+            /*
+            $scope.expandedValue = !$scope.expandedValue;
+
+            let switcher = $scope.expandedValue;
+
+            console.log(switcher );
+
+            let icon = document.getElementById('icon'+$elementID);
+
+            if (switcher == true && icon.className == 'fa fa-plus') {
+                icon.className = 'fa fa-minus';
+            } else {
+                icon.className = 'fa fa-plus';
+            }
+
+        }
+
+        */
+
+            let elementID = 'icon'+$elementID;
+            console.log(elementID);
+            let icon = document.getElementById(elementID);
+            let iconClass = icon.className;
+
+            if (iconClass =="fa fa-plus" ) {
+                icon.className = 'fa fa-minus';
+            } else  {
+                icon.className = 'fa fa-plus';
+            }
+
+
+
+        }
+
 /*
         //TODO
         //Click Detail of Event
