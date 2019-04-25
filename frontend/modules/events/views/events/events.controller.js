@@ -60,24 +60,23 @@
 
         function toggleIcon($elementID) {
 
-            /*
-            $scope.expandedValue = !$scope.expandedValue;
-
+            console.log("toggleIcon()");
+            console.log("toggleIcon(): " + $elementID);
+            $scope.expandedValue = !$scope.expandedValue; //Wert abgreifen und Rückschreiben in Scope
             let switcher = $scope.expandedValue;
-
-            console.log(switcher );
-
             let icon = document.getElementById('icon'+$elementID);
 
-            if (switcher == true && icon.className == 'fa fa-plus') {
-                icon.className = 'fa fa-minus';
-            } else {
+            console.log("toggleIcon(): " + 'collabse'+$elementID);
+
+            let elementToShow = document.getElementById('collapse'+$elementID);
+
+            if (elementToShow.className == "collapse show" && icon.className == 'fa fa-minus') {
                 icon.className = 'fa fa-plus';
+            } else {
+                icon.className = 'fa fa-minus';
             }
-
         }
-
-        */
+/*
 
             let elementID = 'icon'+$elementID;
             console.log(elementID);
@@ -93,7 +92,7 @@
 
 
         }
-
+*/
 /*
         //TODO
         //Click Detail of Event
