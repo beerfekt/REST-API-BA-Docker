@@ -1,228 +1,113 @@
 <!-- extends  events/index.html -->
 
 
-
+<events id="events" ng-if="events">
     <div class="content-header">
         <h2>Fortbildungen <small>( Gesamt{{ events.length}})</small></h2>
     </div>
 
-<!--
-<events id="events" ng-if="events">
-        <div class="list-group" >
-            <div class="row fit">
-                <div class="col-sm">
-                    <strong>Title</strong>
-                </div>
-                <div class="col-sm mx-auto">
-                    <strong>Startdatum</strong>
-                </div>
-                <div class="col-sm mx-auto">
-                    <strong>Beginn</strong>
-                </div>
-                <div class="col-sm mx-auto">
-                    <strong>Enddatum</strong>
-                </div>
-                <div class="col-sm"></div>
-                <div class="col-sm"></div>
-            </div>
-        </div>
-
-    <div class="accordion"  id="event-list">
-        <div  class="card" dir-paginate="event in events | itemsPerPage: 5" >
-            <div class="card-header " id="heading{{event.id}}">
-                <div class="row">
-                    <div class="col-sm">
-
-    <!--
-                            Titel klickbar zum Öffnen der Detailanzeige
-                            <button class="btn btn-link" type="button"
-                                data-toggle="collapse"
-                                data-target="#collapse{{event.id}}"
-                                aria-expanded="{{expandedValue}}"
-                                aria-controls="collapse{{event.id}}">
-    -->
-                            {{event.title}}
-    <!--
-                        </button>
-    -->
-<!--
-                    </div>
-                    <div class="col-sm mx-auto">
-                        {{event.startDate | date:'dd.MM.yyyy  '}}
-                    </div>
-                    <div class="col-sm mx-auto">
-                        {{event.startDate | date:'HH:mm:ss '}}
-                    </div>
-                    <div class="col-sm mx-auto">
-                        {{event.endDate | date:'dd.MM.yyyy  '}}
-                    </div>
-                    <!-- TODO: editieren button -->
-<!--
-                    <div class="col-sm">
-                        <button class="btn btn-link float-right toggleDetails{{event.id}}"
-                                type="button" data-toggle="collapse"
-                                data-target="#collapse{{event.id}}"
-                                aria-expanded="true"
-                                aria-controls="collapse{{event.id}}"
-                                ng-click="vm.toggle(event.id)"   >
-                            <i  class="fas fa-pencil-alt"></i>
-                        </button>
-                    </div>
-
-                    <div class="col-sm">
-                        <button class="btn btn-link float-right toggleDetails{{event.id}}"
-                                type="button" data-toggle="collapse"
-                                data-target="#collapse{{event.id}}"
-                                aria-expanded="true"
-                                aria-controls="collapse{{event.id}}"
-                                ng-click="vm.toggleIcon(event.id)" >
-                            <i id="icon{{event.id}}"  class="fas fa-plus"></i>
-                        </button>
-                    </div>
-
-                </div>
-            </div>
-
-            <div id="collapse{{event.id}}" class="collapse" aria-labelledby="heading{{event.id}}" data-parent="#event-list">
-                <div class="card-body">
-                    <h4>{{event.title}}</h4>
-                    {{event.description}}
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <dir-pagination-controls></dir-pagination-controls>
-</events>
--->
-
-
-
-
-
-<!-- HEADLINE -->
-<div class="list-group" >
-    <div class="row fit">
-        <div class="col-sm">
-            <strong>Title</strong>
-        </div>
-        <div class="col-sm mx-auto">
-            <strong>Startdatum</strong>
-        </div>
-        <div class="col-sm mx-auto">
-            <strong>Beginn</strong>
-        </div>
-        <div class="col-sm mx-auto">
-            <strong>Enddatum</strong>
-        </div>
-        <div class="col-sm"></div>
-        <div class="col-sm"></div>
-    </div>
-</div>
-
-
-<!-- EIGENES ACCORDION  -->
-<div class="card"  dir-paginate="event in events | itemsPerPage: 5">  <!-- class="card" -->
-    <div class="card-header">                                   <!-- class="card-header" -->
-        <div class="row">
+    <!-- HEADLINE -->
+    <div class="list-group" >
+        <div class="row fit">
             <div class="col-sm">
-
-                <!--
-                                        Titel klickbar zum Öffnen der Detailanzeige
-                                        <button class="btn btn-link" type="button"
-                                            data-toggle="collapse"
-                                            data-target="#collapse{{event.id}}"
-                                            aria-expanded="{{expandedValue}}"
-                                            aria-controls="collapse{{event.id}}">
-                -->
-                {{event.title}}
-                <!--
-                                    </button>
-                -->
+                <strong>Title</strong>
             </div>
-            <div class="col-sm ">
-                {{event.startDate | date:'dd.MM.yyyy  '}}
+            <div class="col-sm mx-auto">
+                <strong>Startdatum</strong>
             </div>
-            <div class="col-sm ">
-                {{event.startDate | date:'HH:mm:ss '}}
+            <div class="col-sm mx-auto">
+                <strong>Beginn</strong>
             </div>
-            <div class="col-sm ">
-                {{event.endDate | date:'dd.MM.yyyy  '}}
+            <div class="col-sm mx-auto">
+                <strong>Enddatum</strong>
             </div>
-            <!-- TODO: editieren button -->
-
-            <div class="col-sm align-right">
-                <button class="btn btn-link float-right toggleDetails{{event.id}}"
-                        type="button" data-toggle="collapse"
-                        data-target="#collapse{{event.id}}"
-                        aria-expanded="true"
-                        aria-controls="collapse{{event.id}}"
-                        ng-click="vm.toggle(event.id)"   >
-                    <i  class="fas fa-pencil-alt"></i>
-                </button>
-            </div>
-
-            <div class="col-sm align-right ">
-                <button class="btn btn-primary"
-                        type="button"
-                        data-toggle="collapse"
-                        data-target="#collapse{{event.id}}"
-                        aria-expanded="false"
-                        aria-controls="collapse{{event.id}}"
-                        ng-click="vm.toggleIcon(event.id)"
-                >
-                    <i id="icon{{event.id}}" class="fas fa-plus"></i>
-                </button>
-            </div>
-        </div><!-- row -->
-    </div><!-- card-header -->
+            <div class="col-sm"></div>
+            <div class="col-sm"></div>
+        </div>
+    </div>
 
 
-    <div class="row">
+    <!-- EIGENES ACCORDION  -->
+    <div class="card"  dir-paginate="event in events | itemsPerPage: 5">  <!-- class="card" -->
+        <div class="card-header">                                   <!-- class="card-header" -->
+            <div class="row">
+                <div class="col-sm">
+
+                    <!--
+                                            Titel klickbar zum Öffnen der Detailanzeige
+                                            <button class="btn btn-link" type="button"
+                                                data-toggle="collapse"
+                                                data-target="#collapse{{event.id}}"
+                                                aria-expanded="{{expandedValue}}"
+                                                aria-controls="collapse{{event.id}}">
+                    -->
+                    {{event.title}}
+                    <!--
+                                        </button>
+                    -->
+                </div>
+                <div class="col-sm ">
+                    {{event.startDate | date:'dd.MM.yyyy  '}}
+                </div>
+                <div class="col-sm ">
+                    {{event.startDate | date:'HH:mm:ss '}}
+                </div>
+                <div class="col-sm ">
+                    {{event.endDate | date:'dd.MM.yyyy  '}}
+                </div>
+                <!-- TODO: editieren button -->
+
+                <div class="col-sm align-right">
+                    <button class="btn btn-link float-right toggleDetails{{event.id}}"
+                            type="button" data-toggle="collapse"
+                            data-target="#collapse{{event.id}}"
+                            aria-expanded="true"
+                            aria-controls="collapse{{event.id}}"
+                            ng-click="vm.toggle(event.id)"   >
+                        <i  class="fas fa-pencil-alt"></i>
+                    </button>
+                </div>
+
+                <div class="col-sm align-right ">
+                    <button class="btn btn-primary"
+                            type="button"
+                            data-toggle="collapse"
+                            data-target="#collapse{{event.id}}"
+                            aria-expanded="false"
+                            aria-controls="collapse{{event.id}}"
+                            ng-click="vm.toggleIcon(event.id)"
+                    >
+                        <i id="icon{{event.id}}" class="fas fa-plus"></i>
+                    </button>
+                </div>
+            </div><!-- row -->
+        </div><!-- card-header -->
+
+
         <div class="collapse" id="collapse{{event.id}}">
             <div class="card card-body">
-               {{ event.title}}
-               {{event.description}}
+                <div clas="row">
+                    <h4>{{event.title}}</h4>
+                    <p>{{event.description}}</p>
+                </div>
+
             </div>
         </div>
+
+
     </div>
 
-</div>
+
+
+    <dir-pagination-controls></dir-pagination-controls>
+
+
+</events>
 
 
 
-<dir-pagination-controls></dir-pagination-controls>
-
-
-<style>
-    .align-right {
-        text-align:right;
-    }
-</style>
-<!--
-<p>
-    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample1" aria-expanded="false" aria-controls="collapseExample">
-        Button with data-target
-    </button>
-</p>
-
-<div class="collapse" id="collapseExample1">
-    <div class="card card-body">
-        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
-    </div>
-</div>
 
 
 
-<p>
-    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample">
-        Button with data-target
-    </button>
-</p>
 
-<div class="collapse" id="collapseExample2">
-    <div class="card card-body">
-        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
-    </div>
-</div>
--->
+
