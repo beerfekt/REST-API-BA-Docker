@@ -1,6 +1,5 @@
 <!-- extends  events/index.html -->
 
-
 <events id="events" ng-if="events">
     <div class="content-header">
         <h2>Fortbildungen <small>( Gesamt{{ events.length}})</small></h2>
@@ -25,7 +24,6 @@
             <div class="col-sm"></div>
         </div>
     </div>
-
 
     <!-- EIGENES ACCORDION  -->
     <div class="card"  dir-paginate="event in events | itemsPerPage: 5">  <!-- class="card" -->
@@ -83,7 +81,6 @@
             </div><!-- row -->
         </div><!-- card-header -->
 
-
         <div class="collapse" id="collapse{{event.id}}">
             <div class="card card-body">
                 <div clas="row">
@@ -92,15 +89,11 @@
                 </div>
 
             </div>
-        </div>
+        </div><!-- collapse -->
 
-
-    </div>
-
-
+    </div> <!-- card -->
 
     <dir-pagination-controls></dir-pagination-controls>
-
 
 </events>
 
