@@ -20,18 +20,15 @@
         vm.showEvents = showEvents;
         vm.toggleIcon = toggleIcon;
 
-        //Go to home
-        function goHome() {
-            $state.go('home');
-        }
+        //Wenn State aufgerufen wird, wird diese Funktion ausgeführt,
+        //andere Funktionen werden nur spezifisch aufgerufen
+        init();
 
-        //Go to add some events
-        function createNewEvent() {
-            $state.go('events.create');
+        function init(){
+            showEvents();
         }
 
         function showEvents() {
-            console.log('EVENTsCONTROLLER.showEvents()');
             $http({
                 method: "GET",
                 url: "http://docker-backend.test/api/events/list"
@@ -41,25 +38,28 @@
             }, function myError(response) {
                 $scope.events = [{"title": "keine Events vorhanden!"}];
             });
-        }
+        }//showEvents()
 
         function toggleIcon($elementID) {
-
-            console.log("toggleIcon()");
-            console.log("toggleIcon(): " + $elementID);
             $scope.expandedValue = !$scope.expandedValue; //Wert abgreifen und Rückschreiben in Scope
             let switcher = $scope.expandedValue;
             let icon = document.getElementById('icon' + $elementID);
-
-            console.log("toggleIcon(): " + 'collabse' + $elementID);
-
             let elementToShow = document.getElementById('collapse' + $elementID);
-
             if (elementToShow.className == "collapse show" && icon.className == 'fa fa-minus') {
                 icon.className = 'fa fa-plus';
             } else {
                 icon.className = 'fa fa-minus';
             }
+        }//toggleIcon
+
+        //Go to home
+        function goHome() {
+            $state.go('home');
+        }
+
+        //Go to add some events
+        function createNewEvent() {
+            $state.go('events.create');
         }
     }
 

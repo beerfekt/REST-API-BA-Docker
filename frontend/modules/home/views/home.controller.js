@@ -13,7 +13,7 @@
 
         //Go to courses
         function goToEvents() {
-            $state.go('app.events.list');
+            $state.go('events.list');
         }
     }
 
