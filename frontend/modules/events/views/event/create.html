@@ -1,8 +1,5 @@
 <!-- extends  events/index.html -->
 
-<!--TODO: hübsches bootstrap drüber machen -->
-
-
 <form>
     <div class="form-group">
         <label for="inputTitle">Fortbildungsname</label>
@@ -12,19 +9,25 @@
     <div class="form-row">
         <div class="form-group col-sm">
             <label for="startDatepicker">Fortbildungsbeginn:</label>
-            <input id="startDatepicker" ng-model="startDateString"  value="Beginn auswählen" width="100%" />
+            <input id="startDatepicker" ng-model="startDateString"  placeholder="Datum auswählen" width="100%" />
         </div>
         <div class="form-group col-sm">
             <label for="endDatepicker">Fortbildungsende:</label>
-            <input id="endDatepicker" ng-model="endDateString"  value="Ende auswählen" width="100%" />
+            <input id="endDatepicker" ng-model="endDateString"  placeholder="Datum auswählen" width="100%" />
         </div>
     </div>
     <div class="form-group">
-        <label for="inputDescription">Example textarea</label>
-        <textarea  id="inputDescription" class="form-control" ng-model="description" rows="3"></textarea>
+        <label for="inputDescription">Beschreibung</label>
+        <textarea  id="inputDescription" class="form-control" ng-model="description" rows="3" placeholder="Bitte Fortbildung hier beschreiben"></textarea>
     </div>
-    <button type="submit" value="Send" ng-click="vm.addEvent(title, description, startDateString,endDateString)" class="btn btn-primary">Submit</button>
+    <button type="submit" value="Eintragen" ng-click="vm.addEvent(title, description, startDateString,endDateString)" class="btn btn-primary">Eintragen</button>
 </form>
+
+
+<script>
+    $('#startDatepicker').datepicker({ format: 'dd.mm.yyyy' });
+    $('#endDatepicker').datepicker({ format: 'dd.mm.yyyy' });
+</script>
 
 
 <!-- TODO Ausgangsgedöhns -->
@@ -122,9 +125,3 @@ ROLLE
 
 
 
-
-
-<script>
-    $('#startDatepicker').datepicker({ format: 'dd.mm.yyyy' });
-    $('#endDatepicker').datepicker({ format: 'dd.mm.yyyy' });
-</script>

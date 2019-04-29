@@ -35,13 +35,11 @@ sudo  sed -i -e "/$URLBACKEND/d" /etc/hosts; sudo sed -i "2i127.0.3.2 $URLBACKEN
 
 #docker exec docker-rest-frontend-server apk add --update nodejs nodejs-npm
 #log in
-docker exec -it docker-rest-frontend-server sh
-#npm
-apk add --update nodejs nodejs-npm
+docker exec  docker-rest-frontend-server apk add --update nodejs nodejs-npm
 #ui-router
-npm install --save @uirouter/angularjs
+docker exec  docker-rest-frontend-server npm install --save @uirouter/angularjs
 #toaster
-npm install angular-toastr
+docker exec  docker-rest-frontend-server npm install angular-toastr
 
 
 

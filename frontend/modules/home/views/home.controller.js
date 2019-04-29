@@ -1,18 +1,20 @@
-'use strict';
+(function () {
+    "use strict";
 
-angular
-    .module('app')
-    .controller('HomeController', HomeController);
+    angular
+        .module('app')
+        .controller('HomeController', HomeController);
 
-/** @ngInject */
-function HomeController($state){
-    var vm = this;
+    /** @ngInject */
+    function HomeController($state) {
+        var vm = this;
 
-    vm.goToEvents=goToEvents;
+        vm.goToEvents = goToEvents;
 
-    //Go to courses
-    function goToEvents(){
-        $state.go('app.events.list');
+        //Go to courses
+        function goToEvents() {
+            $state.go('app.events.list');
+        }
     }
 
-};
+}());
