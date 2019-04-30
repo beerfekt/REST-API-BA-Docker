@@ -206,6 +206,6 @@ a.doc:hover {
     top: -7em;
     visibility: hidden;
 }
-", "@WebProfiler/Profiler/open.css.twig", "/home/vagrant/projekte/tutorials/symfony4/neu/vendor/symfony/web-profiler-bundle/Resources/views/Profiler/open.css.twig");
+", "@WebProfiler/Profiler/open.css.twig", "/backend/vendor/symfony/web-profiler-bundle/Resources/views/Profiler/open.css.twig");
     }
 }

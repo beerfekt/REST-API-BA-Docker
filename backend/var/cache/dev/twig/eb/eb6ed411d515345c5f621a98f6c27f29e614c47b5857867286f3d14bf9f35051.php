@@ -49,6 +49,6 @@ class __TwigTemplate_d2e6426a74a2e1f8bd1f4a347ac014d6810c0d48d9ff93c2e42f65e9e76
     public function getSourceContext()
     {
         return new Twig_Source("<?php echo \$view['form']->block(\$form, 'form_widget_simple', array('type' => isset(\$type) ? \$type : 'hidden')) ?>
-", "@Framework/Form/hidden_widget.html.php", "/home/vagrant/projekte/tutorials/symfony4/neu/vendor/symfony/framework-bundle/Resources/views/Form/hidden_widget.html.php");
+", "@Framework/Form/hidden_widget.html.php", "/backend/vendor/symfony/framework-bundle/Resources/views/Form/hidden_widget.html.php");
     }
 }

@@ -916,6 +916,6 @@ class __TwigTemplate_71feede21669f3f4a18ca78c336166c87b035e70ab17c15c69a1bf8a7b4
         </tbody>
     </table>
 {% endmacro %}
-", "@WebProfiler/Collector/translation.html.twig", "/home/vagrant/projekte/tutorials/symfony4/neu/vendor/symfony/web-profiler-bundle/Resources/views/Collector/translation.html.twig");
+", "@WebProfiler/Collector/translation.html.twig", "/backend/vendor/symfony/web-profiler-bundle/Resources/views/Collector/translation.html.twig");
     }
 }

@@ -49,6 +49,6 @@ class __TwigTemplate_97d39fe1fe3f6268e1fa8cdc8ee1a3671a4701e3ebdf54782f867d0ab2b
     public function getSourceContext()
     {
         return new Twig_Source("<textarea <?php echo \$view['form']->block(\$form, 'widget_attributes') ?>><?php echo \$view->escape(\$value) ?></textarea>
-", "@Framework/Form/textarea_widget.html.php", "/home/vagrant/projekte/tutorials/symfony4/neu/vendor/symfony/framework-bundle/Resources/views/Form/textarea_widget.html.php");
+", "@Framework/Form/textarea_widget.html.php", "/backend/vendor/symfony/framework-bundle/Resources/views/Form/textarea_widget.html.php");
     }
 }

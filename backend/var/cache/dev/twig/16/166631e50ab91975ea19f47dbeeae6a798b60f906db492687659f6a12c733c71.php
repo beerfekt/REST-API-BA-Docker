@@ -205,6 +205,6 @@ class __TwigTemplate_4b0a6a41fd083fbc71b771e15c156957088272cf1fef85ecb410ce80930
         </div>
     {% endif %}
 {% endblock %}
-", "@WebProfiler/Collector/exception.html.twig", "/home/vagrant/projekte/tutorials/symfony4/neu/vendor/symfony/web-profiler-bundle/Resources/views/Collector/exception.html.twig");
+", "@WebProfiler/Collector/exception.html.twig", "/backend/vendor/symfony/web-profiler-bundle/Resources/views/Collector/exception.html.twig");
     }
 }

@@ -61,6 +61,6 @@ class __TwigTemplate_9b338937df0c2e18e5b4a73e531c50ad1d987538b3a82c04769da30d9f2
     <?php echo \$view['form']->block(\$form, 'form_rows') ?>
     <?php echo \$view['form']->rest(\$form) ?>
 </div>
-", "@Framework/Form/form_widget_compound.html.php", "/home/vagrant/projekte/tutorials/symfony4/neu/vendor/symfony/framework-bundle/Resources/views/Form/form_widget_compound.html.php");
+", "@Framework/Form/form_widget_compound.html.php", "/backend/vendor/symfony/framework-bundle/Resources/views/Form/form_widget_compound.html.php");
     }
 }

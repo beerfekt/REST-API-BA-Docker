@@ -155,6 +155,6 @@ class __TwigTemplate_2e258954f8de0221555eb7dda711e77414c4a2dc7aa7e02452c2328cb34
         {% block javascripts %}{% endblock %}
     </body>
 </html>
-", "base.html.twig", "/home/vagrant/projekte/tutorials/symfony4/neu/templates/base.html.twig");
+", "base.html.twig", "/backend/templates/base.html.twig");
     }
 }

@@ -57,6 +57,6 @@ class __TwigTemplate_884f783130019806002ceb0c1265f32664d11b320dfc571ca134e6d364a
     <?php if (strlen(\$value) > 0): ?> value=\"<?php echo \$view->escape(\$value) ?>\"<?php endif ?>
     <?php if (\$checked): ?> checked=\"checked\"<?php endif ?>
 />
-", "@Framework/Form/checkbox_widget.html.php", "/home/vagrant/projekte/tutorials/symfony4/neu/vendor/symfony/framework-bundle/Resources/views/Form/checkbox_widget.html.php");
+", "@Framework/Form/checkbox_widget.html.php", "/backend/vendor/symfony/framework-bundle/Resources/views/Form/checkbox_widget.html.php");
     }
 }

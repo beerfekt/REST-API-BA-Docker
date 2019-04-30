@@ -57,6 +57,6 @@ class __TwigTemplate_b650d99919a879c5b68a1f8a183e0d19e2424755b80c603a50e0fc45528
     C0.9,2,0.8,2.8,1.6,3.6L4,6L1.6,8.4C0.8,9.2,0.9,10,1.4,10.6c0.6,0.6,1.4,0.6,2.2-0.2L6,8l2.4,2.4c0.8,0.8,1.6,0.7,2.2,0.2
     C11.1,10,11.2,9.2,10.4,8.4z\"/>
 </svg>
-", "@WebProfiler/Icon/no.svg", "/home/vagrant/projekte/tutorials/symfony4/neu/vendor/symfony/web-profiler-bundle/Resources/views/Icon/no.svg");
+", "@WebProfiler/Icon/no.svg", "/backend/vendor/symfony/web-profiler-bundle/Resources/views/Icon/no.svg");
     }
 }

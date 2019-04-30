@@ -476,6 +476,6 @@ class __TwigTemplate_6648898aea9861d91e519c061a3dfc72b8da287ba374728d21eefacae58
         {% endif %}
     </div>
 </div>
-", "@Twig/Exception/exception.html.twig", "/home/vagrant/projekte/tutorials/symfony4/neu/vendor/symfony/twig-bundle/Resources/views/Exception/exception.html.twig");
+", "@Twig/Exception/exception.html.twig", "/backend/vendor/symfony/twig-bundle/Resources/views/Exception/exception.html.twig");
     }
 }

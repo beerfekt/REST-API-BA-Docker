@@ -49,6 +49,6 @@ class __TwigTemplate_ddf0700209720b5ea4f71a05ea249d930d4d77d0931e4a4a0ddec908bfe
     public function getSourceContext()
     {
         return new Twig_Source("<?php echo \$view['form']->block(\$form, 'button_widget', array('type' => isset(\$type) ? \$type : 'reset')) ?>
-", "@Framework/Form/reset_widget.html.php", "/home/vagrant/projekte/tutorials/symfony4/neu/vendor/symfony/framework-bundle/Resources/views/Form/reset_widget.html.php");
+", "@Framework/Form/reset_widget.html.php", "/backend/vendor/symfony/framework-bundle/Resources/views/Form/reset_widget.html.php");
     }
 }

@@ -465,6 +465,6 @@ class __TwigTemplate_c486d7a9ad52e19eaac137147edd1373b04a3bddb3ae12ca786910690bf
         {% endfor %}
     </table>
 {% endmacro %}
-", "@WebProfiler/Collector/events.html.twig", "/home/vagrant/projekte/tutorials/symfony4/neu/vendor/symfony/web-profiler-bundle/Resources/views/Collector/events.html.twig");
+", "@WebProfiler/Collector/events.html.twig", "/backend/vendor/symfony/web-profiler-bundle/Resources/views/Collector/events.html.twig");
     }
 }

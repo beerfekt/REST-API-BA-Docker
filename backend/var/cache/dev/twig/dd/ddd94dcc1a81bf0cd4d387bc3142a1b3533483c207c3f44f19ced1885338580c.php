@@ -456,6 +456,6 @@ class __TwigTemplate_2fc6c5d926b67047a05f18134a82ad9eef702365306084ff85d142acf87
         </div>
     {% endfor %}
 {% endblock %}
-", "@WebProfiler/Collector/validator.html.twig", "/home/vagrant/projekte/tutorials/symfony4/neu/vendor/symfony/web-profiler-bundle/Resources/views/Collector/validator.html.twig");
+", "@WebProfiler/Collector/validator.html.twig", "/backend/vendor/symfony/web-profiler-bundle/Resources/views/Collector/validator.html.twig");
     }
 }

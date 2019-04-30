@@ -190,6 +190,6 @@ class __TwigTemplate_804dfb7641cd3bbd3aef5545e25c04104777502c85b669da96fc32add92
         })|raw }}
     </div>
 {% endif %}
-", "@Twig/Exception/trace.html.twig", "/home/vagrant/projekte/tutorials/symfony4/neu/vendor/symfony/twig-bundle/Resources/views/Exception/trace.html.twig");
+", "@Twig/Exception/trace.html.twig", "/backend/vendor/symfony/twig-bundle/Resources/views/Exception/trace.html.twig");
     }
 }

@@ -61,6 +61,6 @@ class __TwigTemplate_9282cd875c188dcf5f72200568e552bbc80b882f53cd7dbff4a1575d0f8
         return new Twig_Source("/*
 {{ include('@Twig/Exception/exception.txt.twig', { exception: exception }) }}
 */
-", "@Twig/Exception/exception.css.twig", "/home/vagrant/projekte/tutorials/symfony4/neu/vendor/symfony/twig-bundle/Resources/views/Exception/exception.css.twig");
+", "@Twig/Exception/exception.css.twig", "/backend/vendor/symfony/twig-bundle/Resources/views/Exception/exception.css.twig");
     }
 }

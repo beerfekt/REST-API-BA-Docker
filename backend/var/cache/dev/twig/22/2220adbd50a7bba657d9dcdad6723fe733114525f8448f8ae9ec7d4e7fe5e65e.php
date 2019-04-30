@@ -49,6 +49,6 @@ class __TwigTemplate_c03a02f90770329ab20815e3833701a874cdc2f32f2d1a3bf3166fa18c1
     public function getSourceContext()
     {
         return new Twig_Source("<?php echo \$view['form']->block(\$form, 'form_widget_simple', array('type' => isset(\$type) ? \$type : 'range'));
-", "@Framework/Form/range_widget.html.php", "/home/vagrant/projekte/tutorials/symfony4/neu/vendor/symfony/framework-bundle/Resources/views/Form/range_widget.html.php");
+", "@Framework/Form/range_widget.html.php", "/backend/vendor/symfony/framework-bundle/Resources/views/Form/range_widget.html.php");
     }
 }

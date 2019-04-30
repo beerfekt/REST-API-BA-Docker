@@ -55,6 +55,6 @@ class __TwigTemplate_93f3b020a6745f12b8bd52d297089b2b16ccf09a7269cdcfee8f310678c
     public function getSourceContext()
     {
         return new Twig_Source("{{ include('@Twig/Exception/error.xml.twig') }}
-", "@Twig/Exception/error.atom.twig", "/home/vagrant/projekte/tutorials/symfony4/neu/vendor/symfony/twig-bundle/Resources/views/Exception/error.atom.twig");
+", "@Twig/Exception/error.atom.twig", "/backend/vendor/symfony/twig-bundle/Resources/views/Exception/error.atom.twig");
     }
 }

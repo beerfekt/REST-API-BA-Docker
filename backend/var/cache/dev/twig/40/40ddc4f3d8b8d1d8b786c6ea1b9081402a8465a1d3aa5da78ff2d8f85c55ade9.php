@@ -158,6 +158,6 @@ class __TwigTemplate_eef2c239cb10e68d5eba31ef3688f000b6781aef8f0bd1135a9b84a676b
         {% endif %}
     </div>
 {% endblock %}
-", "@WebProfiler/Profiler/open.html.twig", "/home/vagrant/projekte/tutorials/symfony4/neu/vendor/symfony/web-profiler-bundle/Resources/views/Profiler/open.html.twig");
+", "@WebProfiler/Profiler/open.html.twig", "/backend/vendor/symfony/web-profiler-bundle/Resources/views/Profiler/open.html.twig");
     }
 }

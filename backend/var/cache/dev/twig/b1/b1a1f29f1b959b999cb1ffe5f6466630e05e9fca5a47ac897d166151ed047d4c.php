@@ -1645,6 +1645,6 @@ class __TwigTemplate_20c85640a35e00c53764e4d4907a7e3e68e81dd554bb75b2119f0c028b0
         <canvas width=\"680\" height=\"\" id=\"{{ id }}\" class=\"timeline\"></canvas>
     </div>
 {% endmacro %}
-", "@WebProfiler/Collector/time.html.twig", "/home/vagrant/projekte/tutorials/symfony4/neu/vendor/symfony/web-profiler-bundle/Resources/views/Collector/time.html.twig");
+", "@WebProfiler/Collector/time.html.twig", "/backend/vendor/symfony/web-profiler-bundle/Resources/views/Collector/time.html.twig");
     }
 }

@@ -162,6 +162,6 @@ class __TwigTemplate_44d6567c033afa67dd1d18230f26347e23075c579786252f1d513d482c1
         </tr>
     </tbody>
 </table>
-", "@Twig/Exception/traces_text.html.twig", "/home/vagrant/projekte/tutorials/symfony4/neu/vendor/symfony/twig-bundle/Resources/views/Exception/traces_text.html.twig");
+", "@Twig/Exception/traces_text.html.twig", "/backend/vendor/symfony/twig-bundle/Resources/views/Exception/traces_text.html.twig");
     }
 }

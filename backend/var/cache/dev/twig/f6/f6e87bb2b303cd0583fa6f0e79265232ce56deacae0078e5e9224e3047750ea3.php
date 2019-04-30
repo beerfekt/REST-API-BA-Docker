@@ -57,6 +57,6 @@ class __TwigTemplate_3d2f7c11cf18a7503da32b1d8a2e457e8aeacd54a59141492e2a4081697
 <?php else: ?>
 <?php echo \$view['form']->block(\$form, 'choice_widget_collapsed') ?>
 <?php endif ?>
-", "@Framework/Form/choice_widget.html.php", "/home/vagrant/projekte/tutorials/symfony4/neu/vendor/symfony/framework-bundle/Resources/views/Form/choice_widget.html.php");
+", "@Framework/Form/choice_widget.html.php", "/backend/vendor/symfony/framework-bundle/Resources/views/Form/choice_widget.html.php");
     }
 }

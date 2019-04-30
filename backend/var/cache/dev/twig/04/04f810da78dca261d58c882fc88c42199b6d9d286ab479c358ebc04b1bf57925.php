@@ -49,6 +49,6 @@ class __TwigTemplate_e9c915be0dd9e29c16402342631371c4adcd6b770d1c94f655391265680
     public function getSourceContext()
     {
         return new Twig_Source("<?php echo \$view['form']->block(\$form, 'form_widget_simple', array('type' => isset(\$type) ? \$type : 'password')) ?>
-", "@Framework/Form/password_widget.html.php", "/home/vagrant/projekte/tutorials/symfony4/neu/vendor/symfony/framework-bundle/Resources/views/Form/password_widget.html.php");
+", "@Framework/Form/password_widget.html.php", "/backend/vendor/symfony/framework-bundle/Resources/views/Form/password_widget.html.php");
     }
 }

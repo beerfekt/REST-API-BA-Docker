@@ -65,6 +65,6 @@ class __TwigTemplate_5495cf76f591dc5addaac8046ab6e036dc38bf86374b29841bcba899da5
         return new Twig_Source("<?xml version=\"1.0\" encoding=\"{{ _charset }}\" ?>
 
 <error code=\"{{ status_code }}\" message=\"{{ status_text }}\" />
-", "@Twig/Exception/error.xml.twig", "/home/vagrant/projekte/tutorials/symfony4/neu/vendor/symfony/twig-bundle/Resources/views/Exception/error.xml.twig");
+", "@Twig/Exception/error.xml.twig", "/backend/vendor/symfony/twig-bundle/Resources/views/Exception/error.xml.twig");
     }
 }

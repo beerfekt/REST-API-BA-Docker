@@ -2026,6 +2026,6 @@ class __TwigTemplate_95d30ea0214c003b3d24a34e97d705974d6b451fb87174586db2efa5fee
         {{ tree.form_tree_details(childName, childData, forms_by_hash) }}
     {% endfor %}
 {% endmacro %}
-", "@WebProfiler/Collector/form.html.twig", "/home/vagrant/projekte/tutorials/symfony4/neu/vendor/symfony/web-profiler-bundle/Resources/views/Collector/form.html.twig");
+", "@WebProfiler/Collector/form.html.twig", "/backend/vendor/symfony/web-profiler-bundle/Resources/views/Collector/form.html.twig");
     }
 }

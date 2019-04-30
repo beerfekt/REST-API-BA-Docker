@@ -88,6 +88,6 @@ class __TwigTemplate_621ee8a6ceb79816af38c04f10c49ee34a9f5937d6589aca7bbd24055e9
 {{ include('@Twig/Exception/traces.txt.twig', { exception: e }, with_context = false) }}
 
 {% endfor %}
-", "@Twig/Exception/exception.txt.twig", "/home/vagrant/projekte/tutorials/symfony4/neu/vendor/symfony/twig-bundle/Resources/views/Exception/exception.txt.twig");
+", "@Twig/Exception/exception.txt.twig", "/backend/vendor/symfony/twig-bundle/Resources/views/Exception/exception.txt.twig");
     }
 }

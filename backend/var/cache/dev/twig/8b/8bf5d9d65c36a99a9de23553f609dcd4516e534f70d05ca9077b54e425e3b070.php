@@ -1659,6 +1659,6 @@ class __TwigTemplate_2901a6a6b850fdc579f3210adc848247425425a157e70ec027b2cfdc605
         </tbody>
     </table>
 {% endmacro %}
-", "@Doctrine/Collector/db.html.twig", "/home/vagrant/projekte/tutorials/symfony4/neu/vendor/doctrine/doctrine-bundle/Resources/views/Collector/db.html.twig");
+", "@Doctrine/Collector/db.html.twig", "/backend/vendor/doctrine/doctrine-bundle/Resources/views/Collector/db.html.twig");
     }
 }

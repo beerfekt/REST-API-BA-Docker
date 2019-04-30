@@ -145,6 +145,6 @@ class __TwigTemplate_8dda4adafdca00249e61c6045a794a97ff5588f632c35f647c4da011825
 
     {{ include('@WebProfiler/Profiler/toolbar_item.html.twig', { link: profiler_url, name: 'time', status: status_color }) }}
 {% endblock %}
-", "@WebProfiler/Collector/memory.html.twig", "/home/vagrant/projekte/tutorials/symfony4/neu/vendor/symfony/web-profiler-bundle/Resources/views/Collector/memory.html.twig");
+", "@WebProfiler/Collector/memory.html.twig", "/backend/vendor/symfony/web-profiler-bundle/Resources/views/Collector/memory.html.twig");
     }
 }

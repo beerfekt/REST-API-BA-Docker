@@ -61,6 +61,6 @@ class __TwigTemplate_557c0f1713a9aa2c7397fe6c80879443d82cb86392f2afb05bca58d91c0
     <?php echo \$view['form']->widget(\$form, \$widgetAttr); ?>
     <?php echo \$view['form']->help(\$form); ?>
 </div>
-", "@Framework/Form/form_row.html.php", "/home/vagrant/projekte/tutorials/symfony4/neu/vendor/symfony/framework-bundle/Resources/views/Form/form_row.html.php");
+", "@Framework/Form/form_row.html.php", "/backend/vendor/symfony/framework-bundle/Resources/views/Form/form_row.html.php");
     }
 }

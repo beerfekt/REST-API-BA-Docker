@@ -57,6 +57,6 @@ class __TwigTemplate_b1c7854a20e26bf3565a5accedea396bbf2b2815cf77b31acb7fc19d042
         <?php echo \$view['form']->row(\$child) ?>
     <?php endif; ?>
 <?php endforeach; ?>
-", "@Framework/Form/form_rest.html.php", "/home/vagrant/projekte/tutorials/symfony4/neu/vendor/symfony/framework-bundle/Resources/views/Form/form_rest.html.php");
+", "@Framework/Form/form_rest.html.php", "/backend/vendor/symfony/framework-bundle/Resources/views/Form/form_rest.html.php");
     }
 }

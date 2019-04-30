@@ -57,6 +57,6 @@ class __TwigTemplate_db8a8cbddb4f2e1e0b289b8ec8fb5f26cfa911001c97b4c33f9bfb20e3d
     value=\"<?php echo \$view->escape(\$value) ?>\"
     <?php if (\$checked): ?> checked=\"checked\"<?php endif ?>
 />
-", "@Framework/Form/radio_widget.html.php", "/home/vagrant/projekte/tutorials/symfony4/neu/vendor/symfony/framework-bundle/Resources/views/Form/radio_widget.html.php");
+", "@Framework/Form/radio_widget.html.php", "/backend/vendor/symfony/framework-bundle/Resources/views/Form/radio_widget.html.php");
     }
 }

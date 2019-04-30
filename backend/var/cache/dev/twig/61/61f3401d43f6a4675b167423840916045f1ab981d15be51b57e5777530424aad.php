@@ -621,6 +621,6 @@ class __TwigTemplate_b6cc8320dbe214b1b5abff814178402ab3c0233131b50bb0c6ea55db001
     });
 
 /*]]>*/</script>
-", "@Twig/base_js.html.twig", "/home/vagrant/projekte/tutorials/symfony4/neu/vendor/symfony/twig-bundle/Resources/views/base_js.html.twig");
+", "@Twig/base_js.html.twig", "/backend/vendor/symfony/twig-bundle/Resources/views/base_js.html.twig");
     }
 }

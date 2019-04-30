@@ -51,6 +51,6 @@ class __TwigTemplate_3ffec6d7faa514616981b09306d5a800dd693b6ba4a016bcde2834e1db5
     {
         return new Twig_Source("id=\"<?php echo \$view->escape(\$id) ?>\" name=\"<?php echo \$view->escape(\$full_name) ?>\"<?php if (\$disabled): ?> disabled=\"disabled\"<?php endif ?>
 <?php echo \$attr ? ' '.\$view['form']->block(\$form, 'attributes') : '' ?>
-", "@Framework/Form/button_attributes.html.php", "/home/vagrant/projekte/tutorials/symfony4/neu/vendor/symfony/framework-bundle/Resources/views/Form/button_attributes.html.php");
+", "@Framework/Form/button_attributes.html.php", "/backend/vendor/symfony/framework-bundle/Resources/views/Form/button_attributes.html.php");
     }
 }

@@ -55,6 +55,6 @@ class __TwigTemplate_e28be6d5002db7986495389facafac40178d80b75e8d170241a5dacc94e
     public function getSourceContext()
     {
         return new Twig_Source("{{ include('@Twig/Exception/exception.xml.twig', { exception: exception }) }}
-", "@Twig/Exception/exception.rdf.twig", "/home/vagrant/projekte/tutorials/symfony4/neu/vendor/symfony/twig-bundle/Resources/views/Exception/exception.rdf.twig");
+", "@Twig/Exception/exception.rdf.twig", "/backend/vendor/symfony/twig-bundle/Resources/views/Exception/exception.rdf.twig");
     }
 }

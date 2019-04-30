@@ -69,6 +69,6 @@ class __TwigTemplate_932e3efa626108679021e562293f32d3510ede7d6b32ba20e4489420d39
         <?php echo \$view['form']->help(\$form); ?>
     </td>
 </tr>
-", "@Framework/FormTable/form_row.html.php", "/home/vagrant/projekte/tutorials/symfony4/neu/vendor/symfony/framework-bundle/Resources/views/FormTable/form_row.html.php");
+", "@Framework/FormTable/form_row.html.php", "/backend/vendor/symfony/framework-bundle/Resources/views/FormTable/form_row.html.php");
     }
 }

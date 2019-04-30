@@ -53,6 +53,6 @@ class __TwigTemplate_134e5b3915fe01477c7ffc30890b784d07ba55a53f26b8fd32364090220
         return new Twig_Source("<div>
     <?php echo \$view['form']->widget(\$form) ?>
 </div>
-", "@Framework/Form/button_row.html.php", "/home/vagrant/projekte/tutorials/symfony4/neu/vendor/symfony/framework-bundle/Resources/views/Form/button_row.html.php");
+", "@Framework/Form/button_row.html.php", "/backend/vendor/symfony/framework-bundle/Resources/views/Form/button_row.html.php");
     }
 }

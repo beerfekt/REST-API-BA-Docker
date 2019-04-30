@@ -121,6 +121,6 @@ class __TwigTemplate_3d092815bf48e1967365477a6f47935281dab17ca42a8e6874793a6b818
 .exception-message-wrapper .container {
     min-height: auto;
 }
-", "@WebProfiler/Collector/exception.css.twig", "/home/vagrant/projekte/tutorials/symfony4/neu/vendor/symfony/web-profiler-bundle/Resources/views/Collector/exception.css.twig");
+", "@WebProfiler/Collector/exception.css.twig", "/backend/vendor/symfony/web-profiler-bundle/Resources/views/Collector/exception.css.twig");
     }
 }

@@ -1271,6 +1271,6 @@ $context["voter_detail"], "vote", array(), "array") == twig_constant("Symfony\\C
         </table>
     {% endif %}
 {% endblock %}
-", "@Security/Collector/security.html.twig", "/home/vagrant/projekte/tutorials/symfony4/neu/vendor/symfony/security-bundle/Resources/views/Collector/security.html.twig");
+", "@Security/Collector/security.html.twig", "/backend/vendor/symfony/security-bundle/Resources/views/Collector/security.html.twig");
     }
 }

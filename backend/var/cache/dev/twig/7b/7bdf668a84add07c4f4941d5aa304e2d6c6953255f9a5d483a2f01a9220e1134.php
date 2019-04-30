@@ -396,6 +396,6 @@ class __TwigTemplate_00c0473b0b94f5ac3d97c2c9698117251c3480e28cd75470b0e4252d019
         </div>
     {% endfor %}
 {% endblock %}
-", "@Debug/Profiler/dump.html.twig", "/home/vagrant/projekte/tutorials/symfony4/neu/vendor/symfony/debug-bundle/Resources/views/Profiler/dump.html.twig");
+", "@Debug/Profiler/dump.html.twig", "/backend/vendor/symfony/debug-bundle/Resources/views/Profiler/dump.html.twig");
     }
 }

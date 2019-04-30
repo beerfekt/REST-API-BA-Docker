@@ -49,6 +49,6 @@ class __TwigTemplate_9deb9ca2c3c5a08777d9e5ce12ee2927ca91e8cc090ce005d42ccd72569
     public function getSourceContext()
     {
         return new Twig_Source("<svg width=\"1792\" height=\"1792\" viewBox=\"0 0 1792 1792\" xmlns=\"http://www.w3.org/2000/svg\"><path fill=\"#FFF\" d=\"M1363 877l-742 742q-19 19-45 19t-45-19l-166-166q-19-19-19-45t19-45l531-531-531-531q-19-19-19-45t19-45l166-166q19-19 45-19t45 19l742 742q19 19 19 45t-19 45z\"/></svg>
-", "@Twig/images/chevron-right.svg", "/home/vagrant/projekte/tutorials/symfony4/neu/vendor/symfony/twig-bundle/Resources/views/images/chevron-right.svg");
+", "@Twig/images/chevron-right.svg", "/backend/vendor/symfony/twig-bundle/Resources/views/images/chevron-right.svg");
     }
 }

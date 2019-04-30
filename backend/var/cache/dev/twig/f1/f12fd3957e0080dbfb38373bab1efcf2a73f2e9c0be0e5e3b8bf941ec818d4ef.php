@@ -992,6 +992,6 @@ class __TwigTemplate_07b1d1b3299b882ee761015aeb7e943552b71f1388e5aa970fbbc23eb93
         {% endif %}
     {% endfor %}
 {% endblock %}
-", "@Swiftmailer/Collector/swiftmailer.html.twig", "/home/vagrant/projekte/tutorials/symfony4/neu/vendor/symfony/swiftmailer-bundle/Resources/views/Collector/swiftmailer.html.twig");
+", "@Swiftmailer/Collector/swiftmailer.html.twig", "/backend/vendor/symfony/swiftmailer-bundle/Resources/views/Collector/swiftmailer.html.twig");
     }
 }

@@ -210,6 +210,6 @@ class __TwigTemplate_7a2191697ec8b8875b0b50d27cf81deee6526ce03f64ae660c5d4a85042
         {{ include('@Twig/base_js.html.twig') }}
     </body>
 </html>
-", "@Twig/layout.html.twig", "/home/vagrant/projekte/tutorials/symfony4/neu/vendor/symfony/twig-bundle/Resources/views/layout.html.twig");
+", "@Twig/layout.html.twig", "/backend/vendor/symfony/twig-bundle/Resources/views/layout.html.twig");
     }
 }

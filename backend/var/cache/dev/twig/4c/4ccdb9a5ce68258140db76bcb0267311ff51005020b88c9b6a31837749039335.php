@@ -83,6 +83,6 @@ class __TwigTemplate_51a98fa864d9e1e064b24b776a248f68077ee91e55d10bad935ec608edb
         </div>
     </div>
 </div>
-", "@WebProfiler/Profiler/header.html.twig", "/home/vagrant/projekte/tutorials/symfony4/neu/vendor/symfony/web-profiler-bundle/Resources/views/Profiler/header.html.twig");
+", "@WebProfiler/Profiler/header.html.twig", "/backend/vendor/symfony/web-profiler-bundle/Resources/views/Profiler/header.html.twig");
     }
 }

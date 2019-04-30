@@ -49,6 +49,6 @@ class __TwigTemplate_f005a88d5c2f05884208ced6d6e184359d44bc7e752352a88029c24b7af
     public function getSourceContext()
     {
         return new Twig_Source("<?php echo \$view['form']->block(\$form, 'choice_widget_options') ?>
-", "@Framework/Form/choice_options.html.php", "/home/vagrant/projekte/tutorials/symfony4/neu/vendor/symfony/framework-bundle/Resources/views/Form/choice_options.html.php");
+", "@Framework/Form/choice_options.html.php", "/backend/vendor/symfony/framework-bundle/Resources/views/Form/choice_options.html.php");
     }
 }

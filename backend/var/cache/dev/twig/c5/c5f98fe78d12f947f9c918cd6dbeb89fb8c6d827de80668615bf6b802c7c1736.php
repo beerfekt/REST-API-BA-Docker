@@ -57,6 +57,6 @@ class __TwigTemplate_85d9602011a6b9d6ded12c17f26eba9f4834c8b88b47ff44293a5fb4088
         <?php echo \$view['form']->widget(\$form); ?>
     </td>
 </tr>
-", "@Framework/FormTable/hidden_row.html.php", "/home/vagrant/projekte/tutorials/symfony4/neu/vendor/symfony/framework-bundle/Resources/views/FormTable/hidden_row.html.php");
+", "@Framework/FormTable/hidden_row.html.php", "/backend/vendor/symfony/framework-bundle/Resources/views/FormTable/hidden_row.html.php");
     }
 }
