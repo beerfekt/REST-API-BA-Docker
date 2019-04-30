@@ -7,20 +7,26 @@
 
 
     /** @ngInject */
-    function EventController($state, $scope, $http) {
+    function EventController($state, $scope, $http, toaster) {
         var vm = this;
 
         vm.addEvent = addEvent;
+        vm.goToEvents = goToEvents;
 
         function addEvent($title, $description, $startDateString, $endDateString) {
             // curl -i -X POST -H 'Content-Type: application/json' -d '{"title": "new Title", "content": "new Content"}' http://rest-tutorial.test/api/events
 
-            //TODO: POST -formdaten abgreifen und in form bringen:
+            if (!$title || !$description || !$startDateString || !$endDateString) {
+                toaster.pop('error', 'title', 'Bitte alle Felder ausfuellen!');
+                return;
+            }
+                //TODO: Uhrzeit fehlt noch
+                //TODO: Prüfung das Startdatum < Enddatum
             var data = {
-                "title": $title,
-                "startDate": convertDateStringToSeconds($startDateString),
-                "endDate": convertDateStringToSeconds($endDateString),
-                "description": $description
+                    "title": $title,
+                    "startDate": convertDateStringToSeconds($startDateString),
+                    "endDate": convertDateStringToSeconds($endDateString),
+                    "description": $description
             };
 
             console.log(JSON.stringify(data));
@@ -33,8 +39,10 @@
                 },
                 data: data
             }).then(function mySuccess() {
-                $scope.msg = "Post Data Submitted Successfully!";
+                toaster.pop('success', "title", 'Fortbildung erfolgreich eingetragen');
+                goToEvents();
             }, function myError(response) {
+                toaster.pop('error', "title", 'Fortbildung konnte nicht eingetragen werden');
                 $scope.msg = "Service not Exists";
                 $scope.statusval = response.status;
                 $scope.statustext = response.statusText;
@@ -44,7 +52,13 @@
             // showEventDetails() (mit verzögerung, sodass Änderungen übernommen werden)
         }
 
+        function goToEvents() {
+            $state.go('events.list');
+        }
+
         function convertDateStringToSeconds($dateAsString) {
+            if (!$dateAsString) return;
+
             var parts = $dateAsString.split('.');
             var date = new Date(parts[2], parts[1] - 1, parts[0]);
             //seconds

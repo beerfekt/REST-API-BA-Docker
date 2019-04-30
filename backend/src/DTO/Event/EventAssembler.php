@@ -57,7 +57,7 @@ final class EventAssembler
         $dateAsInt = intval($date);
         $dateTime = new \DateTime();
         $dateTime->setTimestamp($dateAsInt);
-        echo $dateTime->format('U = Y-m-d H:i:s') . "n";
+        //echo $dateTime->format('U = Y-m-d H:i:s') . "n";
         return $dateTime;
     }
 

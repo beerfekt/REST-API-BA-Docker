@@ -7,6 +7,15 @@
     //module
     angular
         .module('app', [
+
+            //libraries
+            'ui.router',
+            'angularUtils.directives.dirPagination',
+            'ngAnimate',
+            'toaster',
+
+
+            //modules
             'app.events',
             'app.home'
         ])

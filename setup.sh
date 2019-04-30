@@ -41,16 +41,19 @@ echo "Installing Frontend ..."
 docker exec  docker-rest-frontend-server apk add --update nodejs nodejs-npm
 #ui-router
 docker exec  docker-rest-frontend-server npm install --save @uirouter/angularjs
-#toaster
-docker exec  docker-rest-frontend-server npm install angular-toastr
+#toaster   https://github.com/jirikavi/AngularJS-Toaster
+docker-compose exec frontend-server  npm install --save angularjs-toaster
+
 
 #installing dependencies
+#TODO: docker-compose exec container befehl1 befehl2 befehl3?
 echo "install dependencies via npm:  \n"
 docker-compose exec frontend-server npm install angular@1.7.8
 docker-compose exec frontend-server npm install angular-ui-router
 # falls eigentümer geforkte Änderungen in Repo angenommen hat, kann diese Zeile wieder einkommentiert werden
 # solange werden lokale Dateien verwendet ohne diese via npm neuzuinstallieren
 # npm install angular-utils-pagination
+docker-compose exec frontend-server npm install angular-animate
 docker-compose exec frontend-server npm install bootstrap@4.2.1
 docker-compose exec frontend-server npm install jquery@latest
 docker-compose exec frontend-server npm install gijgo --save

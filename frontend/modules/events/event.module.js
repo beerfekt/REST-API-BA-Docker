@@ -3,13 +3,9 @@
 //module
 
     angular
-        .module('app.events', ['ui.router','angularUtils.directives.dirPagination'])
+        .module('app.events', [])
+
         .config(config)
-    /*
-        .run(function(){
-            console.log('myApp is ready!');
-        });
-    */
 
     //Configuration of module
     /** @ngInject */

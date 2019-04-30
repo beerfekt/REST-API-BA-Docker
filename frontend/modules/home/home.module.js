@@ -3,7 +3,7 @@
 
     //module
     angular
-        .module('app.home', ['ui.router'])
+        .module('app.home',[])
         .config(config)
 
     //Configuration of module

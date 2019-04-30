@@ -11,7 +11,7 @@
 
         vm.goToEvents = goToEvents;
 
-        //Go to courses
+        //Go to events
         function goToEvents() {
             $state.go('events.list');
         }
