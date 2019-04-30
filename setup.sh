@@ -55,7 +55,12 @@ docker-compose exec frontend-server npm install bootstrap@4.2.1
 docker-compose exec frontend-server npm install jquery@latest
 docker-compose exec frontend-server npm install gijgo --save
 docker-compose exec frontend-server npm install --save-dev @fortawesome/fontawesome-free
-echo "DONE! \n"
+echo "DONE! \n \n"
+
+echo "You could access the Website at following URLs : \n
+        Frontend: $URLFRONTEND \n
+        Backend: $URLBACKEND  \n "
+
 
 
 #TODO: npm installieren und abhängigkeiten reinziehen, db dump einspielen, domain namen für service verteilen 
