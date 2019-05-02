@@ -50,9 +50,12 @@
                 },
                 data: data
             }).then(function mySuccess() {
+                console.log('success');
                 toaster.pop('success', "title", 'Fortbildung erfolgreich eingetragen');
-                goToEvents();
+                //goToEvents();
+                setTimeout(function(){ goToEvents() }, 2000);
             }, function myError(response) {
+                console.log('error');
                 toaster.pop('error', "title", 'Fortbildung konnte nicht eingetragen werden');
                 $scope.msg = "Service not Exists";
                 $scope.statusval = response.status;
