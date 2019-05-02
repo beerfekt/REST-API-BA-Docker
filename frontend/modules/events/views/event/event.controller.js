@@ -17,15 +17,26 @@
             // curl -i -X POST -H 'Content-Type: application/json' -d '{"title": "new Title", "content": "new Content"}' http://rest-tutorial.test/api/events
 
             if (!$title || !$description || !$startDateString || !$endDateString) {
-                toaster.pop('error', 'title', 'Bitte alle Felder ausfuellen!');
+                toaster.pop('error', 'Fehlende Felder!', 'Bitte alle Felder ausfuellen!');
                 return;
             }
                 //TODO: Uhrzeit fehlt noch
                 //TODO: Prüfung das Startdatum < Enddatum
+
+
+            var $startDate = convertDateStringToSeconds($startDateString);
+            var $endDate =  convertDateStringToSeconds($endDateString);
+
+            if ($startDate > $endDate){
+                toaster.pop('error', 'Falsche Datumeingabe', 'Startdatum muss vor dem Endsdatum liegen!');
+                return;
+            }
+
+
             var data = {
                     "title": $title,
-                    "startDate": convertDateStringToSeconds($startDateString),
-                    "endDate": convertDateStringToSeconds($endDateString),
+                    "startDate": $startDate,
+                    "endDate": $endDate,
                     "description": $description
             };
 
