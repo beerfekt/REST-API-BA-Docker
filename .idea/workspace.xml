@@ -2,11 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a80c4c59-88e8-4169-adb3-71fa4e6d3270" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/frontend/modules/events/services/toastservice.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/modules/events/services/myService.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/modules/events/views/event/done.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/profiler/index.csv" beforeDir="false" afterPath="$PROJECT_DIR$/backend/var/cache/dev/profiler/index.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/var/log/dev.log" beforeDir="false" afterPath="$PROJECT_DIR$/backend/var/log/dev.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/modules/events/event.module.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/modules/events/event.module.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/modules/events/services/toastservice.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/modules/events/views/event/create.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/modules/events/views/event/create.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/modules/events/views/event/event.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/modules/events/views/event/event.controller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/modules/events/views/events/events.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/modules/events/views/events/events.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -79,11 +85,12 @@
     <session id="-613543551">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="11" />
+          <entry key="project.closed" value="13" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.10" value="2" />
-          <entry key="project.open.time.13" value="2" />
+          <entry key="project.open.time.12" value="1" />
+          <entry key="project.open.time.13" value="3" />
           <entry key="project.open.time.14" value="2" />
           <entry key="project.open.time.15" value="2" />
           <entry key="project.open.time.17" value="1" />
@@ -91,16 +98,16 @@
           <entry key="project.open.time.3" value="1" />
           <entry key="project.open.time.37" value="1" />
           <entry key="project.open.time.9" value="3" />
-          <entry key="project.opened" value="17" />
+          <entry key="project.opened" value="19" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="Bash" value="2" />
-          <entry key="CSS" value="1" />
+          <entry key="CSS" value="2" />
           <entry key="Database Element" value="1" />
-          <entry key="HTML" value="40" />
-          <entry key="JavaScript" value="73" />
+          <entry key="HTML" value="50" />
+          <entry key="JavaScript" value="82" />
           <entry key="PHP" value="8" />
           <entry key="Scratch" value="1" />
           <entry key="YAML" value="1" />
@@ -109,8 +116,9 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Bash" value="442" />
-          <entry key="HTML" value="3048" />
-          <entry key="JavaScript" value="3149" />
+          <entry key="CSS" value="38" />
+          <entry key="HTML" value="4072" />
+          <entry key="JavaScript" value="3737" />
           <entry key="PHP" value="10" />
           <entry key="PLAIN_TEXT" value="12" />
         </counts>
@@ -125,8 +133,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/frontend/modules/events/views/event/event.controller.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="239">
-              <caret line="55" column="56" selection-start-line="55" selection-start-column="56" selection-end-line="55" selection-end-column="56" />
+            <state relative-caret-position="120">
+              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
             </state>
           </provider>
         </entry>
@@ -134,17 +142,35 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/frontend/modules/events/event.module.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="570">
-              <caret line="38" selection-start-line="38" selection-end-line="38" selection-end-column="5" />
+            <state relative-caret-position="180">
+              <caret line="12" column="41" selection-start-line="12" selection-start-column="41" selection-end-line="12" selection-end-column="41" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/modules/events/services/toastservice.js">
+        <entry file="file://$PROJECT_DIR$/frontend/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="25" column="20" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
+            <state relative-caret-position="105">
+              <caret line="7" column="11" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frontend/modules/events/views/events/events.controller.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="420">
+              <caret line="28" column="9" selection-start-line="28" selection-start-column="9" selection-end-line="28" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frontend/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="126">
+              <caret line="32" column="18" selection-start-line="32" selection-start-column="18" selection-end-line="32" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -155,6 +181,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
+        <option value="HTML File" />
         <option value="JavaScript File" />
       </list>
     </option>
@@ -174,6 +201,10 @@
       <find>convert</find>
       <find>echo</find>
       <find>input</find>
+      <find>$scope</find>
+      <find>toast</find>
+      <find>service</find>
+      <find>myservice</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/frontend</dir>
@@ -189,22 +220,24 @@
       <list>
         <option value="$PROJECT_DIR$/backend/.env" />
         <option value="$PROJECT_DIR$/backend/config/packages/doctrine.yaml" />
-        <option value="$PROJECT_DIR$/frontend/modules/events/views/events/events.css" />
         <option value="$PROJECT_DIR$/backend/src/Entity/Room.php" />
         <option value="$PROJECT_DIR$/frontend/modules/events/index.html" />
         <option value="$PROJECT_DIR$/frontend/modules/home/views/index.html" />
         <option value="$PROJECT_DIR$/backend/src/DataFixtures/AppFixtures.php" />
         <option value="$PROJECT_DIR$/backend/src/DTO/Event/EventAssembler.php" />
-        <option value="$PROJECT_DIR$/frontend/modules/events/event.module.js" />
         <option value="$PROJECT_DIR$/frontend/modules/home/home.module.js" />
         <option value="$PROJECT_DIR$/frontend/app.js" />
-        <option value="$PROJECT_DIR$/frontend/index.html" />
         <option value="$PROJECT_DIR$/setup.sh" />
         <option value="$PROJECT_DIR$/frontend/modules/home/views/home.controller.js" />
-        <option value="$PROJECT_DIR$/frontend/modules/events/views/event/create.html" />
         <option value="$PROJECT_DIR$/frontend/modules/events/views/events/list.html" />
         <option value="$PROJECT_DIR$/frontend/modules/events/views/events/events.controller.js" />
+        <option value="$PROJECT_DIR$/frontend/modules/events/views/events/events.css" />
+        <option value="$PROJECT_DIR$/frontend/modules/events/views/event/create.html" />
+        <option value="$PROJECT_DIR$/frontend/modules/events/views/event/done.html" />
         <option value="$PROJECT_DIR$/frontend/modules/events/services/toastservice.js" />
+        <option value="$PROJECT_DIR$/frontend/modules/events/services/myService.js" />
+        <option value="$PROJECT_DIR$/frontend/index.html" />
+        <option value="$PROJECT_DIR$/frontend/modules/events/event.module.js" />
         <option value="$PROJECT_DIR$/frontend/modules/events/views/event/event.controller.js" />
       </list>
     </option>
@@ -671,7 +704,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -701,23 +733,46 @@
               <item name="REST-API-BA-Docker" type="b2602c69:ProjectViewProjectNode" />
               <item name="REST-API-BA-Docker" type="462c0819:PsiDirectoryNode" />
               <item name="frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
+              <item name="modules" type="462c0819:PsiDirectoryNode" />
+              <item name="events" type="462c0819:PsiDirectoryNode" />
+              <item name="services" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="REST-API-BA-Docker" type="b2602c69:ProjectViewProjectNode" />
               <item name="REST-API-BA-Docker" type="462c0819:PsiDirectoryNode" />
               <item name="frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
-              <item name="toaster" type="462c0819:PsiDirectoryNode" />
+              <item name="modules" type="462c0819:PsiDirectoryNode" />
+              <item name="events" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="REST-API-BA-Docker" type="b2602c69:ProjectViewProjectNode" />
+              <item name="REST-API-BA-Docker" type="462c0819:PsiDirectoryNode" />
+              <item name="frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="modules" type="462c0819:PsiDirectoryNode" />
+              <item name="events" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="event" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="REST-API-BA-Docker" type="b2602c69:ProjectViewProjectNode" />
+              <item name="REST-API-BA-Docker" type="462c0819:PsiDirectoryNode" />
+              <item name="frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="modules" type="462c0819:PsiDirectoryNode" />
+              <item name="events" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="events" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -766,18 +821,20 @@
       <workItem from="1556601778333" duration="43000" />
       <workItem from="1556601858118" duration="11926000" />
       <workItem from="1556783877687" duration="144000" />
-      <workItem from="1556784050431" duration="3263000" />
+      <workItem from="1556784050431" duration="3901000" />
+      <workItem from="1556854834432" duration="184000" />
+      <workItem from="1556855045028" duration="10335000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="56249000" />
+    <option name="totallyTimeSpent" value="67406000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="-11" width="1602" height="912" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49808428" visible="true" weight="0.18661518" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49808428" visible="true" weight="0.19176319" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" sideWeight="0.5019157" side_tool="true" weight="0.18661518" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -797,7 +854,7 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Database" order="3" visible="true" weight="0.14092664" />
+      <window_info anchor="right" id="Database" order="3" weight="0.14092664" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -817,8 +874,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/frontend/modules/events/views/event/event.controller.js</url>
-          <line>61</line>
-          <properties lambdaOrdinal="-1" />
+          <line>68</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
@@ -836,13 +892,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
           <caret line="20" selection-start-line="20" selection-end-line="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/modules/events/views/events/events.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="1" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -915,13 +964,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="24" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/frontend/node_modules/angular/angular.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="433230">
@@ -931,34 +973,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/frontend/node_modules/angular-animate/angular-animate.js">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/modules/events/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="31" selection-start-line="31" selection-end-line="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/modules/events/views/event/create.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" selection-start-line="25" selection-end-line="25" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/modules/events/views/events/list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="18" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/frontend/modules/home/views/home.controller.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -974,31 +988,87 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/modules/events/views/events/events.controller.js">
+    <entry file="file://$PROJECT_DIR$/frontend/modules/events/views/events/list.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-370">
-          <caret line="15" column="22" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
+        <state relative-caret-position="45">
+          <caret line="3" selection-start-line="3" selection-end-line="5" selection-end-column="10" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/modules/events/event.module.js">
+    <entry file="file://$PROJECT_DIR$/frontend/modules/events/views/events/events.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="38" selection-start-line="38" selection-end-line="38" selection-end-column="5" />
+        <state relative-caret-position="75">
+          <caret line="5" column="23" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/modules/events/views/event/create.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="19" column="46" selection-start-line="19" selection-start-column="46" selection-end-line="19" selection-end-column="46" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/frontend/modules/events/services/toastservice.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="20" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
+        <state relative-caret-position="105">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/modules/events/views/event/done.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="30" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/modules/events/services/myService.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="28" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/modules/events/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="7" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/modules/events/views/events/events.controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="28" column="9" selection-start-line="28" selection-start-column="9" selection-end-line="28" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="11" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="32" column="18" selection-start-line="32" selection-start-column="18" selection-end-line="32" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/modules/events/event.module.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="41" selection-start-line="12" selection-start-column="41" selection-end-line="12" selection-end-column="41" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/frontend/modules/events/views/event/event.controller.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="239">
-          <caret line="55" column="56" selection-start-line="55" selection-start-column="56" selection-end-line="55" selection-end-column="56" />
+        <state relative-caret-position="120">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
         </state>
       </provider>
     </entry>

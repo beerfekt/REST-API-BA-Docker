@@ -7,9 +7,10 @@
 
 
     /** @ngInject */
-    function EventController($state, $scope, $http, toaster) {
+    function EventController($state, $scope, $http, toaster, myService) {
         var vm = this;
 
+        vm.successMessage = myService.get();
         vm.addEvent = addEvent;
         vm.goToEvents = goToEvents;
 
@@ -51,10 +52,16 @@
                 data: data
             }).then(function mySuccess() {
                 console.log('success');
-                toaster.pop('success', "title", 'Fortbildung erfolgreich eingetragen');
+
+                myService.set('Fortbildung erfolgreich eingetragen');
+
+                //TODO: alter weg - dokumentieren?
+                //toaster.pop('success', "title", 'Fortbildung erfolgreich eingetragen');
                 //goToEvents();
-                setTimeout(function(){ goToEvents() }, 2000);
+                //setTimeout(function(){ goToEvents() }, 2000);
+                $state.go("events.done");
             }, function myError(response) {
+                $scope.successMessage = "";
                 console.log('error');
                 toaster.pop('error', "title", 'Fortbildung konnte nicht eingetragen werden');
                 $scope.msg = "Service not Exists";

@@ -3,8 +3,7 @@
 //module
 
     angular
-        .module('app.events', [])
-
+        .module('app.events',[])
         .config(config)
 
     //Configuration of module
@@ -30,6 +29,12 @@
             .state('events.create', {
                 url: '/create',
                 templateUrl: 'modules/events/views/event/create.html',
+                controller:'EventController as vm'
+            })
+
+            .state('events.done', {
+                url: '/done',
+                templateUrl: 'modules/events/views/event/done.html',
                 controller:'EventController as vm'
             })
 
