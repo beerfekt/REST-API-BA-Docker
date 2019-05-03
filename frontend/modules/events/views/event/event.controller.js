@@ -7,10 +7,19 @@
 
 
     /** @ngInject */
-    function EventController($state, $scope, $http, toaster, myService) {
+    function EventController($state, $scope, $http, toaster, messageService) {
         var vm = this;
 
-        vm.successMessage = myService.get();
+        vm.messageService = messageService;
+
+        /*
+        console.log(vm.successMessage);
+        console.log(messageService.get());
+
+        if (messageService.get() != null) {
+            vm.successMessage = messageService.get();
+        }
+*/
         vm.addEvent = addEvent;
         vm.goToEvents = goToEvents;
 
@@ -53,7 +62,7 @@
             }).then(function mySuccess() {
                 console.log('success');
 
-                myService.set('Fortbildung erfolgreich eingetragen');
+                vm.messageService.set('Fortbildung erfolgreich eingetragen');
 
                 //TODO: alter weg - dokumentieren?
                 //toaster.pop('success', "title", 'Fortbildung erfolgreich eingetragen');

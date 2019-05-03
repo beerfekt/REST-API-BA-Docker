@@ -1,19 +1,31 @@
 
 
 <!-- TODO: Werte übergeben mit if Block -->
-<div class="content-header">
-    <h2>Fortbildungen erstellen:</h2>
-</div>
-<div ng-if="vm.successMessage" class="row">
-    <div class="col-12"></div>
-    <div class="alert alert-success" role="alert">
-        {{ vm.successMessage }}
+<div ng-if="vm.messageService.get()">
+    <div class="content-header">
+        <h2>Fortbildungen erstellen:</h2>
+    </div>
+    <!--
+    <div ng-if="vm.successMessage " class="row">
+        <div class="col-12"></div>
+        <div class="alert alert-success" role="alert">
+            {{ vm.successMessage }}
+        </div>
+    </div>
+    -->
+    <div class="row">
+        <div class="col-12"></div>
+        <div class="alert alert-success" role="alert">
+            {{ vm.messageService.get()}}
+        </div>
     </div>
 </div>
-
-<div class="row">
-    <div class="btn btn-dark" ui-sref="events.create">Neue Veranstaltung eintragen</div>
+<div ng-if="!vm.messageService.get()">
+    <div class="btn btn-info" ui-sref="events.list"> Zurück zu den Veranstaltungen</div>
 </div>
+
+
+
 
 <!-- TODO: Buttons mit Links optionen etc. -->
 
