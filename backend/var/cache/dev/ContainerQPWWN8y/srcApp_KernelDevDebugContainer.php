@@ -1,6 +1,6 @@
 <?php
 
-namespace ContainerTik1aop;
+namespace ContainerQPWWN8y;
 
 use Symfony\Component\DependencyInjection\Argument\RewindableGenerator;
 use Symfony\Component\DependencyInjection\ContainerInterface;
@@ -87,6 +87,11 @@ class srcApp_KernelDevDebugContainer extends Container
             'form.factory' => 'getForm_FactoryService.php',
             'fos_rest.exception.controller' => 'getFosRest_Exception_ControllerService.php',
             'fos_rest.view_handler' => 'getFosRest_ViewHandlerService.php',
+            'lexik_jwt_authentication.check_config_command' => 'getLexikJwtAuthentication_CheckConfigCommandService.php',
+            'lexik_jwt_authentication.encoder' => 'getLexikJwtAuthentication_EncoderService.php',
+            'lexik_jwt_authentication.generate_token_command' => 'getLexikJwtAuthentication_GenerateTokenCommandService.php',
+            'lexik_jwt_authentication.jwt_manager' => 'getLexikJwtAuthentication_JwtManagerService.php',
+            'lexik_jwt_authentication.key_loader' => 'getLexikJwtAuthentication_KeyLoaderService.php',
             'routing.loader' => 'getRouting_LoaderService.php',
             'security.authentication_utils' => 'getSecurity_AuthenticationUtilsService.php',
             'security.csrf.token_manager' => 'getSecurity_Csrf_TokenManagerService.php',
@@ -1228,6 +1233,7 @@ class srcApp_KernelDevDebugContainer extends Container
         'doctrine.orm.proxy_dir' => false,
         'swiftmailer.spool.default.memory.path' => false,
         'nelmio_cors.defaults' => false,
+        'lexik_jwt_authentication.pass_phrase' => false,
     );
     private $dynamicParameters = array();
 
@@ -1280,6 +1286,7 @@ class srcApp_KernelDevDebugContainer extends Container
                 'origin_regex' => true,
                 'forced_allow_origin_value' => NULL,
             ); break;
+            case 'lexik_jwt_authentication.pass_phrase': $value = $this->getEnv('JWT_PASSPHRASE'); break;
             default: throw new InvalidArgumentException(sprintf('The dynamic parameter "%s" must be defined.', $name));
         }
         $this->loadedDynamicParameters[$name] = true;
@@ -1317,6 +1324,7 @@ class srcApp_KernelDevDebugContainer extends Container
                 'FOSRestBundle' => 'FOS\\RestBundle\\FOSRestBundle',
                 'NelmioCorsBundle' => 'Nelmio\\CorsBundle\\NelmioCorsBundle',
                 'DoctrineFixturesBundle' => 'Doctrine\\Bundle\\FixturesBundle\\DoctrineFixturesBundle',
+                'LexikJWTAuthenticationBundle' => 'Lexik\\Bundle\\JWTAuthenticationBundle\\LexikJWTAuthenticationBundle',
             ),
             'kernel.bundles_metadata' => array(
                 'FrameworkBundle' => array(
@@ -1382,6 +1390,10 @@ class srcApp_KernelDevDebugContainer extends Container
                 'DoctrineFixturesBundle' => array(
                     'path' => '/backend/vendor/doctrine/doctrine-fixtures-bundle',
                     'namespace' => 'Doctrine\\Bundle\\FixturesBundle',
+                ),
+                'LexikJWTAuthenticationBundle' => array(
+                    'path' => '/backend/vendor/lexik/jwt-authentication-bundle',
+                    'namespace' => 'Lexik\\Bundle\\JWTAuthenticationBundle',
                 ),
             ),
             'kernel.charset' => 'UTF-8',
@@ -1611,6 +1623,12 @@ class srcApp_KernelDevDebugContainer extends Container
             'nelmio_cors.cors_listener.class' => 'Nelmio\\CorsBundle\\EventListener\\CorsListener',
             'nelmio_cors.options_resolver.class' => 'Nelmio\\CorsBundle\\Options\\Resolver',
             'nelmio_cors.options_provider.config.class' => 'Nelmio\\CorsBundle\\Options\\ConfigProvider',
+            'lexik_jwt_authentication.token_ttl' => 3600,
+            'lexik_jwt_authentication.clock_skew' => 0,
+            'lexik_jwt_authentication.user_identity_field' => 'username',
+            'lexik_jwt_authentication.user_id_claim' => 'username',
+            'lexik_jwt_authentication.encoder.signature_algorithm' => 'RS256',
+            'lexik_jwt_authentication.encoder.crypto_engine' => 'openssl',
             'data_collector.templates' => array(
                 'data_collector.request' => array(
                     0 => 'request',

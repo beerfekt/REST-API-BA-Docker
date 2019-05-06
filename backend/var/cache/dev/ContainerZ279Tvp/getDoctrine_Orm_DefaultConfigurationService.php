@@ -27,6 +27,7 @@ $instance->setEntityListenerResolver(new \Doctrine\Bundle\DoctrineBundle\Mapping
 $instance->setRepositoryFactory(new \Doctrine\Bundle\DoctrineBundle\Repository\ContainerRepositoryFactory(new \Symfony\Component\DependencyInjection\Argument\ServiceLocator($this->getService, array(
     'App\\Repository\\EventRepository' => array('privates', 'App\\Repository\\EventRepository', 'getEventRepositoryService.php', true),
     'App\\Repository\\RoomRepository' => array('privates', 'App\\Repository\\RoomRepository', 'getRoomRepositoryService.php', true),
+    'App\\Repository\\UserRepository' => array('privates', 'App\\Repository\\UserRepository', 'getUserRepositoryService.php', true),
 ))));
 
 return $instance;

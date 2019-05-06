@@ -7,7 +7,7 @@ use Symfony\Component\DependencyInjection\Exception\RuntimeException;
 // Returns the private 'doctrine.fixtures_load_command' shared service.
 
 $a = new \Doctrine\Bundle\FixturesBundle\Loader\SymfonyFixturesLoader($this);
-$a->addFixtures(array(0 => array('fixture' => new \App\DataFixtures\AppFixtures(), 'groups' => array())));
+$a->addFixtures(array(0 => array('fixture' => new \App\DataFixtures\AppFixtures(($this->services['security.password_encoder'] ?? $this->load('getSecurity_PasswordEncoderService.php'))), 'groups' => array())));
 
 $this->privates['doctrine.fixtures_load_command'] = $instance = new \Doctrine\Bundle\FixturesBundle\Command\LoadDataFixturesDoctrineCommand($a);
 

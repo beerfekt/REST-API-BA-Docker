@@ -5,9 +5,22 @@ namespace App\DataFixtures;
 use Doctrine\Bundle\FixturesBundle\Fixture;
 use Doctrine\Common\Persistence\ObjectManager;
 use App\Entity\Event;
+use App\Entity\User;
+use Symfony\Component\Security\Core\Encoder\UserPasswordEncoderInterface;
 
 class AppFixtures extends Fixture
 {
+
+    //encoder could not be passed directly to the load() function (Because the Fixture class doesnt implement it),
+    //but you can pass it to the constructor and the global $encoder
+    private $encoder;
+
+    public function __construct(UserPasswordEncoderInterface $encoder)
+    {
+        $this->encoder = $encoder;
+    }
+
+
     public function load(ObjectManager $manager)
     {
         //Dev Purposes -> Creating Test Data in the DB
@@ -21,6 +34,17 @@ class AppFixtures extends Fixture
             $manager->persist($event);
             $manager->flush();
         }
+
+        $user = new User();
+        $user->setEmail('admin@admin.com');
+        $user->setRoles(['ROLE_USER']);
+        $user->setPassword(
+            //encode the password
+            $this->encoder->encodePassword($user, '1111')
+        );
+        $manager->persist($user);
+        $manager->flush();
+
 
     }
 

@@ -29,6 +29,9 @@ echo "DONE \n \n"
 
 echo "adding jwt authentification bundle:"
 docker-compose exec php-fpm composer require jwt-auth
+docker-compose exec php-fpm mkdir config/jwt
+docker-compose exec php-fpm openssl genrsa -out config/jwt/private.pem -aes256 4096
+docker-compose exec php-fpm openssl rsa -pubout -in config/jwt/private.pem -out config/jwt/public.pem
 echo "DONE \n \n"
 
 echo "Hosteinträge setzen ..."

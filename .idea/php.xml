@@ -109,6 +109,9 @@
       <path value="$PROJECT_DIR$/backend/vendor/symfony/event-dispatcher" />
       <path value="$PROJECT_DIR$/backend/vendor/doctrine/doctrine-bundle" />
       <path value="$PROJECT_DIR$/backend/vendor/symfony/routing" />
+      <path value="$PROJECT_DIR$/backend/vendor/lexik/jwt-authentication-bundle" />
+      <path value="$PROJECT_DIR$/backend/vendor/lcobucci/jwt" />
+      <path value="$PROJECT_DIR$/backend/vendor/namshi/jose" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="7.1" />
