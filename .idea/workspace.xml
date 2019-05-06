@@ -3,227 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="a80c4c59-88e8-4169-adb3-71fa4e6d3270" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/.env" beforeDir="false" afterPath="$PROJECT_DIR$/backend/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/config/packages/lexik_jwt_authentication.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/config/packages/lexik_jwt_authentication.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/config/packages/security.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/config/routes.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/config/routes.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerQPWWN8y.legacy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerQPWWN8y/getAnnotations_CacheService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerQPWWN8y/getAnnotations_CacheWarmerService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerQPWWN8y/getCacheClearerService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerQPWWN8y/getCacheWarmerService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerQPWWN8y/getCache_AppClearerService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerQPWWN8y/getCache_GlobalClearerService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerQPWWN8y/getCache_SystemClearerService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerQPWWN8y/getConsole_CommandLoaderService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerQPWWN8y/getConsole_Command_AboutService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerQPWWN8y/getConsole_Command_AssetsInstallService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerQPWWN8y/getConsole_Command_CacheClearService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerQPWWN8y/getConsole_Command_CachePoolClearService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerQPWWN8y/getConsole_Command_CachePoolDeleteService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerQPWWN8y/getConsole_Command_CachePoolPruneService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerQPWWN8y/getConsole_Command_CacheWarmupService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerQPWWN8y/getConsole_Command_ConfigDebugService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerQPWWN8y/getConsole_Command_ConfigDumpReferenceService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerQPWWN8y/getConsole_Command_ContainerDebugService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerQPWWN8y/getConsole_Command_DebugAutowiringService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerQPWWN8y/getConsole_Command_EventDispatcherDebugService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerQPWWN8y/getConsole_Command_FormDebugService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerQPWWN8y/getConsole_Command_PublicAlias_DoctrineCache_ContainsCommandService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerQPWWN8y/getConsole_Command_PublicAlias_DoctrineCache_DeleteCommandService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerQPWWN8y/getConsole_Command_PublicAlias_DoctrineCache_FlushCommandService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerQPWWN8y/getConsole_Command_PublicAlias_DoctrineCache_StatsCommandService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerQPWWN8y/getConsole_Command_PublicAlias_DoctrineMigrations_DiffCommandService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerQPWWN8y/getConsole_Command_PublicAlias_DoctrineMigrations_ExecuteCommandService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerQPWWN8y/getConsole_Command_PublicAlias_DoctrineMigrations_GenerateCommandService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerQPWWN8y/getConsole_Command_PublicAlias_DoctrineMigrations_LatestCommandService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerQPWWN8y/getConsole_Command_PublicAlias_DoctrineMigrations_MigrateCommandService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerQPWWN8y/getConsole_Command_PublicAlias_DoctrineMigrations_StatusCommandService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerQPWWN8y/getConsole_Command_PublicAlias_DoctrineMigrations_VersionCommandService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerQPWWN8y/getConsole_Command_RouterDebugService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerQPWWN8y/getConsole_Command_RouterMatchService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerQPWWN8y/getConsole_Command_TranslationDebugService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerQPWWN8y/getConsole_Command_TranslationUpdateService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerQPWWN8y/getConsole_Command_XliffLintService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerQPWWN8y/getConsole_Command_YamlLintService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerQPWWN8y/getConsole_ErrorListenerService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerQPWWN8y/getDebug_ArgumentResolver_DefaultService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerQPWWN8y/getDebug_ArgumentResolver_RequestAttributeService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerQPWWN8y/getDebug_ArgumentResolver_RequestService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerQPWWN8y/getDebug_ArgumentResolver_ServiceService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerQPWWN8y/getDebug_ArgumentResolver_SessionService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerQPWWN8y/getDebug_ArgumentResolver_VariadicService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerQPWWN8y/getDebug_DumpListenerService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerQPWWN8y/getDebug_FileLinkFormatter_UrlFormatService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerQPWWN8y/getDebug_Security_UserValueResolverService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerQPWWN8y/getDebug_Security_Voter_Security_Access_AuthenticatedVoterService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerQPWWN8y/getDebug_Security_Voter_Security_Access_ExpressionVoterService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerQPWWN8y/getDebug_Security_Voter_Security_Access_SimpleRoleVoterService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerQPWWN8y/getDebug_Security_Voter_VoteListenerService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerQPWWN8y/getDoctrineCache_Providers_Doctrine_Orm_DefaultMetadataCacheService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerQPWWN8y/getDoctrineCache_Providers_Doctrine_Orm_DefaultQueryCacheService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerQPWWN8y/getDoctrineCache_Providers_Doctrine_Orm_DefaultResultCacheService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerQPWWN8y/getDoctrine_CacheClearMetadataCommandService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerQPWWN8y/getDoctrine_CacheClearQueryCacheCommandService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerQPWWN8y/getDoctrine_CacheClearResultCommandService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerQPWWN8y/getDoctrine_CacheCollectionRegionCommandService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerQPWWN8y/getDoctrine_ClearEntityRegionCommandService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerQPWWN8y/getDoctrine_ClearQueryRegionCommandService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerQPWWN8y/getDoctrine_DatabaseCreateCommandService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerQPWWN8y/getDoctrine_DatabaseDropCommandService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerQPWWN8y/getDoctrine_DatabaseImportCommandService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerQPWWN8y/getDoctrine_Dbal_DefaultConnectionService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerQPWWN8y/getDoctrine_EnsureProductionSettingsCommandService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerQPWWN8y/getDoctrine_FixturesLoadCommandService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerQPWWN8y/getDoctrine_GenerateEntitiesCommandService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerQPWWN8y/getDoctrine_MappingConvertCommandService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerQPWWN8y/getDoctrine_MappingImportCommandService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerQPWWN8y/getDoctrine_MappingInfoCommandService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerQPWWN8y/getDoctrine_Orm_DefaultConfigurationService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerQPWWN8y/getDoctrine_Orm_DefaultEntityManagerService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerQPWWN8y/getDoctrine_Orm_DefaultEntityManager_PropertyInfoExtractorService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerQPWWN8y/getDoctrine_Orm_DefaultListeners_AttachEntityListenersService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerQPWWN8y/getDoctrine_Orm_ProxyCacheWarmerService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerQPWWN8y/getDoctrine_Orm_Validator_UniqueService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerQPWWN8y/getDoctrine_QueryDqlCommandService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerQPWWN8y/getDoctrine_QuerySqlCommandService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerQPWWN8y/getDoctrine_SchemaCreateCommandService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerQPWWN8y/getDoctrine_SchemaDropCommandService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerQPWWN8y/getDoctrine_SchemaUpdateCommandService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerQPWWN8y/getDoctrine_SchemaValidateCommandService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerQPWWN8y/getEventControllerService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerQPWWN8y/getEventDTOService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerQPWWN8y/getEventRepositoryService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerQPWWN8y/getFilesystemService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerQPWWN8y/getForm_FactoryService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerQPWWN8y/getForm_RegistryService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerQPWWN8y/getForm_ServerParamsService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerQPWWN8y/getForm_TypeExtension_CsrfService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerQPWWN8y/getForm_TypeExtension_Form_DataCollectorService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerQPWWN8y/getForm_TypeExtension_Form_HttpFoundationService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerQPWWN8y/getForm_TypeExtension_Form_TransformationFailureHandlingService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerQPWWN8y/getForm_TypeExtension_Form_ValidatorService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerQPWWN8y/getForm_TypeExtension_Upload_ValidatorService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerQPWWN8y/getForm_TypeGuesser_DoctrineService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerQPWWN8y/getForm_TypeGuesser_ValidatorService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerQPWWN8y/getForm_Type_ChoiceService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerQPWWN8y/getForm_Type_EntityService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerQPWWN8y/getForm_Type_FormService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerQPWWN8y/getFosRest_Decoder_JsonService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerQPWWN8y/getFosRest_Decoder_XmlService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerQPWWN8y/getFosRest_ExceptionListenerService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerQPWWN8y/getFosRest_Exception_ControllerService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerQPWWN8y/getFosRest_ViewHandlerService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerQPWWN8y/getFosRest_ViewResponseListenerService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerQPWWN8y/getFragment_Renderer_InlineService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerQPWWN8y/getHttpExceptionListenerService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerQPWWN8y/getLexikJwtAuthentication_CheckConfigCommandService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerQPWWN8y/getLexikJwtAuthentication_EncoderService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerQPWWN8y/getLexikJwtAuthentication_GenerateTokenCommandService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerQPWWN8y/getLexikJwtAuthentication_JwtManagerService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerQPWWN8y/getLexikJwtAuthentication_KeyLoaderService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerQPWWN8y/getMaker_AutoCommand_MakeAuthService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerQPWWN8y/getMaker_AutoCommand_MakeCommandService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerQPWWN8y/getMaker_AutoCommand_MakeControllerService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerQPWWN8y/getMaker_AutoCommand_MakeCrudService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerQPWWN8y/getMaker_AutoCommand_MakeEntityService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerQPWWN8y/getMaker_AutoCommand_MakeFixturesService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerQPWWN8y/getMaker_AutoCommand_MakeFormService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerQPWWN8y/getMaker_AutoCommand_MakeFunctionalTestService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerQPWWN8y/getMaker_AutoCommand_MakeMigrationService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerQPWWN8y/getMaker_AutoCommand_MakeRegistrationFormService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerQPWWN8y/getMaker_AutoCommand_MakeSerializerEncoderService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerQPWWN8y/getMaker_AutoCommand_MakeSerializerNormalizerService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerQPWWN8y/getMaker_AutoCommand_MakeSubscriberService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerQPWWN8y/getMaker_AutoCommand_MakeTwigExtensionService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerQPWWN8y/getMaker_AutoCommand_MakeUnitTestService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerQPWWN8y/getMaker_AutoCommand_MakeUserService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerQPWWN8y/getMaker_AutoCommand_MakeValidatorService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerQPWWN8y/getMaker_AutoCommand_MakeVoterService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerQPWWN8y/getMaker_DoctrineHelperService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerQPWWN8y/getMaker_FileManagerService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerQPWWN8y/getMaker_GeneratorService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerQPWWN8y/getMaker_Renderer_FormTypeRendererService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerQPWWN8y/getMonolog_Logger_SecurityService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerQPWWN8y/getPropertyInfo_SerializerExtractorService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerQPWWN8y/getRedirectControllerService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerQPWWN8y/getRoomRepositoryService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerQPWWN8y/getRouter_CacheWarmerService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerQPWWN8y/getRouting_LoaderService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerQPWWN8y/getSecurity_AccessListenerService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerQPWWN8y/getSecurity_AuthenticationUtilsService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerQPWWN8y/getSecurity_Authentication_Listener_Anonymous_MainService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerQPWWN8y/getSecurity_ChannelListenerService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerQPWWN8y/getSecurity_Command_UserPasswordEncoderService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerQPWWN8y/getSecurity_ContextListener_0Service.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerQPWWN8y/getSecurity_Csrf_TokenManagerService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerQPWWN8y/getSecurity_Firewall_Map_Context_DevService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerQPWWN8y/getSecurity_Firewall_Map_Context_MainService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerQPWWN8y/getSecurity_PasswordEncoderService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerQPWWN8y/getSecurity_Validator_UserPasswordService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerQPWWN8y/getSerializer_Mapping_CacheWarmerService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerQPWWN8y/getServicesResetterService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerQPWWN8y/getSessionService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerQPWWN8y/getSession_Storage_NativeService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerQPWWN8y/getSwiftmailer_Command_DebugService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerQPWWN8y/getSwiftmailer_Command_NewEmailService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerQPWWN8y/getSwiftmailer_Command_SendEmailService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerQPWWN8y/getSwiftmailer_EmailSender_ListenerService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerQPWWN8y/getSwiftmailer_Mailer_DefaultService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerQPWWN8y/getSwiftmailer_Mailer_Default_Plugin_MessageloggerService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerQPWWN8y/getSwiftmailer_Mailer_Default_Transport_RealService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerQPWWN8y/getSwiftmailer_TransportService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerQPWWN8y/getTemplateControllerService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerQPWWN8y/getTranslation_ExtractorService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerQPWWN8y/getTranslation_Loader_CsvService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerQPWWN8y/getTranslation_Loader_DatService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerQPWWN8y/getTranslation_Loader_IniService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerQPWWN8y/getTranslation_Loader_JsonService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerQPWWN8y/getTranslation_Loader_MoService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerQPWWN8y/getTranslation_Loader_PhpService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerQPWWN8y/getTranslation_Loader_PoService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerQPWWN8y/getTranslation_Loader_QtService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerQPWWN8y/getTranslation_Loader_ResService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerQPWWN8y/getTranslation_Loader_XliffService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerQPWWN8y/getTranslation_Loader_YmlService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerQPWWN8y/getTranslation_ReaderService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerQPWWN8y/getTranslation_WarmerService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerQPWWN8y/getTwig_CacheWarmerService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerQPWWN8y/getTwig_Command_DebugService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerQPWWN8y/getTwig_Command_LintService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerQPWWN8y/getTwig_Controller_ExceptionService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerQPWWN8y/getTwig_Controller_PreviewErrorService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerQPWWN8y/getTwig_ExceptionListenerService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerQPWWN8y/getTwig_Form_RendererService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerQPWWN8y/getTwig_Runtime_HttpkernelService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerQPWWN8y/getTwig_Runtime_SecurityCsrfService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerQPWWN8y/getTwig_TemplateCacheWarmerService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerQPWWN8y/getValidator_EmailService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerQPWWN8y/getValidator_ExpressionService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerQPWWN8y/getValidator_Mapping_CacheWarmerService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerQPWWN8y/getVarDumper_Command_ServerDumpService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerQPWWN8y/getWebProfiler_Controller_ExceptionService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerQPWWN8y/getWebProfiler_Controller_ProfilerService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerQPWWN8y/getWebProfiler_Controller_RouterService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerQPWWN8y/getWebServer_Command_ServerLogService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerQPWWN8y/getWebServer_Command_ServerRunService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerQPWWN8y/getWebServer_Command_ServerStartService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerQPWWN8y/getWebServer_Command_ServerStatusService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerQPWWN8y/getWebServer_Command_ServerStopService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerQPWWN8y/get_ServiceLocator_L2alLEuService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerQPWWN8y/get_ServiceLocator_LSIKWsrService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerQPWWN8y/get_ServiceLocator_TcrnKcuService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerQPWWN8y/removed-ids.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerQPWWN8y/srcApp_KernelDevDebugContainer.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/DataFixtures/AppFixtures.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/DataFixtures/AppFixtures.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/profiler/index.csv" beforeDir="false" afterPath="$PROJECT_DIR$/backend/var/cache/dev/profiler/index.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/srcApp_KernelDevDebugContainer.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/var/cache/dev/srcApp_KernelDevDebugContainer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/srcApp_KernelDevDebugContainer.xml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/var/cache/dev/srcApp_KernelDevDebugContainer.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/srcApp_KernelDevDebugContainerCompiler.log" beforeDir="false" afterPath="$PROJECT_DIR$/backend/var/cache/dev/srcApp_KernelDevDebugContainerCompiler.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/srcApp_KernelDevDebugContainerDeprecations.log" beforeDir="false" afterPath="$PROJECT_DIR$/backend/var/cache/dev/srcApp_KernelDevDebugContainerDeprecations.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/srcApp_KernelDevDebugContainerUrlGenerator.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/var/cache/dev/srcApp_KernelDevDebugContainerUrlGenerator.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/srcApp_KernelDevDebugContainerUrlGenerator.php.meta" beforeDir="false" afterPath="$PROJECT_DIR$/backend/var/cache/dev/srcApp_KernelDevDebugContainerUrlGenerator.php.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/srcApp_KernelDevDebugContainerUrlMatcher.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/var/cache/dev/srcApp_KernelDevDebugContainerUrlMatcher.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/srcApp_KernelDevDebugContainerUrlMatcher.php.meta" beforeDir="false" afterPath="$PROJECT_DIR$/backend/var/cache/dev/srcApp_KernelDevDebugContainerUrlMatcher.php.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/var/log/dev.log" beforeDir="false" afterPath="$PROJECT_DIR$/backend/var/log/dev.log" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -297,7 +78,7 @@
     <session id="-613543551">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="16" />
+          <entry key="project.closed" value="17" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.1" value="2" />
           <entry key="project.open.time.10" value="2" />
@@ -320,7 +101,7 @@
           <entry key="Database Element" value="1" />
           <entry key="HTML" value="53" />
           <entry key="JavaScript" value="83" />
-          <entry key="PHP" value="10" />
+          <entry key="PHP" value="11" />
           <entry key="PLAIN_TEXT" value="2" />
           <entry key="Scratch" value="2" />
           <entry key="YAML" value="2" />
@@ -332,7 +113,7 @@
           <entry key="CSS" value="100" />
           <entry key="HTML" value="4583" />
           <entry key="JavaScript" value="4026" />
-          <entry key="PHP" value="44" />
+          <entry key="PHP" value="91" />
           <entry key="PLAIN_TEXT" value="29" />
           <entry key="Scratch" value="68" />
           <entry key="YAML" value="200" />
@@ -354,11 +135,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/backend/.env">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="35" column="23" selection-start-line="35" selection-start-column="23" selection-end-line="35" selection-end-column="23" />
+            <state relative-caret-position="300">
+              <caret line="32" column="30" selection-start-line="32" selection-start-column="30" selection-end-line="32" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/backend/src/Entity/User.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
             </state>
           </provider>
         </entry>
@@ -399,11 +189,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/backend/src/DataFixtures/AppFixtures.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-195">
-              <caret line="20" column="5" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
+            <state relative-caret-position="584">
+              <caret line="65" lean-forward="true" selection-start-line="65" selection-end-line="65" />
               <folding>
                 <element signature="e#36#79#0#PHP" expanded="true" />
               </folding>
@@ -477,12 +267,13 @@
         <option value="$PROJECT_DIR$/frontend/main.css" />
         <option value="$PROJECT_DIR$/frontend/modules/events/views/events/list.html" />
         <option value="$PROJECT_DIR$/setup.sh" />
-        <option value="$PROJECT_DIR$/backend/src/DataFixtures/AppFixtures.php" />
         <option value="$PROJECT_DIR$/backend/config/packages/lexik_jwt_authentication.yaml" />
         <option value="$PROJECT_DIR$/backend/config/packages/security.yaml" />
         <option value="$PROJECT_DIR$/backend/config/routes.yaml" />
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch.css" />
         <option value="$PROJECT_DIR$/backend/.env" />
+        <option value="$PROJECT_DIR$/backend/src/Entity/User.php" />
+        <option value="$PROJECT_DIR$/backend/src/DataFixtures/AppFixtures.php" />
       </list>
     </option>
   </component>
@@ -938,10 +729,11 @@
       <path value="$PROJECT_DIR$/backend/vendor/namshi/jose" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="y" value="-4" />
-    <option name="width" value="1600" />
-    <option name="height" value="904" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="17" />
+    <option name="y" value="32" />
+    <option name="width" value="1598" />
+    <option name="height" value="868" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -1012,6 +804,13 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="DataFixtures" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="REST-API-BA-Docker" type="b2602c69:ProjectViewProjectNode" />
+              <item name="REST-API-BA-Docker" type="462c0819:PsiDirectoryNode" />
+              <item name="backend" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Entity" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -1075,18 +874,17 @@
       <workItem from="1556855045028" duration="12592000" />
       <workItem from="1556896174244" duration="2026000" />
       <workItem from="1557141519911" duration="395000" />
-      <workItem from="1557141933154" duration="3343000" />
+      <workItem from="1557141933154" duration="4915000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="75431000" />
+    <option name="totallyTimeSpent" value="77003000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1" y="-11" width="1602" height="912" extended-state="6" />
-    <editor active="true" />
+    <frame x="17" y="32" width="1598" height="868" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49808428" visible="true" weight="0.2985843" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49808428" visible="true" weight="0.29896906" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" sideWeight="0.5019157" side_tool="true" weight="0.18661518" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -1099,7 +897,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.4993565" visible="true" weight="0.3273196" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.4993565" weight="0.34324324" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5006435" side_tool="true" weight="0.3273196" />
       <window_info anchor="bottom" id="Database Console" order="12" weight="0.32860824" />
       <window_info anchor="bottom" id="Messages" order="13" visible="true" weight="0.3298969" />
@@ -1338,16 +1136,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/backend/src/DataFixtures/AppFixtures.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-195">
-          <caret line="20" column="5" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
-          <folding>
-            <element signature="e#36#79#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/backend/config/packages/lexik_jwt_authentication.yaml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="96">
@@ -1385,8 +1173,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/backend/.env">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="35" column="23" selection-start-line="35" selection-start-column="23" selection-end-line="35" selection-end-column="23" />
+        <state relative-caret-position="300">
+          <caret line="32" column="30" selection-start-line="32" selection-start-column="30" selection-end-line="32" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/src/Entity/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/src/DataFixtures/AppFixtures.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="584">
+          <caret line="65" lean-forward="true" selection-start-line="65" selection-end-line="65" />
+          <folding>
+            <element signature="e#36#79#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -35,6 +35,10 @@ class AppFixtures extends Fixture
             $manager->flush();
         }
 
+        //USER:
+            // Token holen via:
+            // curl -X POST -H "Content-Type: application/json" http://docker-backend.test/api/login_check -d '{"username":"admin@admin.com","password":"1111"}'
+
         $user = new User();
         $user->setEmail('admin@admin.com');
         $user->setRoles(['ROLE_USER']);
