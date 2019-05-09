@@ -38,8 +38,9 @@
                 controller:'EventController as vm'
             })
 
-
     }
+
+
 
 }());
 

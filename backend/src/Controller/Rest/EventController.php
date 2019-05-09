@@ -5,12 +5,14 @@ namespace App\Controller\Rest;
 use App\Services\EventService;
 use FOS\RestBundle\Controller\FOSRestController;
 use FOS\RestBundle\Controller\Annotations as Rest;
+use function MongoDB\BSON\toJSON;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use App\Entity\Event;
 use FOS\RestBundle\View\View;
 use App\DTO\Event\EventDTO;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\ParamConverter;
+use App\Entity\User;
 
 class EventController extends FOSRestController {
 
@@ -56,18 +58,19 @@ class EventController extends FOSRestController {
 
 
     //Test via Browser-URL:
-    // http://rest-tutorial.test/api/events/list
+    // http://rest-backend.test/api/events/list
 
-    /**
-     * Retrieves a collection of Event resource
-     * @Rest\Get("/events/list")
-     * @return view
-     */
-    public function getEvens(): View
-    {
-        $events = $this->eventService->getAll();
-        return View::create($events, Response::HTTP_OK);
-    }
+        /**
+         * Retrieves a collection of Event resource
+         * @Rest\Get("/events/list")
+         * @return view
+         */
+        public function getEvens(): View
+        {
+            $events = $this->eventService->getAll();
+            echo $this->getUser()->getUsername();
+            return View::create($events, Response::HTTP_OK);
+        }
 
 
     // Test via terminal:

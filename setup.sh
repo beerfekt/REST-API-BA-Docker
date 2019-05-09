@@ -68,6 +68,7 @@ docker-compose exec frontend-server npm install bootstrap@4.2.1
 docker-compose exec frontend-server npm install jquery@latest
 docker-compose exec frontend-server npm install gijgo --save
 docker-compose exec frontend-server npm install --save-dev @fortawesome/fontawesome-free
+docker-compose exec frontend-server npm install ngstorage
 echo "DONE! \n \n"
 
 echo "You could access the Website at following URLs : \n

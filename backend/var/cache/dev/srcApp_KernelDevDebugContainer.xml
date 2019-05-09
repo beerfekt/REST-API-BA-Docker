@@ -3232,14 +3232,14 @@
     </service>
     <service id="security.access_map" class="Symfony\Component\Security\Http\AccessMap" public="false">
       <call method="add">
-        <argument type="service" id=".security.request_matcher.Ud1TEPV"/>
+        <argument type="service" id=".security.request_matcher.MBt.Hn5"/>
         <argument type="collection">
           <argument>IS_AUTHENTICATED_ANONYMOUSLY</argument>
         </argument>
         <argument>null</argument>
       </call>
       <call method="add">
-        <argument type="service" id=".security.request_matcher.cRNYaJ1"/>
+        <argument type="service" id=".security.request_matcher.5dJADCx"/>
         <argument type="collection">
           <argument>IS_AUTHENTICATED_FULLY</argument>
         </argument>
@@ -3796,11 +3796,11 @@
         <argument key="security.firewall.map.context.main" type="service" id="security.firewall.map.context.main"/>
       </argument>
     </service>
-    <service id=".security.request_matcher.Ud1TEPV" class="Symfony\Component\HttpFoundation\RequestMatcher" public="false">
-      <argument>^/api/login</argument>
+    <service id=".security.request_matcher.MBt.Hn5" class="Symfony\Component\HttpFoundation\RequestMatcher" public="false">
+      <argument>^/public</argument>
     </service>
-    <service id=".security.request_matcher.cRNYaJ1" class="Symfony\Component\HttpFoundation\RequestMatcher" public="false">
-      <argument>^/api</argument>
+    <service id=".security.request_matcher.5dJADCx" class="Symfony\Component\HttpFoundation\RequestMatcher" public="false">
+      <argument>^/admin</argument>
     </service>
     <service id="security.command.user_password_encoder" class="Symfony\Bundle\SecurityBundle\Command\UserPasswordEncoderCommand" public="false">
       <tag name="console.command" command="security:encode-password"/>
