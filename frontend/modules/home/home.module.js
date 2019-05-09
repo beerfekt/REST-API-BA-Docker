@@ -6,7 +6,6 @@
         .module('app.home',[])
         .config(config)
 
-
     //Configuration of module
     /** @ngInject */
     function config($stateProvider, $urlRouterProvider) {
