@@ -68,7 +68,6 @@ class EventController extends FOSRestController {
         public function getEvens(): View
         {
             $events = $this->eventService->getAll();
-            echo $this->getUser()->getUsername();
             return View::create($events, Response::HTTP_OK);
         }
 

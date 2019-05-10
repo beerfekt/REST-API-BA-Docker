@@ -39,14 +39,10 @@
                 url: "http://docker-backend.test/api/events/list"
             }).then(function mySuccess(response) {
                 console.log('receive data');
-                //$scope.events = response.data;
-                //TODO daten mit jwt token empfangen???  !!!!
-                echo(response.data);
-                var json = JSON.parse(response.data);
-                console.log(json);
-                console.log(json[0]);
-
+                $scope.events = response.data;
+                console.log(response.data);
             }, function myError(response) {
+                console.log(response);
                 $scope.error = "Keine Events vorhanden!";
             });
         }//showEvents()
