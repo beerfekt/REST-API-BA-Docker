@@ -12,13 +12,15 @@
         .controller('EventsController', EventsController);
 
     /** @ngInject */
-    function EventsController($state, $scope, $http) {
+    function EventsController($state, $scope, $http/*, AuthenticationService*/) {
         var vm = this;
 
         vm.goHome = goHome;
         vm.createNewEvent = createNewEvent;
         vm.showEvents = showEvents;
         vm.toggleIcon = toggleIcon;
+        //TODO: CurrentUser ausgabe
+        //vm.currentUser = AuthenticationService.getCurrentUser();
 
         //Wenn State aufgerufen wird, wird diese Funktion ausgeführt,
         //andere Funktionen werden nur spezifisch aufgerufen
@@ -29,14 +31,23 @@
         }
 
         function showEvents() {
+
+            console.log('show Events');
+
             $http({
                 method: "GET",
                 url: "http://docker-backend.test/api/events/list"
             }).then(function mySuccess(response) {
                 console.log('receive data');
-                $scope.events = response.data;
+                //$scope.events = response.data;
+                //TODO daten mit jwt token empfangen???  !!!!
+                echo(response.data);
+                var json = JSON.parse(response.data);
+                console.log(json);
+                console.log(json[0]);
+
             }, function myError(response) {
-                $scope.events = [{"title": "keine Events vorhanden!"}];
+                $scope.error = "Keine Events vorhanden!";
             });
         }//showEvents()
 

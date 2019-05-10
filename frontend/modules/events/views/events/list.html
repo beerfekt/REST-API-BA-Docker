@@ -1,10 +1,10 @@
 <!-- extends  events/index.html -->
 
-<events id="events" ng-if="events">
+<events id="events">
     <div class="content-header">
-        <h2>Fortbildungen <small>( Gesamt{{ events.length}})</small></h2>
+        <h2>Fortbildungen <small ng-if="events.length > 0">( Gesamt{{ events.length}})</small></h2>
     </div>
-    <div class="content-body">
+    <div class="content-body" ng-if="events.length > 0">
         <!-- HEADLINE -->
         <div class="list-group" >
             <div class="row fit">
@@ -93,6 +93,9 @@
         <dir-pagination-controls></dir-pagination-controls>
 
         <toaster-container></toaster-container>
+    </div><!-- ng if events.length > 0 -->
+    <div class="content-body">
+        {{ error }}
     </div>
 
 

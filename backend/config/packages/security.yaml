@@ -33,5 +33,5 @@ security:
             anonymous: true
 
     access_control:
-    - { path: ^/public, roles: IS_AUTHENTICATED_ANONYMOUSLY }
+    - { path: ^/login, roles: IS_AUTHENTICATED_ANONYMOUSLY }
     - { path: ^/admin,       roles: IS_AUTHENTICATED_FULLY }
