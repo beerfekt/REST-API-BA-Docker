@@ -1,7 +1,3 @@
-//TODO: AJAX erfüllt? Was macht promise von Jonas
-
-
-//TODO: Event Modell ändern in Title, Description, Date
 //TODO: Bilder hochladen für Event
 
 (function () {
@@ -12,7 +8,7 @@
         .controller('EventsController', EventsController);
 
     /** @ngInject */
-    function EventsController($state, $scope, $http/*, AuthenticationService*/) {
+    function EventsController($state, $scope, $http, $localStorage) {
         var vm = this;
 
         vm.goHome = goHome;
@@ -33,6 +29,8 @@
         function showEvents() {
 
             console.log('show Events');
+
+            console.log($localStorage.currentUser);
 
             $http({
                 method: "GET",

@@ -24,7 +24,7 @@ security:
                 success_handler: lexik_jwt_authentication.handler.authentication_success
                 failure_handler: lexik_jwt_authentication.handler.authentication_failure
         api:
-            pattern:   ^/api
+            pattern:   ^/api/admin/
             stateless: true
             guard:
                 authenticators:
@@ -34,4 +34,4 @@ security:
 
     access_control:
     - { path: ^/login, roles: IS_AUTHENTICATED_ANONYMOUSLY }
-    - { path: ^/admin,       roles: IS_AUTHENTICATED_FULLY }
+    - { path: ^/admin,       roles: ROLE_USER }

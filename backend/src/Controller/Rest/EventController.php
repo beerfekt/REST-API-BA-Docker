@@ -75,10 +75,10 @@ class EventController extends FOSRestController {
     // Test via terminal:
     // curl -i -X POST -H 'Content-Type: application/json' -d '{"title": "new T", "content": "new C"}' http://rest-tutorial.test/api/events
     // FALSCH: curl -i -X POST -H 'Content-Type: application/json' -d '{title: "new T", content: "new C"}' http://rest-tutorial.test/api/events
-
+//TODO: test /admin/events bei post -> NUR TEMPORÄR - wieder löschen bei fail
     /**
      * Creates new event resource in database
-     * @Rest\Post("/events")
+     * @Rest\Post("/admin/events")
      * @ParamConverter("eventDTO", converter="fos_rest.request_body")
      * @param EventDTO $eventDTO
      * @return view

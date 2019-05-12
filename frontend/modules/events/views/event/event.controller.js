@@ -7,7 +7,7 @@
 
 
     /** @ngInject */
-    function EventController($state, $scope, $http, toaster, messageService) {
+    function EventController($state, $scope, $http, toaster, messageService, $localStorage) {
         var vm = this;
 
         vm.messageService = messageService;
@@ -54,7 +54,7 @@
 
             $http({
                 method: "POST",
-                url: 'http://docker-backend.test/api/events',
+                url: 'http://docker-backend.test/api/admin/events',
                 headers: {
                     'Content-Type': 'application/json'
                 },

@@ -22,7 +22,7 @@ class srcApp_KernelDevDebugContainerUrlGenerator extends Symfony\Component\Routi
             self::$declaredRoutes = array(
         'app_rest_event_getevent' => array(array('eventID'), array('_controller' => 'App\\Controller\\Rest\\EventController::getEvent'), array(), array(array('variable', '/', '[^/]++', 'eventID', true), array('text', '/api/events/list')), array(), array()),
         'app_rest_event_getevens' => array(array(), array('_controller' => 'App\\Controller\\Rest\\EventController::getEvens'), array(), array(array('text', '/api/events/list')), array(), array()),
-        'app_rest_event_addevent' => array(array(), array('_controller' => 'App\\Controller\\Rest\\EventController::addEvent'), array(), array(array('text', '/api/events')), array(), array()),
+        'app_rest_event_addevent' => array(array(), array('_controller' => 'App\\Controller\\Rest\\EventController::addEvent'), array(), array(array('text', '/api/admin/events')), array(), array()),
         'app_rest_event_updateevent' => array(array('eventsID'), array('_controller' => 'App\\Controller\\Rest\\EventController::updateEvent'), array(), array(array('variable', '/', '[^/]++', 'eventsID', true), array('text', '/api/events')), array(), array()),
         'app_rest_event_deleteevent' => array(array('eventID'), array('_controller' => 'App\\Controller\\Rest\\EventController::deleteEvent'), array(), array(array('variable', '/', '[^/]++', 'eventID', true), array('text', '/api/events')), array(), array()),
         'app_rest_event_options' => array(array(), array('_controller' => 'App\\Controller\\Rest\\EventController::options'), array(), array(array('text', '/api/events')), array(), array()),
