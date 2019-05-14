@@ -6,10 +6,12 @@
         .controller('HomeController', HomeController);
 
     /** @ngInject */
-    function HomeController($state) {
+    function HomeController($state, $localStorage) {
         var vm = this;
 
         vm.goToEvents = goToEvents;
+
+        vm.currentUser = $localStorage.currentUser;
 
         //Go to events
         function goToEvents() {

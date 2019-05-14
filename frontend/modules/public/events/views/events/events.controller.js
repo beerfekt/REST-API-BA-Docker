@@ -11,6 +11,8 @@
     function EventsController($state, $scope, $http, $localStorage) {
         var vm = this;
 
+        vm.currentUser = $localStorage.currentUser;
+
         vm.goHome = goHome;
         vm.createNewEvent = createNewEvent;
         vm.showEvents = showEvents;
