@@ -2,462 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a80c4c59-88e8-4169-adb3-71fa4e6d3270" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/6703ca5e-5f50-4779-9665-4711085df043.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/6703ca5e-5f50-4779-9665-4711085df043.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/modules/admin/admin.module.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/modules/public/public.module.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/config/packages/security.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/Controller/Rest/EventController.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/Controller/Rest/EventController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y.legacy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getAnnotations_CacheService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getAnnotations_CacheWarmerService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getCacheClearerService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getCacheWarmerService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getCache_AppClearerService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getCache_GlobalClearerService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getCache_SystemClearerService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getConsole_CommandLoaderService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getConsole_Command_AboutService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getConsole_Command_AssetsInstallService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getConsole_Command_CacheClearService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getConsole_Command_CachePoolClearService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getConsole_Command_CachePoolDeleteService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getConsole_Command_CachePoolPruneService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getConsole_Command_CacheWarmupService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getConsole_Command_ConfigDebugService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getConsole_Command_ConfigDumpReferenceService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getConsole_Command_ContainerDebugService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getConsole_Command_DebugAutowiringService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getConsole_Command_EventDispatcherDebugService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getConsole_Command_FormDebugService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getConsole_Command_PublicAlias_DoctrineCache_ContainsCommandService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getConsole_Command_PublicAlias_DoctrineCache_DeleteCommandService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getConsole_Command_PublicAlias_DoctrineCache_FlushCommandService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getConsole_Command_PublicAlias_DoctrineCache_StatsCommandService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getConsole_Command_PublicAlias_DoctrineMigrations_DiffCommandService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getConsole_Command_PublicAlias_DoctrineMigrations_ExecuteCommandService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getConsole_Command_PublicAlias_DoctrineMigrations_GenerateCommandService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getConsole_Command_PublicAlias_DoctrineMigrations_LatestCommandService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getConsole_Command_PublicAlias_DoctrineMigrations_MigrateCommandService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getConsole_Command_PublicAlias_DoctrineMigrations_StatusCommandService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getConsole_Command_PublicAlias_DoctrineMigrations_VersionCommandService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getConsole_Command_RouterDebugService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getConsole_Command_RouterMatchService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getConsole_Command_TranslationDebugService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getConsole_Command_TranslationUpdateService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getConsole_Command_XliffLintService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getConsole_Command_YamlLintService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getConsole_ErrorListenerService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getDebug_ArgumentResolver_DefaultService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getDebug_ArgumentResolver_RequestAttributeService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getDebug_ArgumentResolver_RequestService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getDebug_ArgumentResolver_ServiceService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getDebug_ArgumentResolver_SessionService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getDebug_ArgumentResolver_VariadicService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getDebug_DumpListenerService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getDebug_FileLinkFormatter_UrlFormatService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getDebug_Security_UserValueResolverService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getDebug_Security_Voter_Security_Access_AuthenticatedVoterService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getDebug_Security_Voter_Security_Access_ExpressionVoterService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getDebug_Security_Voter_Security_Access_SimpleRoleVoterService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getDebug_Security_Voter_VoteListenerService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getDoctrineCache_Providers_Doctrine_Orm_DefaultMetadataCacheService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getDoctrineCache_Providers_Doctrine_Orm_DefaultQueryCacheService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getDoctrineCache_Providers_Doctrine_Orm_DefaultResultCacheService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getDoctrine_CacheClearMetadataCommandService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getDoctrine_CacheClearQueryCacheCommandService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getDoctrine_CacheClearResultCommandService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getDoctrine_CacheCollectionRegionCommandService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getDoctrine_ClearEntityRegionCommandService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getDoctrine_ClearQueryRegionCommandService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getDoctrine_DatabaseCreateCommandService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getDoctrine_DatabaseDropCommandService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getDoctrine_DatabaseImportCommandService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getDoctrine_Dbal_DefaultConnectionService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getDoctrine_EnsureProductionSettingsCommandService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getDoctrine_FixturesLoadCommandService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getDoctrine_GenerateEntitiesCommandService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getDoctrine_MappingConvertCommandService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getDoctrine_MappingImportCommandService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getDoctrine_MappingInfoCommandService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getDoctrine_Orm_DefaultConfigurationService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getDoctrine_Orm_DefaultEntityManagerService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getDoctrine_Orm_DefaultEntityManager_PropertyInfoExtractorService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getDoctrine_Orm_DefaultListeners_AttachEntityListenersService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getDoctrine_Orm_ProxyCacheWarmerService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getDoctrine_Orm_Validator_UniqueService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getDoctrine_QueryDqlCommandService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getDoctrine_QuerySqlCommandService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getDoctrine_SchemaCreateCommandService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getDoctrine_SchemaDropCommandService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getDoctrine_SchemaUpdateCommandService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getDoctrine_SchemaValidateCommandService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getEventControllerService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getEventDTOService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getEventRepositoryService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getFilesystemService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getForm_FactoryService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getForm_RegistryService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getForm_ServerParamsService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getForm_TypeExtension_CsrfService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getForm_TypeExtension_Form_DataCollectorService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getForm_TypeExtension_Form_HttpFoundationService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getForm_TypeExtension_Form_TransformationFailureHandlingService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getForm_TypeExtension_Form_ValidatorService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getForm_TypeExtension_Upload_ValidatorService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getForm_TypeGuesser_DoctrineService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getForm_TypeGuesser_ValidatorService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getForm_Type_ChoiceService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getForm_Type_EntityService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getForm_Type_FormService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getFosRest_Decoder_JsonService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getFosRest_Decoder_XmlService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getFosRest_ExceptionListenerService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getFosRest_Exception_ControllerService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getFosRest_ViewHandlerService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getFosRest_ViewResponseListenerService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getFragment_Renderer_InlineService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getHttpExceptionListenerService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getLexikJwtAuthentication_CheckConfigCommandService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getLexikJwtAuthentication_EncoderService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getLexikJwtAuthentication_GenerateTokenCommandService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getLexikJwtAuthentication_JwtManagerService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getLexikJwtAuthentication_KeyLoaderService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getLexikJwtAuthentication_Security_Guard_JwtTokenAuthenticatorService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getMaker_AutoCommand_MakeAuthService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getMaker_AutoCommand_MakeCommandService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getMaker_AutoCommand_MakeControllerService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getMaker_AutoCommand_MakeCrudService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getMaker_AutoCommand_MakeEntityService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getMaker_AutoCommand_MakeFixturesService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getMaker_AutoCommand_MakeFormService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getMaker_AutoCommand_MakeFunctionalTestService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getMaker_AutoCommand_MakeMigrationService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getMaker_AutoCommand_MakeRegistrationFormService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getMaker_AutoCommand_MakeSerializerEncoderService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getMaker_AutoCommand_MakeSerializerNormalizerService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getMaker_AutoCommand_MakeSubscriberService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getMaker_AutoCommand_MakeTwigExtensionService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getMaker_AutoCommand_MakeUnitTestService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getMaker_AutoCommand_MakeUserService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getMaker_AutoCommand_MakeValidatorService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getMaker_AutoCommand_MakeVoterService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getMaker_DoctrineHelperService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getMaker_FileManagerService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getMaker_GeneratorService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getMaker_Renderer_FormTypeRendererService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getMonolog_Logger_SecurityService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getPropertyInfo_SerializerExtractorService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getRedirectControllerService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getRoomRepositoryService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getRouter_CacheWarmerService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getRouting_LoaderService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getSecurity_AccessListenerService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getSecurity_AccessMapService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getSecurity_AuthenticationUtilsService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getSecurity_Authentication_Listener_Anonymous_LoginService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getSecurity_Authentication_Listener_Anonymous_MainService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getSecurity_Authentication_Listener_Guard_ApiService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getSecurity_Authentication_Listener_Json_LoginService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getSecurity_Authentication_Provider_Dao_LoginService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getSecurity_Authentication_Provider_Guard_ApiService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getSecurity_ChannelListenerService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getSecurity_Command_UserPasswordEncoderService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getSecurity_ContextListener_0Service.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getSecurity_Csrf_TokenManagerService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getSecurity_EncoderFactory_GenericService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getSecurity_Firewall_Map_Context_ApiService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getSecurity_Firewall_Map_Context_DevService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getSecurity_Firewall_Map_Context_LoginService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getSecurity_Firewall_Map_Context_MainService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getSecurity_HttpUtilsService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getSecurity_PasswordEncoderService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getSecurity_User_Provider_Concrete_AppUserProviderService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getSecurity_Validator_UserPasswordService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getSerializer_Mapping_CacheWarmerService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getServicesResetterService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getSessionService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getSession_Storage_NativeService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getSwiftmailer_Command_DebugService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getSwiftmailer_Command_NewEmailService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getSwiftmailer_Command_SendEmailService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getSwiftmailer_EmailSender_ListenerService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getSwiftmailer_Mailer_DefaultService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getSwiftmailer_Mailer_Default_Plugin_MessageloggerService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getSwiftmailer_Mailer_Default_Transport_RealService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getSwiftmailer_TransportService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getTemplateControllerService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getTranslation_ExtractorService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getTranslation_Loader_CsvService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getTranslation_Loader_DatService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getTranslation_Loader_IniService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getTranslation_Loader_JsonService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getTranslation_Loader_MoService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getTranslation_Loader_PhpService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getTranslation_Loader_PoService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getTranslation_Loader_QtService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getTranslation_Loader_ResService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getTranslation_Loader_XliffService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getTranslation_Loader_YmlService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getTranslation_ReaderService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getTranslation_WarmerService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getTwig_CacheWarmerService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getTwig_Command_DebugService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getTwig_Command_LintService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getTwig_Controller_ExceptionService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getTwig_Controller_PreviewErrorService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getTwig_ExceptionListenerService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getTwig_Form_RendererService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getTwig_Runtime_HttpkernelService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getTwig_Runtime_SecurityCsrfService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getTwig_TemplateCacheWarmerService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getUserRepositoryService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getValidator_EmailService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getValidator_ExpressionService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getValidator_Mapping_CacheWarmerService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getVarDumper_Command_ServerDumpService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getWebProfiler_Controller_ExceptionService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getWebProfiler_Controller_ProfilerService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getWebProfiler_Controller_RouterService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getWebServer_Command_ServerLogService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getWebServer_Command_ServerRunService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getWebServer_Command_ServerStartService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getWebServer_Command_ServerStatusService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/getWebServer_Command_ServerStopService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/get_ServiceLocator_L2alLEuService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/get_ServiceLocator_LSIKWsrService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/get_ServiceLocator_TcrnKcuService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/removed-ids.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerMzyaE5y/srcApp_KernelDevDebugContainer.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getAnnotations_CacheService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getAnnotations_CacheWarmerService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getCacheClearerService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getCacheWarmerService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getCache_AppClearerService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getCache_GlobalClearerService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getCache_SystemClearerService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getConsole_CommandLoaderService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getConsole_Command_AboutService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getConsole_Command_AssetsInstallService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getConsole_Command_CacheClearService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getConsole_Command_CachePoolClearService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getConsole_Command_CachePoolDeleteService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getConsole_Command_CachePoolPruneService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getConsole_Command_CacheWarmupService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getConsole_Command_ConfigDebugService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getConsole_Command_ConfigDumpReferenceService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getConsole_Command_ContainerDebugService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getConsole_Command_DebugAutowiringService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getConsole_Command_EventDispatcherDebugService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getConsole_Command_FormDebugService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getConsole_Command_PublicAlias_DoctrineCache_ContainsCommandService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getConsole_Command_PublicAlias_DoctrineCache_DeleteCommandService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getConsole_Command_PublicAlias_DoctrineCache_FlushCommandService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getConsole_Command_PublicAlias_DoctrineCache_StatsCommandService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getConsole_Command_PublicAlias_DoctrineMigrations_DiffCommandService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getConsole_Command_PublicAlias_DoctrineMigrations_ExecuteCommandService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getConsole_Command_PublicAlias_DoctrineMigrations_GenerateCommandService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getConsole_Command_PublicAlias_DoctrineMigrations_LatestCommandService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getConsole_Command_PublicAlias_DoctrineMigrations_MigrateCommandService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getConsole_Command_PublicAlias_DoctrineMigrations_StatusCommandService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getConsole_Command_PublicAlias_DoctrineMigrations_VersionCommandService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getConsole_Command_RouterDebugService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getConsole_Command_RouterMatchService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getConsole_Command_TranslationDebugService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getConsole_Command_TranslationUpdateService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getConsole_Command_XliffLintService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getConsole_Command_YamlLintService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getConsole_ErrorListenerService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getDebug_ArgumentResolver_DefaultService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getDebug_ArgumentResolver_RequestAttributeService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getDebug_ArgumentResolver_RequestService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getDebug_ArgumentResolver_ServiceService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getDebug_ArgumentResolver_SessionService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getDebug_ArgumentResolver_VariadicService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getDebug_DumpListenerService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getDebug_FileLinkFormatter_UrlFormatService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getDebug_Security_UserValueResolverService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getDebug_Security_Voter_Security_Access_AuthenticatedVoterService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getDebug_Security_Voter_Security_Access_ExpressionVoterService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getDebug_Security_Voter_Security_Access_SimpleRoleVoterService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getDebug_Security_Voter_VoteListenerService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getDoctrineCache_Providers_Doctrine_Orm_DefaultMetadataCacheService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getDoctrineCache_Providers_Doctrine_Orm_DefaultQueryCacheService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getDoctrineCache_Providers_Doctrine_Orm_DefaultResultCacheService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getDoctrine_CacheClearMetadataCommandService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getDoctrine_CacheClearQueryCacheCommandService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getDoctrine_CacheClearResultCommandService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getDoctrine_CacheCollectionRegionCommandService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getDoctrine_ClearEntityRegionCommandService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getDoctrine_ClearQueryRegionCommandService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getDoctrine_DatabaseCreateCommandService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getDoctrine_DatabaseDropCommandService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getDoctrine_DatabaseImportCommandService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getDoctrine_Dbal_DefaultConnectionService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getDoctrine_EnsureProductionSettingsCommandService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getDoctrine_FixturesLoadCommandService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getDoctrine_GenerateEntitiesCommandService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getDoctrine_MappingConvertCommandService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getDoctrine_MappingImportCommandService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getDoctrine_MappingInfoCommandService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getDoctrine_Orm_DefaultConfigurationService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getDoctrine_Orm_DefaultEntityManagerService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getDoctrine_Orm_DefaultEntityManager_PropertyInfoExtractorService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getDoctrine_Orm_DefaultListeners_AttachEntityListenersService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getDoctrine_Orm_ProxyCacheWarmerService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getDoctrine_Orm_Validator_UniqueService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getDoctrine_QueryDqlCommandService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getDoctrine_QuerySqlCommandService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getDoctrine_SchemaCreateCommandService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getDoctrine_SchemaDropCommandService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getDoctrine_SchemaUpdateCommandService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getDoctrine_SchemaValidateCommandService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getEventControllerService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getEventDTOService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getEventRepositoryService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getFilesystemService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getForm_FactoryService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getForm_RegistryService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getForm_ServerParamsService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getForm_TypeExtension_CsrfService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getForm_TypeExtension_Form_DataCollectorService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getForm_TypeExtension_Form_HttpFoundationService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getForm_TypeExtension_Form_TransformationFailureHandlingService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getForm_TypeExtension_Form_ValidatorService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getForm_TypeExtension_Upload_ValidatorService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getForm_TypeGuesser_DoctrineService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getForm_TypeGuesser_ValidatorService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getForm_Type_ChoiceService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getForm_Type_EntityService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getForm_Type_FormService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getFosRest_Decoder_JsonService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getFosRest_Decoder_XmlService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getFosRest_ExceptionListenerService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getFosRest_Exception_ControllerService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getFosRest_ViewHandlerService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getFosRest_ViewResponseListenerService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getFragment_Renderer_InlineService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getHttpExceptionListenerService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getLexikJwtAuthentication_CheckConfigCommandService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getLexikJwtAuthentication_EncoderService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getLexikJwtAuthentication_GenerateTokenCommandService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getLexikJwtAuthentication_JwtManagerService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getLexikJwtAuthentication_KeyLoaderService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getLexikJwtAuthentication_Security_Guard_JwtTokenAuthenticatorService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getMaker_AutoCommand_MakeAuthService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getMaker_AutoCommand_MakeCommandService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getMaker_AutoCommand_MakeControllerService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getMaker_AutoCommand_MakeCrudService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getMaker_AutoCommand_MakeEntityService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getMaker_AutoCommand_MakeFixturesService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getMaker_AutoCommand_MakeFormService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getMaker_AutoCommand_MakeFunctionalTestService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getMaker_AutoCommand_MakeMigrationService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getMaker_AutoCommand_MakeRegistrationFormService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getMaker_AutoCommand_MakeSerializerEncoderService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getMaker_AutoCommand_MakeSerializerNormalizerService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getMaker_AutoCommand_MakeSubscriberService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getMaker_AutoCommand_MakeTwigExtensionService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getMaker_AutoCommand_MakeUnitTestService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getMaker_AutoCommand_MakeUserService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getMaker_AutoCommand_MakeValidatorService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getMaker_AutoCommand_MakeVoterService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getMaker_DoctrineHelperService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getMaker_FileManagerService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getMaker_GeneratorService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getMaker_Renderer_FormTypeRendererService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getMonolog_Logger_SecurityService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getPropertyInfo_SerializerExtractorService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getRedirectControllerService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getRoomRepositoryService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getRouter_CacheWarmerService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getRouting_LoaderService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getSecurity_AccessListenerService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getSecurity_AccessMapService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getSecurity_AuthenticationUtilsService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getSecurity_Authentication_Listener_Anonymous_LoginService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getSecurity_Authentication_Listener_Anonymous_MainService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getSecurity_Authentication_Listener_Guard_ApiService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getSecurity_Authentication_Listener_Json_LoginService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getSecurity_Authentication_Provider_Dao_LoginService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getSecurity_Authentication_Provider_Guard_ApiService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getSecurity_ChannelListenerService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getSecurity_Command_UserPasswordEncoderService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getSecurity_ContextListener_0Service.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getSecurity_Csrf_TokenManagerService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getSecurity_EncoderFactory_GenericService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getSecurity_Firewall_Map_Context_ApiService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getSecurity_Firewall_Map_Context_DevService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getSecurity_Firewall_Map_Context_LoginService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getSecurity_Firewall_Map_Context_MainService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getSecurity_HttpUtilsService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getSecurity_PasswordEncoderService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getSecurity_User_Provider_Concrete_AppUserProviderService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getSecurity_Validator_UserPasswordService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getSerializer_Mapping_CacheWarmerService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getServicesResetterService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getSessionService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getSession_Storage_NativeService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getSwiftmailer_Command_DebugService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getSwiftmailer_Command_NewEmailService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getSwiftmailer_Command_SendEmailService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getSwiftmailer_EmailSender_ListenerService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getSwiftmailer_Mailer_DefaultService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getSwiftmailer_Mailer_Default_Plugin_MessageloggerService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getSwiftmailer_Mailer_Default_Transport_RealService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getSwiftmailer_TransportService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getTemplateControllerService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getTranslation_ExtractorService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getTranslation_Loader_CsvService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getTranslation_Loader_DatService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getTranslation_Loader_IniService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getTranslation_Loader_JsonService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getTranslation_Loader_MoService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getTranslation_Loader_PhpService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getTranslation_Loader_PoService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getTranslation_Loader_QtService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getTranslation_Loader_ResService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getTranslation_Loader_XliffService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getTranslation_Loader_YmlService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getTranslation_ReaderService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getTranslation_WarmerService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getTwig_CacheWarmerService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getTwig_Command_DebugService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getTwig_Command_LintService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getTwig_Controller_ExceptionService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getTwig_Controller_PreviewErrorService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getTwig_ExceptionListenerService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getTwig_Form_RendererService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getTwig_Runtime_HttpkernelService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getTwig_Runtime_SecurityCsrfService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getTwig_TemplateCacheWarmerService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getUserRepositoryService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getValidator_EmailService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getValidator_ExpressionService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getValidator_Mapping_CacheWarmerService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getVarDumper_Command_ServerDumpService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getWebProfiler_Controller_ExceptionService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getWebProfiler_Controller_ProfilerService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getWebProfiler_Controller_RouterService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getWebServer_Command_ServerLogService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getWebServer_Command_ServerRunService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getWebServer_Command_ServerStartService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getWebServer_Command_ServerStatusService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/getWebServer_Command_ServerStopService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/get_ServiceLocator_L2alLEuService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/get_ServiceLocator_LSIKWsrService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/get_ServiceLocator_TcrnKcuService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/removed-ids.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/ContainerSFa5UC3/srcApp_KernelDevDebugContainer.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/profiler/index.csv" beforeDir="false" afterPath="$PROJECT_DIR$/backend/var/cache/dev/profiler/index.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/srcApp_KernelDevDebugContainer.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/var/cache/dev/srcApp_KernelDevDebugContainer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/srcApp_KernelDevDebugContainer.php.meta" beforeDir="false" afterPath="$PROJECT_DIR$/backend/var/cache/dev/srcApp_KernelDevDebugContainer.php.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/srcApp_KernelDevDebugContainer.xml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/var/cache/dev/srcApp_KernelDevDebugContainer.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/srcApp_KernelDevDebugContainer.xml.meta" beforeDir="false" afterPath="$PROJECT_DIR$/backend/var/cache/dev/srcApp_KernelDevDebugContainer.xml.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/srcApp_KernelDevDebugContainerUrlGenerator.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/var/cache/dev/srcApp_KernelDevDebugContainerUrlGenerator.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/srcApp_KernelDevDebugContainerUrlMatcher.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/var/cache/dev/srcApp_KernelDevDebugContainerUrlMatcher.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/var/log/dev.log" beforeDir="false" afterPath="$PROJECT_DIR$/backend/var/log/dev.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/app.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/app.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/app.routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/app.routes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/app.run.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/app.run.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/modules/events/views/event/event.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/modules/events/views/event/event.controller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/modules/events/views/events/events.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/modules/events/views/events/events.controller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/modules/events/event.module.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/modules/events/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/modules/public/events/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/modules/events/services/messageService.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/modules/public/events/services/messageService.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/modules/events/views/event/create.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/modules/admin/events/views/event/create.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/modules/events/views/event/done.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/modules/admin/events/views/event/done.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/modules/events/views/event/event.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/modules/admin/events/views/event/event.controller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/modules/events/views/events/events.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/modules/public/events/views/events/events.controller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/modules/events/views/events/events.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/modules/public/events/views/events/events.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/modules/events/views/events/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/modules/public/events/views/events/list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/modules/home/home.module.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/modules/home/views/home/home.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/modules/public/home/home.controller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/modules/home/views/home/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/modules/public/home/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/modules/login/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/login/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/modules/login/services/authentication.service.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/login/services/authentication.service.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -511,64 +78,73 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backend/src/Controller/Rest/EventController.php">
+        <entry file="file://$PROJECT_DIR$/frontend/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="77" column="77" selection-start-line="77" selection-start-column="77" selection-end-line="77" selection-end-column="77" />
+            <state relative-caret-position="143">
+              <caret line="49" column="21" selection-start-line="49" selection-start-column="21" selection-end-line="49" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frontend/modules/public/home/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="14" column="14" lean-forward="true" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frontend/modules/admin/admin.module.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="525">
+              <caret line="35" selection-start-line="35" selection-end-line="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frontend/modules/public/events/views/events/events.controller.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="495">
+              <caret line="33" column="14" selection-start-line="33" selection-start-column="14" selection-end-line="33" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frontend/modules/public/events/services/messageService.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="18" column="24" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="24" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/backend/config/packages/security.yaml">
+        <entry file="file://$PROJECT_DIR$/frontend/modules/public/public.module.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="203">
-              <caret line="25" column="12" lean-forward="true" selection-start-line="25" selection-start-column="12" selection-end-line="25" selection-end-column="12" />
+            <state relative-caret-position="83">
+              <caret line="17" column="50" selection-start-line="17" selection-start-column="50" selection-end-line="17" selection-end-column="50" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/app.config.js">
+        <entry file="file://$PROJECT_DIR$/frontend/modules/public/events/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="240">
-              <caret line="16" selection-start-line="16" selection-end-line="16" />
+              <caret line="16" column="10" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="10" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/app.controller.js">
+        <entry file="file://$PROJECT_DIR$/frontend/modules/public/home/home.controller.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="40" selection-start-line="7" selection-start-column="40" selection-end-line="7" selection-end-column="61" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="58" column="55" selection-start-line="58" selection-start-column="55" selection-end-line="58" selection-end-column="55" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/modules/events/views/event/event.controller.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="56" column="59" selection-start-line="56" selection-start-column="59" selection-end-line="56" selection-end-column="59" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/app.routes.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="47" selection-start-line="17" selection-start-column="47" selection-end-line="17" selection-end-column="47" />
+            <state relative-caret-position="60">
+              <caret line="4" column="27" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="27" />
             </state>
           </provider>
         </entry>
@@ -576,20 +152,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/frontend/app.run.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="28" column="5" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
+            <state relative-caret-position="240">
+              <caret line="16" column="9" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="das://6703ca5e-5f50-4779-9665-4711085df043/schema/rest-backend/table/user">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
-              <column-attributes>
-                <column name="roles" languageId="JSON" />
-              </column-attributes>
+        <entry file="file://$PROJECT_DIR$/frontend/login/services/authentication.service.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-360">
+              <caret line="6" selection-start-line="6" selection-end-line="6" />
             </state>
           </provider>
         </entry>
@@ -642,7 +215,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/backend/config/packages/doctrine.yaml" />
         <option value="$PROJECT_DIR$/backend/src/Entity/Room.php" />
         <option value="$PROJECT_DIR$/backend/src/DTO/Event/EventAssembler.php" />
         <option value="$PROJECT_DIR$/frontend/modules/home/views/home.controller.js" />
@@ -666,12 +238,10 @@
         <option value="$PROJECT_DIR$/frontend/app.js" />
         <option value="$PROJECT_DIR$/frontend/node_modules/app.controller.js" />
         <option value="$PROJECT_DIR$/frontend/modules/login/login.controller.js" />
-        <option value="$PROJECT_DIR$/frontend/app.config.js" />
         <option value="$PROJECT_DIR$/frontend/modules/home/services/authentication.service.js" />
         <option value="$PROJECT_DIR$/frontend/app.controller.js" />
         <option value="$PROJECT_DIR$/frontend/modules/home/views/login/login.controller.js" />
         <option value="$PROJECT_DIR$/frontend/app.routes.js" />
-        <option value="$PROJECT_DIR$/frontend/app.run.js" />
         <option value="$PROJECT_DIR$/frontend/modules/home/views/login/index.html" />
         <option value="$PROJECT_DIR$/frontend/modules/home/home.module.js" />
         <option value="$PROJECT_DIR$/frontend/modules/home/views/home/home.controller.js" />
@@ -682,9 +252,20 @@
         <option value="$PROJECT_DIR$/frontend/modules/events/views/events/events.controller.js" />
         <option value="$PROJECT_DIR$/frontend/modules/events/event.module.js" />
         <option value="$PROJECT_DIR$/backend/src/Controller/Rest/EventController.php" />
-        <option value="$PROJECT_DIR$/frontend/index.html" />
         <option value="$PROJECT_DIR$/frontend/modules/events/views/event/event.controller.js" />
         <option value="$PROJECT_DIR$/backend/config/packages/security.yaml" />
+        <option value="$PROJECT_DIR$/frontend/modules/public/home/home.module.js" />
+        <option value="$PROJECT_DIR$/frontend/modules/public/events/event.module.js" />
+        <option value="$PROJECT_DIR$/frontend/app.config.js" />
+        <option value="$PROJECT_DIR$/frontend/modules/admin/admin.module.js" />
+        <option value="$PROJECT_DIR$/frontend/index.html" />
+        <option value="$PROJECT_DIR$/frontend/modules/public/home/views/home/home.controller.js" />
+        <option value="$PROJECT_DIR$/frontend/modules/public/events/services/messageService.js" />
+        <option value="$PROJECT_DIR$/frontend/modules/public/events/views/events/events.controller.js" />
+        <option value="$PROJECT_DIR$/frontend/modules/public/events/index.html" />
+        <option value="$PROJECT_DIR$/frontend/app.run.js" />
+        <option value="$PROJECT_DIR$/frontend/modules/public/home/views/home/index.html" />
+        <option value="$PROJECT_DIR$/frontend/modules/public/public.module.js" />
       </list>
     </option>
   </component>
@@ -1171,6 +752,19 @@
               <item name="REST-API-BA-Docker" type="b2602c69:ProjectViewProjectNode" />
               <item name="REST-API-BA-Docker" type="462c0819:PsiDirectoryNode" />
               <item name="frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="login" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="REST-API-BA-Docker" type="b2602c69:ProjectViewProjectNode" />
+              <item name="REST-API-BA-Docker" type="462c0819:PsiDirectoryNode" />
+              <item name="frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="login" type="462c0819:PsiDirectoryNode" />
+              <item name="services" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="REST-API-BA-Docker" type="b2602c69:ProjectViewProjectNode" />
+              <item name="REST-API-BA-Docker" type="462c0819:PsiDirectoryNode" />
+              <item name="frontend" type="462c0819:PsiDirectoryNode" />
               <item name="modules" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -1178,6 +772,14 @@
               <item name="REST-API-BA-Docker" type="462c0819:PsiDirectoryNode" />
               <item name="frontend" type="462c0819:PsiDirectoryNode" />
               <item name="modules" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="REST-API-BA-Docker" type="b2602c69:ProjectViewProjectNode" />
+              <item name="REST-API-BA-Docker" type="462c0819:PsiDirectoryNode" />
+              <item name="frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="modules" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
               <item name="events" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -1185,6 +787,7 @@
               <item name="REST-API-BA-Docker" type="462c0819:PsiDirectoryNode" />
               <item name="frontend" type="462c0819:PsiDirectoryNode" />
               <item name="modules" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
               <item name="events" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
             </path>
@@ -1193,9 +796,61 @@
               <item name="REST-API-BA-Docker" type="462c0819:PsiDirectoryNode" />
               <item name="frontend" type="462c0819:PsiDirectoryNode" />
               <item name="modules" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
               <item name="events" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
               <item name="event" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="REST-API-BA-Docker" type="b2602c69:ProjectViewProjectNode" />
+              <item name="REST-API-BA-Docker" type="462c0819:PsiDirectoryNode" />
+              <item name="frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="modules" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="REST-API-BA-Docker" type="b2602c69:ProjectViewProjectNode" />
+              <item name="REST-API-BA-Docker" type="462c0819:PsiDirectoryNode" />
+              <item name="frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="modules" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="events" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="REST-API-BA-Docker" type="b2602c69:ProjectViewProjectNode" />
+              <item name="REST-API-BA-Docker" type="462c0819:PsiDirectoryNode" />
+              <item name="frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="modules" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="events" type="462c0819:PsiDirectoryNode" />
+              <item name="services" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="REST-API-BA-Docker" type="b2602c69:ProjectViewProjectNode" />
+              <item name="REST-API-BA-Docker" type="462c0819:PsiDirectoryNode" />
+              <item name="frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="modules" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="events" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="REST-API-BA-Docker" type="b2602c69:ProjectViewProjectNode" />
+              <item name="REST-API-BA-Docker" type="462c0819:PsiDirectoryNode" />
+              <item name="frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="modules" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="events" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="events" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="REST-API-BA-Docker" type="b2602c69:ProjectViewProjectNode" />
+              <item name="REST-API-BA-Docker" type="462c0819:PsiDirectoryNode" />
+              <item name="frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="modules" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="home" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -1216,11 +871,15 @@
     <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/frontend/modules/admin/events" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/frontend/modules/login" />
-      <recent name="$PROJECT_DIR$/frontend/modules" />
-      <recent name="$PROJECT_DIR$/frontend/modules/home/views" />
-      <recent name="$PROJECT_DIR$/frontend/modules/home/views/home" />
+      <recent name="$PROJECT_DIR$/frontend/modules/public/home" />
+      <recent name="$PROJECT_DIR$/frontend" />
+      <recent name="$PROJECT_DIR$/frontend/modules/admin/login" />
+      <recent name="$PROJECT_DIR$/frontend/app-services" />
+      <recent name="$PROJECT_DIR$/frontend/modules/admin/events/views" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -1277,18 +936,20 @@
       <workItem from="1557383990789" duration="11550000" />
       <workItem from="1557476657066" duration="8103000" />
       <workItem from="1557555938968" duration="4775000" />
-      <workItem from="1557648004349" duration="5849000" />
+      <workItem from="1557648004349" duration="6449000" />
+      <workItem from="1557744855960" duration="2555000" />
+      <workItem from="1557860449801" duration="4428000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="128614000" />
+    <option name="totallyTimeSpent" value="136197000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="-4" width="1600" height="904" extended-state="6" />
+    <frame x="-1" y="-11" width="1602" height="912" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49808428" visible="true" weight="0.22779922" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49808428" visible="true" weight="0.23423423" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" sideWeight="0.5019157" side_tool="true" weight="0.18661518" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -1350,7 +1011,7 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/frontend/modules/events/views/event/event.controller.js</url>
+          <url>file://$PROJECT_DIR$/frontend/modules/public/events/views/event/event.controller.js</url>
           <line>77</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
@@ -1358,19 +1019,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/backend/src/DTO/Event/EventDTO.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/src/Entity/Event.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="101">
-          <caret line="17" column="16" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/node_modules/angularjs-toaster/toaster.min.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/frontend/node_modules/toaster/toaster.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -1378,7 +1026,7 @@
     <entry file="file://$PROJECT_DIR$/frontend/node_modules/angular-animate/angular-animate.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/modules/events/views/events/events.css">
+    <entry file="file://$PROJECT_DIR$/frontend/modules/public/events/views/events/events.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" column="23" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
@@ -1386,7 +1034,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/frontend/modules/events/services/toastservice.js" />
-    <entry file="file://$PROJECT_DIR$/frontend/modules/events/views/event/done.html">
+    <entry file="file://$PROJECT_DIR$/frontend/modules/public/events/views/event/done.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="8" column="48" lean-forward="true" selection-start-line="8" selection-start-column="48" selection-end-line="8" selection-end-column="48" />
@@ -1461,7 +1109,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/modules/events/views/event/create.html">
+    <entry file="file://$PROJECT_DIR$/frontend/modules/public/events/views/event/create.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="4" selection-start-line="4" selection-end-line="4" selection-end-column="26" />
@@ -1480,31 +1128,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/frontend/node_modules/app.controller.js" />
     <entry file="file://$PROJECT_DIR$/frontend/modules/home/views/login/login.controller.js" />
-    <entry file="file://$PROJECT_DIR$/frontend/modules/login/index.html">
+    <entry file="file://$PROJECT_DIR$/frontend/login/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
           <caret line="13" column="18" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/modules/home/views/home/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="23" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/modules/home/views/home/home.controller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="35" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/modules/home/home.module.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
         </state>
       </provider>
     </entry>
@@ -1529,13 +1156,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/modules/events/services/messageService.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" selection-start-line="20" selection-end-line="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -1551,38 +1171,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/modules/login/services/authentication.service.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="915">
-          <caret line="61" column="53" selection-start-line="61" selection-start-column="53" selection-end-line="61" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/modules/events/views/events/events.controller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="30" column="11" selection-start-line="30" selection-end-line="44" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/modules/events/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="21" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/modules/events/views/events/list.html">
+    <entry file="file://$PROJECT_DIR$/frontend/modules/public/events/views/events/list.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1590">
           <caret line="106" selection-start-line="106" selection-end-line="106" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/modules/events/event.module.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="23" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
         </state>
       </provider>
     </entry>
@@ -1595,8 +1187,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/backend/src/Controller/Rest/EventController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
+        <state relative-caret-position="1005">
           <caret line="77" column="77" selection-start-line="77" selection-start-column="77" selection-end-line="77" selection-end-column="77" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/config/packages/security.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" column="12" selection-start-line="25" selection-start-column="12" selection-end-line="25" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/modules/public/events/views/event/event.controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="645">
+          <caret line="43" selection-start-line="43" selection-end-line="43" />
         </state>
       </provider>
     </entry>
@@ -1604,9 +1210,34 @@
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
-          <column-attributes>
-            <column name="roles" languageId="JSON" />
-          </column-attributes>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/modules/public/events/event.module.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/modules/public/home/home.module.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="27" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/app.controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-22">
+          <caret line="7" column="40" selection-start-line="7" selection-start-column="40" selection-end-line="7" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/app.routes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="22" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
         </state>
       </provider>
     </entry>
@@ -1617,45 +1248,76 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/app.controller.js">
+    <entry file="file://$PROJECT_DIR$/frontend/modules/admin/events/views/event/event.controller.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/modules/public/home/home.controller.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="40" selection-start-line="7" selection-start-column="40" selection-end-line="7" selection-end-column="61" />
+        <state relative-caret-position="60">
+          <caret line="4" column="27" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="27" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/app.routes.js">
+    <entry file="file://$PROJECT_DIR$/frontend/modules/public/events/services/messageService.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="47" selection-start-line="17" selection-start-column="47" selection-end-line="17" selection-end-column="47" />
+        <state relative-caret-position="270">
+          <caret line="18" column="24" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/modules/public/events/views/events/events.controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="33" column="14" selection-start-line="33" selection-start-column="14" selection-end-line="33" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/login/services/authentication.service.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-360">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/frontend/app.run.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" column="5" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
+        <state relative-caret-position="240">
+          <caret line="16" column="9" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/frontend/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="58" column="55" selection-start-line="58" selection-start-column="55" selection-end-line="58" selection-end-column="55" />
+        <state relative-caret-position="143">
+          <caret line="49" column="21" selection-start-line="49" selection-start-column="21" selection-end-line="49" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/modules/events/views/event/event.controller.js">
+    <entry file="file://$PROJECT_DIR$/frontend/modules/public/events/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="56" column="59" selection-start-line="56" selection-start-column="59" selection-end-line="56" selection-end-column="59" />
+        <state relative-caret-position="240">
+          <caret line="16" column="10" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="10" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/backend/config/packages/security.yaml">
+    <entry file="file://$PROJECT_DIR$/frontend/modules/public/home/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="25" column="12" lean-forward="true" selection-start-line="25" selection-start-column="12" selection-end-line="25" selection-end-column="12" />
+        <state relative-caret-position="210">
+          <caret line="14" column="14" lean-forward="true" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/modules/admin/admin.module.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="35" selection-start-line="35" selection-end-line="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/modules/public/public.module.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="83">
+          <caret line="17" column="50" selection-start-line="17" selection-start-column="50" selection-end-line="17" selection-end-column="50" />
         </state>
       </provider>
     </entry>

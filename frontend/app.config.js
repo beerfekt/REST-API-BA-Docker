@@ -17,8 +17,8 @@
 
 
             //modules
-            'app.events',
-            'app.home'
+            'app.public',
+            'app.admin'
         ])
 
 }());

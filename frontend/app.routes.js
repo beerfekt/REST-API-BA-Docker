@@ -19,7 +19,7 @@
 
             .state('login', {
                 url: '/login',
-                templateUrl: 'modules/login/index.html',
+                templateUrl: 'login/index.html',
                 controller: 'LoginController as vm'
             });
     }
