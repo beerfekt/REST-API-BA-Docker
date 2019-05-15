@@ -1,0 +1,99 @@
+<!-- extends  events/index.html -->
+
+<events id="events">
+    <div class="content-header">
+        <h2>Fortbildungen <small ng-if="events.length > 0">( Gesamt{{ events.length}})</small></h2>
+    </div>
+    <div class="content-body" ng-if="events.length > 0">
+        <!-- HEADLINE -->
+        <div class="list-group" >
+            <div class="row fit">
+                <div class="col-sm">
+                    <strong>Title</strong>
+                </div>
+                <div class="col-sm mx-auto">
+                    <strong>Startdatum</strong>
+                </div>
+                <div class="col-sm mx-auto">
+                    <strong>Beginn</strong>
+                </div>
+                <div class="col-sm mx-auto">
+                    <strong>Enddatum</strong>
+                </div>
+                <div class="col-sm"></div>
+            </div>
+        </div>
+
+        <!-- EIGENES ACCORDION  -->
+        <div class="card"  dir-paginate="event in events | itemsPerPage: 5">  <!-- class="card" -->
+            <div class="card-header">                                   <!-- class="card-header" -->
+                <div class="row">
+                    <div class="col-sm">
+
+                        <!--
+                                                Titel klickbar zum Öffnen der Detailanzeige
+                                                <button class="btn btn-link" type="button"
+                                                    data-toggle="collapse"
+                                                    data-target="#collapse{{event.id}}"
+                                                    aria-expanded="{{expandedValue}}"
+                                                    aria-controls="collapse{{event.id}}">
+                        -->
+                        {{event.title}}
+                        <!--
+                                            </button>
+                        -->
+                    </div>
+                    <div class="col-sm ">
+                        {{event.startDate | date:'dd.MM.yyyy  '}}
+                    </div>
+                    <div class="col-sm ">
+                        {{event.startDate | date:'HH:mm:ss '}}
+                    </div>
+                    <div class="col-sm ">
+                        {{event.endDate | date:'dd.MM.yyyy  '}}
+                    </div>
+
+                    <div class="col-sm align-right ">
+                        <button class="btn btn-primary"
+                                type="button"
+                                data-toggle="collapse"
+                                data-target="#collapse{{event.id}}"
+                                aria-expanded="false"
+                                aria-controls="collapse{{event.id}}"
+                                ng-click="vm.toggleIcon(event.id)" >
+                            <i id="icon{{event.id}}" class="fas fa-plus"></i>
+                        </button>
+                    </div>
+                </div><!-- row -->
+            </div><!-- card-header -->
+
+            <div class="collapse" id="collapse{{event.id}}">
+                <div class="card card-body">
+                    <div clas="row">
+                        <h4>{{event.title}}</h4>
+                        <p>{{event.description}}</p>
+                    </div>
+                </div>
+            </div><!-- collapse -->
+        </div> <!-- card -->
+
+        <dir-pagination-controls></dir-pagination-controls>
+
+        <toaster-container></toaster-container>
+    </div><!-- ng if events.length > 0 -->
+    <div class="content-body">
+        {{ error }}
+    </div>
+
+
+
+</events>
+
+
+
+
+
+
+
+
+

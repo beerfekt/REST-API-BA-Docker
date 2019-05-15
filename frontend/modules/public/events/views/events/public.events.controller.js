@@ -17,8 +17,6 @@
         vm.createNewEvent = createNewEvent;
         vm.showEvents = showEvents;
         vm.toggleIcon = toggleIcon;
-        //TODO: CurrentUser ausgabe
-        //vm.currentUser = AuthenticationService.getCurrentUser();
 
         //Wenn State aufgerufen wird, wird diese Funktion ausgeführt,
         //andere Funktionen werden nur spezifisch aufgerufen

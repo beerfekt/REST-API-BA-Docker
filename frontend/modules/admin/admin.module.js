@@ -24,14 +24,12 @@
                 templateUrl: 'modules/admin/home/index.html',
                 controller: 'Admin.HomeController as vm'
             })
+            .state('admin.events', {
+                 url: '/events',
+                 templateUrl: 'modules/admin/events/list.html',
+                 controller:'Admin.EventsController as vm'
+            })
         /*
-
-                    .state('public.events', {
-                        url: '/events',
-                        templateUrl: 'modules/public/events/index.html',
-                        controller:'Public.EventsController as vm'
-                    })
-
                     .state('public.events.list', {
                         url: '/list',
                         templateUrl: 'modules/public/events/views/events/list.html',
