@@ -2,24 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a80c4c59-88e8-4169-adb3-71fa4e6d3270" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/frontend/modules/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/profiler/index.csv" beforeDir="false" afterPath="$PROJECT_DIR$/backend/var/cache/dev/profiler/index.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/var/log/dev.log" beforeDir="false" afterPath="$PROJECT_DIR$/backend/var/log/dev.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/app.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/app.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/app.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/app.controller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/app.routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/app.routes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/modules/admin/admin.module.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/modules/admin/events/views/event/create.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/modules/admin/events/views/event/done.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/modules/admin/events/views/event/event.controller.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/modules/public/events/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/modules/public/events/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/modules/public/events/views/events/events.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/modules/public/events/views/events/public.events.controller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/modules/public/events/views/events/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/modules/public/events/views/events/list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/modules/public/home/home.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/modules/public/home/public.home.controller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/modules/public/home/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/modules/public/home/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/modules/public/public.module.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/modules/public/public.module.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -888,12 +872,12 @@
       <workItem from="1557917119643" duration="8723000" />
       <workItem from="1557932101377" duration="180000" />
       <workItem from="1557933526579" duration="97000" />
-      <workItem from="1557934747353" duration="1008000" />
+      <workItem from="1557934747353" duration="1612000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="147559000" />
+    <option name="totallyTimeSpent" value="148163000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="-11" width="1602" height="912" extended-state="6" />
