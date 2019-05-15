@@ -10,25 +10,32 @@
     /** @ngInject */
     function config($stateProvider, $urlRouterProvider) {
 
-        $urlRouterProvider.otherwise('home');
+        $urlRouterProvider.otherwise('public.home');
 
         $stateProvider
-            .state('home', {
+            .state('public', {
+                url: '/public',
+                templateUrl: 'modules/public/index.html',
+                controller: 'Public.HomeController as vm'
+            })
+
+            .state('public.home', {
                 url: '/home',
                 templateUrl: 'modules/public/home/index.html',
-                controller: 'HomeController as vm'
+                controller: 'Public.HomeController as vm'
             })
 
-            .state('events', {
+
+            .state('public.events', {
                 url: '/events',
                 templateUrl: 'modules/public/events/index.html',
-                controller:'EventsController as vm'
+                controller:'Public.EventsController as vm'
             })
 
-            .state('events.list', {
+            .state('public.events.list', {
                 url: '/list',
                 templateUrl: 'modules/public/events/views/events/list.html',
-                controller:'EventsController as vm'
+                controller:'Public.EventsController as vm'
             })
 
 

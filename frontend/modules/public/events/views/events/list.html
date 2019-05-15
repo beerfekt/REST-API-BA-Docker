@@ -21,7 +21,6 @@
                     <strong>Enddatum</strong>
                 </div>
                 <div class="col-sm"></div>
-                <div class="col-sm"></div>
             </div>
         </div>
 
@@ -52,18 +51,6 @@
                     </div>
                     <div class="col-sm ">
                         {{event.endDate | date:'dd.MM.yyyy  '}}
-                    </div>
-                    <!-- TODO: editieren button -->
-
-                    <div class="col-sm align-right">
-                        <button class="btn btn-link float-right toggleDetails{{event.id}}"
-                                type="button" data-toggle="collapse"
-                                data-target="#collapse{{event.id}}"
-                                aria-expanded="true"
-                                aria-controls="collapse{{event.id}}"
-                                ng-click="vm.toggle(event.id)"   >
-                            <i  class="fas fa-pencil-alt"></i>
-                        </button>
                     </div>
 
                     <div class="col-sm align-right ">

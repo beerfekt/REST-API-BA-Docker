@@ -1,30 +1,13 @@
 <!-- MAIN CONTENT -->
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">Fortbildungsverwaltung</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                    <a class="nav-link" ui-sref="events" ui-sref-active="active" >Fortbildungen</a>
-                </li>
-                <li class="nav-item">{{vm.currentUser.username}}</li>
-            </ul>
-        </div>
-    </nav>
-
-
-<div class="container">
 
     <div class="jumbotron text-center">
-        <h1> Fortbildung </h1>
-        <p>Hier sehen Sie die kommenden Fortbildungen </p>
+        <h1> Fortbildungen </h1>
+        <p>Hier sehen Sie die kommenden Fortbildungen</p>
 
         <a class="btn btn-primary"
-           ui-sref="events.list"
+           ui-sref="public.events.list"
            ng-click="vm.showEvents()"  >Fortbildungen auflisten</a>
     </div>
 
@@ -32,9 +15,6 @@
      injection -->
    <div ui-view></div>
 
-
-
-</div>
 
 
 

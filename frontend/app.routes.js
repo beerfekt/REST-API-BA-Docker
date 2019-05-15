@@ -11,7 +11,7 @@
     /** @ngInject */
     function config($stateProvider, $urlRouterProvider) {
 
-        $urlRouterProvider.otherwise('home');
+        $urlRouterProvider.otherwise('public/home');
 
         $stateProvider
 

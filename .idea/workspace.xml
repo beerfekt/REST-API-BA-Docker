@@ -2,13 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a80c4c59-88e8-4169-adb3-71fa4e6d3270" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/frontend/modules/public/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/profiler/index.csv" beforeDir="false" afterPath="$PROJECT_DIR$/backend/var/cache/dev/profiler/index.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/var/log/dev.log" beforeDir="false" afterPath="$PROJECT_DIR$/backend/var/log/dev.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/app.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/app.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/app.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/app.controller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/app.routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/app.routes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/modules/admin/admin.module.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/modules/admin/events/views/event/create.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/modules/admin/events/views/event/done.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/modules/admin/events/views/event/event.controller.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/modules/public/events/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/modules/public/events/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/modules/public/events/views/events/events.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/modules/public/events/views/events/events.controller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/modules/public/home/home.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/modules/public/home/home.controller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/modules/public/events/views/events/events.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/modules/public/events/views/events/public.events.controller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/modules/public/events/views/events/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/modules/public/events/views/events/list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/modules/public/home/home.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/modules/public/home/public.home.controller.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/modules/public/home/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/modules/public/home/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/modules/public/public.module.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/modules/public/public.module.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -62,10 +73,64 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/modules/public/events/views/events/events.controller.js">
+        <entry file="file://$PROJECT_DIR$/frontend/modules/public/public.module.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="12" column="49" selection-start-line="12" selection-start-column="49" selection-end-line="12" selection-end-column="49" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frontend/modules/public/home/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="6" column="65" selection-start-line="6" selection-start-column="65" selection-end-line="6" selection-end-column="65" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/frontend/modules/public/home/public.home.controller.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="17" column="36" selection-start-line="17" selection-start-column="36" selection-end-line="17" selection-end-column="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frontend/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="630">
+              <caret line="66" column="31" selection-start-line="66" selection-start-column="31" selection-end-line="66" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frontend/modules/public/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="3" column="52" selection-start-line="3" selection-start-column="52" selection-end-line="3" selection-end-column="52" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frontend/app.run.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="435">
+              <caret line="29" column="15" selection-start-line="29" selection-start-column="15" selection-end-line="29" selection-end-column="15" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frontend/app.routes.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="195">
-              <caret line="13" selection-start-line="13" selection-end-line="13" selection-end-column="51" />
+              <caret line="13" column="45" selection-start-line="13" selection-start-column="45" selection-end-line="13" selection-end-column="45" />
             </state>
           </provider>
         </entry>
@@ -73,35 +138,26 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/frontend/modules/public/events/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="13" column="16" lean-forward="true" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="69" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/frontend/modules/public/home/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="13" column="69" selection-start-line="13" selection-start-column="69" selection-end-line="13" selection-end-column="69" />
+            <state relative-caret-position="60">
+              <caret line="4" selection-start-line="4" selection-end-line="12" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/modules/public/home/home.controller.js">
+        <entry file="file://$PROJECT_DIR$/frontend/modules/public/events/views/events/public.events.controller.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="13" column="51" selection-start-line="13" selection-start-column="51" selection-end-line="13" selection-end-column="51" />
+            <state relative-caret-position="420">
+              <caret line="28" column="9" selection-start-line="28" selection-start-column="9" selection-end-line="28" selection-end-column="9" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/login/services/authentication.service.js">
+        <entry file="file://$PROJECT_DIR$/frontend/modules/public/events/views/events/list.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-210">
-              <caret line="6" selection-start-line="6" selection-end-line="6" />
+            <state relative-caret-position="180">
+              <caret line="12" column="22" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -112,8 +168,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
-        <option value="HTML File" />
         <option value="JavaScript File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -141,6 +197,7 @@
       <find>public</find>
       <find>admin</find>
       <find>config</find>
+      <find>info</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/frontend</dir>
@@ -154,15 +211,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/frontend/modules/home/views/home.controller.js" />
-        <option value="$PROJECT_DIR$/frontend/modules/events/views/events/events.css" />
-        <option value="$PROJECT_DIR$/frontend/modules/events/services/toastservice.js" />
-        <option value="$PROJECT_DIR$/frontend/modules/events/services/myService.js" />
-        <option value="$PROJECT_DIR$/frontend/modules/events/services/messageService.js" />
-        <option value="$PROJECT_DIR$/frontend/modules/events/views/event/done.html" />
-        <option value="$PROJECT_DIR$/frontend/modules/events/views/event/create.html" />
-        <option value="$PROJECT_DIR$/frontend/main.css" />
-        <option value="$PROJECT_DIR$/backend/config/routes.yaml" />
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch.css" />
         <option value="$PROJECT_DIR$/backend/src/Entity/User.php" />
         <option value="$PROJECT_DIR$/backend/src/DataFixtures/AppFixtures.php" />
@@ -176,9 +224,7 @@
         <option value="$PROJECT_DIR$/frontend/node_modules/app.controller.js" />
         <option value="$PROJECT_DIR$/frontend/modules/login/login.controller.js" />
         <option value="$PROJECT_DIR$/frontend/modules/home/services/authentication.service.js" />
-        <option value="$PROJECT_DIR$/frontend/app.controller.js" />
         <option value="$PROJECT_DIR$/frontend/modules/home/views/login/login.controller.js" />
-        <option value="$PROJECT_DIR$/frontend/app.routes.js" />
         <option value="$PROJECT_DIR$/frontend/modules/home/views/login/index.html" />
         <option value="$PROJECT_DIR$/frontend/modules/home/home.module.js" />
         <option value="$PROJECT_DIR$/frontend/modules/home/views/home/home.controller.js" />
@@ -193,18 +239,29 @@
         <option value="$PROJECT_DIR$/backend/config/packages/security.yaml" />
         <option value="$PROJECT_DIR$/frontend/modules/public/home/home.module.js" />
         <option value="$PROJECT_DIR$/frontend/modules/public/events/event.module.js" />
-        <option value="$PROJECT_DIR$/frontend/app.config.js" />
-        <option value="$PROJECT_DIR$/frontend/modules/admin/admin.module.js" />
-        <option value="$PROJECT_DIR$/frontend/index.html" />
         <option value="$PROJECT_DIR$/frontend/modules/public/home/views/home/home.controller.js" />
         <option value="$PROJECT_DIR$/frontend/modules/public/events/services/messageService.js" />
         <option value="$PROJECT_DIR$/frontend/app.run.js" />
         <option value="$PROJECT_DIR$/frontend/modules/public/home/views/home/index.html" />
-        <option value="$PROJECT_DIR$/frontend/modules/public/public.module.js" />
-        <option value="$PROJECT_DIR$/frontend/modules/public/events/views/events/events.controller.js" />
+        <option value="$PROJECT_DIR$/frontend/login/services/authentication.service.js" />
+        <option value="$PROJECT_DIR$/frontend/app.controller.js" />
+        <option value="$PROJECT_DIR$/frontend/modules/public/events/views/events/list.html" />
+        <option value="$PROJECT_DIR$/frontend/modules/admin/home/index.html" />
+        <option value="$PROJECT_DIR$/frontend/modules/admin/events/views/events/list.html" />
+        <option value="$PROJECT_DIR$/frontend/modules/admin/events/views/events/events.controller.js" />
+        <option value="$PROJECT_DIR$/frontend/modules/admin/events/views/events/index.html" />
         <option value="$PROJECT_DIR$/frontend/modules/public/home/home.controller.js" />
+        <option value="$PROJECT_DIR$/frontend/modules/public/events/views/events/events.controller.js" />
+        <option value="$PROJECT_DIR$/frontend/modules/admin/admin.module.js" />
+        <option value="$PROJECT_DIR$/frontend/modules/admin/home/home.controller.js" />
+        <option value="$PROJECT_DIR$/frontend/app.config.js" />
+        <option value="$PROJECT_DIR$/frontend/index.html" />
         <option value="$PROJECT_DIR$/frontend/modules/public/events/index.html" />
+        <option value="$PROJECT_DIR$/frontend/modules/public/public.module.js" />
+        <option value="$PROJECT_DIR$/frontend/app.routes.js" />
+        <option value="$PROJECT_DIR$/frontend/modules/public/index.html" />
         <option value="$PROJECT_DIR$/frontend/modules/public/home/index.html" />
+        <option value="$PROJECT_DIR$/frontend/modules/public/home/public.home.controller.js" />
       </list>
     </option>
   </component>
@@ -662,9 +719,10 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="y" value="-4" />
-    <option name="width" value="1600" />
-    <option name="height" value="904" />
+    <option name="x" value="118" />
+    <option name="y" value="103" />
+    <option name="width" value="1598" />
+    <option name="height" value="896" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -674,7 +732,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -736,22 +793,13 @@
               <item name="frontend" type="462c0819:PsiDirectoryNode" />
               <item name="modules" type="462c0819:PsiDirectoryNode" />
               <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="events" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="events" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="REST-API-BA-Docker" type="b2602c69:ProjectViewProjectNode" />
-              <item name="REST-API-BA-Docker" type="462c0819:PsiDirectoryNode" />
-              <item name="frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="modules" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
               <item name="home" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -767,15 +815,17 @@
     <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/frontend/modules/admin/events" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/frontend/modules/public" />
       <recent name="$PROJECT_DIR$/frontend/modules/public/home" />
       <recent name="$PROJECT_DIR$/frontend" />
       <recent name="$PROJECT_DIR$/frontend/modules/admin/login" />
       <recent name="$PROJECT_DIR$/frontend/app-services" />
-      <recent name="$PROJECT_DIR$/frontend/modules/admin/events/views" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/frontend/modules/admin" />
+      <recent name="$PROJECT_DIR$/frontend/modules/admin/events/views/events" />
+      <recent name="$PROJECT_DIR$/frontend/modules/admin/events" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -834,18 +884,22 @@
       <workItem from="1557555938968" duration="4775000" />
       <workItem from="1557648004349" duration="6449000" />
       <workItem from="1557744855960" duration="2555000" />
-      <workItem from="1557860449801" duration="5345000" />
+      <workItem from="1557860449801" duration="5638000" />
+      <workItem from="1557917119643" duration="8723000" />
+      <workItem from="1557932101377" duration="180000" />
+      <workItem from="1557933526579" duration="97000" />
+      <workItem from="1557934747353" duration="1008000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="137114000" />
+    <option name="totallyTimeSpent" value="147559000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="-11" width="1602" height="912" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49808428" visible="true" weight="0.23423423" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49808428" visible="true" weight="0.24710424" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" sideWeight="0.5019157" side_tool="true" weight="0.18661518" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -858,14 +912,14 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.4993565" visible="true" weight="0.3427835" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.4993565" weight="0.39046392" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5006435" side_tool="true" weight="0.3273196" />
       <window_info anchor="bottom" id="Database Console" order="12" weight="0.32860824" />
       <window_info anchor="bottom" id="Messages" order="13" visible="true" weight="0.3298969" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Database" order="3" visible="true" weight="0.16280566" />
+      <window_info anchor="right" id="Database" order="3" weight="0.16280566" />
     </layout>
     <layout-to-restore>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49808428" visible="true" weight="0.31917632" />
@@ -915,28 +969,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/frontend/node_modules/toaster/toaster.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/node_modules/angular/angular.js" />
-    <entry file="file://$PROJECT_DIR$/frontend/node_modules/angular-animate/angular-animate.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/modules/public/events/views/events/events.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="23" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/modules/events/services/toastservice.js" />
-    <entry file="file://$PROJECT_DIR$/frontend/modules/public/events/views/event/done.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="48" lean-forward="true" selection-start-line="8" selection-start-column="48" selection-end-line="8" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/frontend/main.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
@@ -1005,13 +1037,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/modules/public/events/views/event/create.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" selection-start-line="4" selection-end-line="4" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/modules/public/events/views/event/create.html" />
     <entry file="file://$PROJECT_DIR$/setup.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="363">
@@ -1060,20 +1086,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/modules/public/events/views/events/list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1590">
-          <caret line="106" selection-start-line="106" selection-end-line="106" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://6703ca5e-5f50-4779-9665-4711085df043/schema/rest-backend/table/event">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="das://6703ca5e-5f50-4779-9665-4711085df043/schema/rest-backend/table/event" />
     <entry file="file://$PROJECT_DIR$/backend/src/Controller/Rest/EventController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1005">
@@ -1088,58 +1101,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/modules/public/events/views/event/event.controller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="645">
-          <caret line="43" selection-start-line="43" selection-end-line="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://6703ca5e-5f50-4779-9665-4711085df043/schema/rest-backend/table/user">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/modules/public/events/event.module.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/modules/public/home/home.module.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="27" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/app.controller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-22">
-          <caret line="7" column="40" selection-start-line="7" selection-start-column="40" selection-end-line="7" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/app.routes.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="22" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/app.config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/modules/admin/events/views/event/event.controller.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/modules/public/events/views/event/event.controller.js" />
+    <entry file="das://6703ca5e-5f50-4779-9665-4711085df043/schema/rest-backend/table/user" />
+    <entry file="file://$PROJECT_DIR$/frontend/modules/public/events/event.module.js" />
+    <entry file="file://$PROJECT_DIR$/frontend/modules/public/home/home.module.js" />
     <entry file="file://$PROJECT_DIR$/frontend/modules/public/events/services/messageService.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
@@ -1147,73 +1112,108 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/app.run.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="9" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="143">
-          <caret line="49" column="21" selection-start-line="49" selection-start-column="21" selection-end-line="49" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/modules/admin/admin.module.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="35" selection-start-line="35" selection-end-line="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/modules/public/public.module.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="293">
-          <caret line="31" column="14" lean-forward="true" selection-start-line="31" selection-start-column="14" selection-end-line="31" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/modules/admin/events/views/events/events.css" />
     <entry file="file://$PROJECT_DIR$/frontend/login/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="18" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
+        <state relative-caret-position="210">
+          <caret line="14" column="55" selection-start-line="14" selection-start-column="55" selection-end-line="14" selection-end-column="55" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/frontend/login/services/authentication.service.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-210">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        <state relative-caret-position="394">
+          <caret line="30" column="26" lean-forward="true" selection-start-line="30" selection-start-column="26" selection-end-line="30" selection-end-column="26" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/modules/public/events/views/events/events.controller.js">
+    <entry file="file://$PROJECT_DIR$/frontend/modules/admin/events/views/event/event.controller.js" />
+    <entry file="file://$PROJECT_DIR$/frontend/modules/admin/events/views/events/index.html" />
+    <entry file="file://$PROJECT_DIR$/frontend/modules/admin/events/views/events/admin.events.controller.js" />
+    <entry file="file://$PROJECT_DIR$/frontend/modules/admin/admin.module.js" />
+    <entry file="file://$PROJECT_DIR$/frontend/modules/admin/home/index.html" />
+    <entry file="file://$PROJECT_DIR$/frontend/modules/admin/home/admin.home.controller.js" />
+    <entry file="file://$PROJECT_DIR$/frontend/app.config.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" selection-start-line="13" selection-end-line="13" selection-end-column="51" />
+        <state relative-caret-position="270">
+          <caret line="18" column="21" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/modules/public/home/home.controller.js">
+    <entry file="file://$PROJECT_DIR$/frontend/app.controller.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="51" selection-start-line="13" selection-start-column="51" selection-end-line="13" selection-end-column="51" />
+        <state relative-caret-position="285">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/modules/public/events/views/events/public.events.controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="28" column="9" selection-start-line="28" selection-start-column="9" selection-end-line="28" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/modules/public/events/views/events/list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="22" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/frontend/modules/public/events/index.html">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" selection-start-line="4" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/modules/public/public.module.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="49" selection-start-line="12" selection-start-column="49" selection-end-line="12" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/app.run.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="29" column="15" selection-start-line="29" selection-start-column="15" selection-end-line="29" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/app.routes.js">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
-          <caret line="13" column="16" lean-forward="true" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="69" />
+          <caret line="13" column="45" selection-start-line="13" selection-start-column="45" selection-end-line="13" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="66" column="31" selection-start-line="66" selection-start-column="31" selection-end-line="66" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/modules/public/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="52" selection-start-line="3" selection-start-column="52" selection-end-line="3" selection-end-column="52" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/frontend/modules/public/home/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="69" selection-start-line="13" selection-start-column="69" selection-end-line="13" selection-end-column="69" />
+        <state relative-caret-position="90">
+          <caret line="6" column="65" selection-start-line="6" selection-start-column="65" selection-end-line="6" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/modules/public/home/public.home.controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="36" selection-start-line="17" selection-start-column="36" selection-end-line="17" selection-end-column="36" />
         </state>
       </provider>
     </entry>
