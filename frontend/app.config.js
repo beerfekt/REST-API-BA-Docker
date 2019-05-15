@@ -17,7 +17,8 @@
 
 
             //modules
-            'app.public'
+            'app.public',
+            'app.admin'
         ])
 
 }());
