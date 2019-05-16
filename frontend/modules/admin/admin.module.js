@@ -43,6 +43,12 @@
                  controller:'Admin.EventController as vm'
             })
 
+            .state('admin.events.done', {
+                url: '/create',
+                templateUrl: 'modules/admin/events/views/event/done.html',
+                controller:'Admin.EventController as vm'
+            })
+
 
     } //config
 
