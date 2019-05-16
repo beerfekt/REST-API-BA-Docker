@@ -32,8 +32,7 @@ class EventController extends FOSRestController {
         //CORS - ALLOW ACCESS
         //header('Access-Control-Allow-Origin: *');
         //header('Access-Control-Allow-Methods: POST, DELETE, PUT, GET');
-
-            //Muss via PLUGIN gemacht werden
+        //Muss via PLUGIN gemacht werden
 
         $this->eventService = $eventService;
     }

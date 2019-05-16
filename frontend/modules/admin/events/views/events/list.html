@@ -1,6 +1,5 @@
 <!-- extends  events/index.html -->
 
-<events id="events">
     <div class="content-header">
         <h2>Fortbildungen <small ng-if="events.length > 0">( Gesamt{{ events.length}})</small></h2>
     </div>
@@ -61,6 +60,18 @@
                                 aria-expanded="false"
                                 aria-controls="collapse{{event.id}}"
                                 ng-click="vm.toggleIcon(event.id)" >
+                            <i id="icon-edit-{{event.id}}" class="fa fa-edit"></i>
+                        </button>
+                    </div>
+
+                    <div class="col-sm align-right ">
+                        <button class="btn btn-primary"
+                                type="button"
+                                data-toggle="collapse"
+                                data-target="#collapse{{event.id}}"
+                                aria-expanded="false"
+                                aria-controls="collapse{{event.id}}"
+                                ng-click="vm.toggleIcon(event.id)" >
                             <i id="icon{{event.id}}" class="fas fa-plus"></i>
                         </button>
                     </div>
@@ -85,9 +96,6 @@
         {{ error }}
     </div>
 
-
-
-</events>
 
 
 

@@ -1,0 +1,46 @@
+
+
+<!-- TODO: Werte übergeben mit if Block -->
+<div ng-if="vm.messageService.get()">
+    <div class="content-header">
+        <h2>Fortbildungen erstellen:</h2>
+    </div>
+    <!--
+    <div ng-if="vm.successMessage " class="row">
+        <div class="col-12"></div>
+        <div class="alert alert-success" role="alert">
+            {{ vm.successMessage }}
+        </div>
+    </div>
+    -->
+    <div class="content-body">
+        <div class="row">
+            <div class="col-12"></div>
+            <div class="alert alert-success" role="alert">
+                {{ vm.messageService.get()}}
+            </div>
+        </div>
+    </div>
+</div>
+<div ng-if="!vm.messageService.get()">
+    <div class="row">
+        <div class="btn btn-info" ui-sref="events.list"> Zurück zu den Veranstaltungen</div>
+    </div>
+</div>
+
+
+
+
+<!-- TODO: Buttons mit Links optionen etc. -->
+
+
+<style>
+    /*TODO: Style auslagern in css datei*/
+
+    .row {
+        display: block;
+        text-align: center;
+        margin-left:0;
+        margin-right:0;
+    }
+</style>
