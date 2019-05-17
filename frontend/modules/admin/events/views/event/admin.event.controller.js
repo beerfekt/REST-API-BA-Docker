@@ -22,15 +22,13 @@
                 return;
             }
 
-
             if (parseInt($startDateString) > parseInt($endDateString)) {
                 toaster.pop('error', 'title', 'Startdatum muss vor dem Enddatum liegen!');
                 return;
             }
 
             //TODO: Uhrzeit fehlt noch
-            //TODO: Prüfung das Startdatum < Enddatum
-            //TODO: Toastservice -> nachricht an done.html
+
             var data = {
                 "title": $title,
                 "startDate": convertDateStringToSeconds($startDateString),
@@ -53,18 +51,16 @@
                 $state.go('admin.events.done');
             }, function myError(response) {
                 toaster.pop('error', "title", 'Fortbildung konnte nicht eingetragen werden');
-                $scope.msg = "Service not Exists";
-                $scope.statusval = response.status;
-                $scope.statustext = response.statusText;
-                $scope.headers = response.headers;
             });
             // Möglichkeit eine aktuelle Ansicht der Artikeldetails
             // showEventDetails() (mit verzögerung, sodass Änderungen übernommen werden)
         }
 
+
         function goToEvents() {
             $state.go('admin.events.list');
         }
+
 
         function convertDateStringToSeconds($dateAsString) {
             if (!$dateAsString) return;

@@ -69,11 +69,7 @@
                     <div class="col-sm-1 align-right ">
                         <button class="btn btn-danger"
                                 type="button"
-                                data-toggle="collapse"
-                                data-target="#collapse{{event.id}}"
-                                aria-expanded="false"
-                                aria-controls="collapse{{event.id}}"
-                                ng-click="vm.toggleIcon(event.id)" >
+                                ng-click="vm.removeEvent(event.id, event.title)" >
                             <i id="icon-delete-{{event.id}}" class="fa fa-window-close"></i>
                         </button>
                     </div>

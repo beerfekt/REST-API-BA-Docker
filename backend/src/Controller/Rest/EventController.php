@@ -113,7 +113,7 @@ class EventController extends FOSRestController {
 
     /**
      * updates a event resource
-     * @Rest\Delete("/events/{eventID}")
+     * @Rest\Delete("/admin/events/{eventID}")
      * @throws \Doctrine\ORM\EntityNotFoundException
      * @return view
      */

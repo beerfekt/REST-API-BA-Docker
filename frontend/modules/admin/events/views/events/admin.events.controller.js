@@ -8,13 +8,14 @@
         .controller('Admin.EventsController', AdminEventsController);
 
     /** @ngInject */
-    function AdminEventsController($state, $scope, $http, $localStorage) {
+    function AdminEventsController($state, $scope, $http, $localStorage, toaster, messageService) {
         var vm = this;
 
         vm.currentUser = $localStorage.currentUser;
 
         vm.goHome = goHome;
         vm.createNewEvent = createNewEvent;
+        vm.removeEvent = removeEvent;
         vm.showEvents = showEvents;
         vm.toggleIcon = toggleIcon;
 
@@ -44,6 +45,28 @@
                 $scope.error = "Keine Events vorhanden!";
             });
         }//showEvents()
+
+
+        function removeEvent($eventId, $eventTitle){
+
+            $http({
+                method: "DELETE",
+                url: 'http://docker-backend.test/api/admin/events/' + $eventId,
+
+                   headers: {
+                       'Content-Type': 'application/json'
+                   }
+            }).then(function mySuccess() {
+                toaster.pop('success','Erfolgreich entfernt!','Veranstaltung: " ' + $eventTitle + ' " wurde erfolgreich gelöscht');
+                setTimeout(showEvents(), 3000);
+            }, function myError(response) {
+                toaster.pop('error', "title", 'Fortbildung " ' + $eventTitle +  ' " konnte nicht gelöscht werden');
+            });
+
+
+        }
+
+
 
         function toggleIcon($elementID) {
             $scope.expandedValue = !$scope.expandedValue; //Wert abgreifen und Rückschreiben in Scope
