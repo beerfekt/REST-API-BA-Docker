@@ -94,7 +94,7 @@ class EventController extends FOSRestController {
 
     /**
      * updates a events resource
-     * @Rest\Put("/events/{eventsID}")
+     * @Rest\Put("/admin/events/{eventsID}")
      * @ParamConverter("eventDTO", converter="fos_rest.request_body")
      * @param EventDTO $eventDTO
      * @throws \Doctrine\ORM\EntityNotFoundException
@@ -112,7 +112,7 @@ class EventController extends FOSRestController {
     // curl -i -X DELETE http://rest-tutorial.test/api/events/3
 
     /**
-     * updates a event resource
+     * deletes a event resource
      * @Rest\Delete("/admin/events/{eventID}")
      * @throws \Doctrine\ORM\EntityNotFoundException
      * @return view

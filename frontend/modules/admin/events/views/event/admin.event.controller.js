@@ -7,12 +7,12 @@
 
 
     /** @ngInject */
-    function AdminEventController($state, $scope, $http, toaster,messageService) {
+    function AdminEventController($state, $scope, $http, toaster, dataTransferService) {
         var vm = this;
 
         vm.addEvent = addEvent;
         vm.goToEvents = goToEvents;
-        vm.messageService = messageService;
+        vm.dataTransferService = dataTransferService;
 
         function addEvent($title, $description, $startDateString, $endDateString) {
             // curl -i -X POST -H 'Content-Type: application/json' -d '{"title": "new Title", "content": "new Content"}' http://rest-tutorial.test/api/events
@@ -47,7 +47,7 @@
                 data: data
             }).then(function mySuccess() {
                 //toaster.pop('success', "title", 'Fortbildung erfolgreich eingetragen');
-                messageService.set('Veranstaltung: " ' + $title + ' " erfolgreich eingetragen');
+                dataTransferService.setMessage('Veranstaltung: " ' + $title + ' " erfolgreich eingetragen');
                 $state.go('admin.events.done');
             }, function myError(response) {
                 toaster.pop('error', "title", 'Fortbildung konnte nicht eingetragen werden');

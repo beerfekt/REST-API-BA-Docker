@@ -8,7 +8,7 @@
         .controller('Admin.EventsController', AdminEventsController);
 
     /** @ngInject */
-    function AdminEventsController($state, $scope, $http, $localStorage, toaster, messageService) {
+    function AdminEventsController($state, $scope, $http, $localStorage, toaster, dataTransferService) {
         var vm = this;
 
         vm.currentUser = $localStorage.currentUser;
@@ -18,6 +18,7 @@
         vm.removeEvent = removeEvent;
         vm.showEvents = showEvents;
         vm.toggleIcon = toggleIcon;
+        vm.editEvent = editEvent;
 
         //Wenn State aufgerufen wird, wird diese Funktion ausgeführt,
         //andere Funktionen werden nur spezifisch aufgerufen
@@ -89,6 +90,32 @@
         function createNewEvent() {
             $state.go('events.create');
         }
+
+        //Go to add some events
+        function editEvent($eventId) {
+
+            $http({
+                method: "GET",
+                url: "http://docker-backend.test/api/events/list/" + $eventId
+            }).then(function mySuccess(response) {
+                console.log('receive  event');
+                //TODO: in dataTransferService reinballern
+                dataTransferService.setEvent(response.data);
+                console.log(response.data);
+            }, function myError(response) {
+                console.log(response);
+                $scope.error = "Keine Events vorhanden!";
+            });
+
+
+
+            dataTransferService.set(
+
+            );
+            $state.go('events.create');
+        }
+
+
     }
 
 }());
