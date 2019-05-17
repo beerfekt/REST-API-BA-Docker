@@ -2,13 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a80c4c59-88e8-4169-adb3-71fa4e6d3270" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/frontend/modules/admin/admin.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/profiler/index.csv" beforeDir="false" afterPath="$PROJECT_DIR$/backend/var/cache/dev/profiler/index.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/var/log/dev.log" beforeDir="false" afterPath="$PROJECT_DIR$/backend/var/log/dev.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/modules/admin/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/modules/admin/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/modules/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/modules/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/modules/admin/events/views/event/admin.event.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/modules/admin/events/views/event/admin.event.controller.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -101,25 +97,25 @@
         <entry file="file://$PROJECT_DIR$/frontend/modules/admin/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="300">
-              <caret line="20" column="21" lean-forward="true" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/frontend/modules/admin/admin.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+              <caret line="20" column="21" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frontend/modules/admin/admin.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" selection-start-line="4" selection-end-line="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/frontend/modules/admin/events/views/event/admin.event.controller.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="32" selection-start-line="32" selection-end-line="32" />
+            <state relative-caret-position="240">
+              <caret line="25" column="69" selection-start-line="25" selection-start-column="69" selection-end-line="25" selection-end-column="69" />
             </state>
           </provider>
         </entry>
@@ -249,11 +245,11 @@
         <option value="$PROJECT_DIR$/frontend/modules/admin/events/views/events/list.html" />
         <option value="$PROJECT_DIR$/frontend/modules/admin/events/services/messageService.js" />
         <option value="$PROJECT_DIR$/frontend/modules/admin/admin.module.js" />
-        <option value="$PROJECT_DIR$/frontend/modules/admin/events/views/event/admin.event.controller.js" />
         <option value="$PROJECT_DIR$/frontend/modules/public/index.html" />
         <option value="$PROJECT_DIR$/frontend/index.html" />
         <option value="$PROJECT_DIR$/frontend/modules/admin/index.html" />
         <option value="$PROJECT_DIR$/frontend/modules/admin/admin.css" />
+        <option value="$PROJECT_DIR$/frontend/modules/admin/events/views/event/admin.event.controller.js" />
       </list>
     </option>
   </component>
@@ -776,6 +772,35 @@
               <item name="REST-API-BA-Docker" type="462c0819:PsiDirectoryNode" />
               <item name="frontend" type="462c0819:PsiDirectoryNode" />
               <item name="modules" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+              <item name="events" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="REST-API-BA-Docker" type="b2602c69:ProjectViewProjectNode" />
+              <item name="REST-API-BA-Docker" type="462c0819:PsiDirectoryNode" />
+              <item name="frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="modules" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+              <item name="events" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="event" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="REST-API-BA-Docker" type="b2602c69:ProjectViewProjectNode" />
+              <item name="REST-API-BA-Docker" type="462c0819:PsiDirectoryNode" />
+              <item name="frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="modules" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+              <item name="events" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="events" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="REST-API-BA-Docker" type="b2602c69:ProjectViewProjectNode" />
+              <item name="REST-API-BA-Docker" type="462c0819:PsiDirectoryNode" />
+              <item name="frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="modules" type="462c0819:PsiDirectoryNode" />
               <item name="public" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -882,12 +907,12 @@
       <workItem from="1557934747353" duration="7195000" />
       <workItem from="1558001105067" duration="4893000" />
       <workItem from="1558016385997" duration="3973000" />
-      <workItem from="1558080974319" duration="4871000" />
+      <workItem from="1558080974319" duration="5102000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="167483000" />
+    <option name="totallyTimeSpent" value="167714000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="-11" width="1602" height="912" extended-state="6" />
@@ -1182,13 +1207,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/modules/admin/events/views/event/admin.event.controller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="32" selection-start-line="32" selection-end-line="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/frontend/login/services/authentication.service.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-75">
@@ -1234,14 +1252,21 @@
     <entry file="file://$PROJECT_DIR$/frontend/modules/admin/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
-          <caret line="20" column="21" lean-forward="true" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
+          <caret line="20" column="21" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/frontend/modules/admin/admin.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/modules/admin/events/views/event/admin.event.controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="25" column="69" selection-start-line="25" selection-start-column="69" selection-end-line="25" selection-end-column="69" />
         </state>
       </provider>
     </entry>

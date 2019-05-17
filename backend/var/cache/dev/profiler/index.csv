@@ -5714,3 +5714,9 @@ a0897f,172.27.0.1,GET,http://docker-backend.test/api/events/list,1558084688,,200
 dcfb98,172.27.0.1,GET,http://docker-backend.test/api/events/list,1558084999,,200
 1a34ee,172.27.0.1,OPTIONS,http://docker-backend.test/api/login_check,1558085004,,200
 248ed4,172.27.0.1,POST,http://docker-backend.test/api/login_check,1558085004,,200
+9cb88a,172.27.0.1,OPTIONS,http://docker-backend.test/api/events/list,1558086076,,200
+341037,172.27.0.1,GET,http://docker-backend.test/api/events/list,1558086076,,200
+bb70a7,172.27.0.1,GET,http://docker-backend.test/api/events/list,1558086078,,200
+1c6a72,172.27.0.1,OPTIONS,http://docker-backend.test/api/admin/events,1558086092,,200
+7d57a8,172.27.0.1,POST,http://docker-backend.test/api/admin/events,1558086092,,201
+c26436,172.27.0.1,GET,http://docker-backend.test/api/events/list,1558086095,,200

@@ -21,6 +21,13 @@
                 toaster.pop('error', 'title', 'Bitte alle Felder ausfuellen!');
                 return;
             }
+
+
+            if (parseInt($startDateString) > parseInt($endDateString)) {
+                toaster.pop('error', 'title', 'Startdatum muss vor dem Enddatum liegen!');
+                return;
+            }
+
             //TODO: Uhrzeit fehlt noch
             //TODO: Prüfung das Startdatum < Enddatum
             //TODO: Toastservice -> nachricht an done.html
