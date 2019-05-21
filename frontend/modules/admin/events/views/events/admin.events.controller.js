@@ -22,6 +22,8 @@
 
         //Wenn State aufgerufen wird, wird diese Funktion ausgeführt,
         //andere Funktionen werden nur spezifisch aufgerufen
+
+        //TODO: Besser init() weglassen, da es auch bei substates "/events/*" jedesmal lädt
         init();
 
         function init(){
@@ -94,6 +96,10 @@
         //Go to add some events
         function editEvent($eventId) {
 
+            //console.log($eventId);
+            $state.go('admin.events.edit', {eventId : $eventId});
+
+            //TODO:       DOKU statt:
             /*
             var event = new AdminEventFactory();
            event.load($eventId);
@@ -108,23 +114,16 @@
             event.getTitle();
 */
 
-
-            var event = new AdminEventFactory();
-            /*
-            event.load($eventId);
-            console.log(event);
-            console.log(event.getTitle());
-            $scope.event = event;
-            */
-
+            //TODO:        DOKU das: Promise Ansatz
             var event = new AdminEventFactory();
             var promise = event.load($eventId);
             promise.then(function(data) {
                 //console.log(data);
                 //console.log(event);
                 //console.log(event.getTitle() + event.getDescription() + event.getStartDate() + event.getEndDate()); //undefined
+
             });
-            $scope.event = event;
+            //$scope.event = event;
 
             //TODO: Weiterreichen des events an edit.html whatever
 

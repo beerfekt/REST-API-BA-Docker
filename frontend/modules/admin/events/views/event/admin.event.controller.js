@@ -11,8 +11,26 @@
         var vm = this;
 
         vm.addEvent = addEvent;
+        vm.editEvent = editEvent;
         vm.goToEvents = goToEvents;
+
         vm.messageService = messageService;
+        vm.currentEventId = $state.params.eventId;
+
+        init();
+
+        function init(){
+            console.log("init():");
+            if (vm.currentEventId){
+                let event = new AdminEventFactory();
+                var promise = event.load(vm.currentEventId);
+                promise.then(function(data) {
+                    event.getData();
+                    $scope.event = data;
+                });
+            }
+        }
+
 
         function addEvent($title, $description, $startDateString, $endDateString) {
             // curl -i -X POST -H 'Content-Type: application/json' -d '{"title": "new Title", "content": "new Content"}' http://rest-tutorial.test/api/events
@@ -57,6 +75,32 @@
             // showEventDetails() (mit verzögerung, sodass Änderungen übernommen werden)
         }
 
+
+        function editEvent($title, $description, $startDateString,$endDateString) {
+
+            let eventJSON = createData(vm.currentEventId, $title, $description, $startDateString,$endDateString);
+            console.log(eventJSON);
+
+            let event = new AdminEventFactory(eventJSON);
+            var promise = event.update();
+            /*
+            promise.then(function(data) {
+                console.log("Editevent()" + data);
+            });
+            */
+
+        }
+
+
+        function  createData($id, $title, $description, $startDateString,$endDateString){
+            return {
+                "id" : $id,
+                "title": $title,
+                "startDate": convertDateStringToSeconds($startDateString),
+                "endDate": convertDateStringToSeconds($endDateString),
+                "description": $description
+            };
+        }
 
         function goToEvents() {
             $state.go('admin.events.list');

@@ -5,12 +5,13 @@
     //TODO: Wo kommt id her???
     angular
         .module('app.admin')
-        .factory('AdminEventFactory', AdminEvent);
+        .factory('AdminEventFactory', AdminEventFactory);
 
 
     /** @ngInject */
-    function  AdminEvent($http) {
+    function  AdminEventFactory($http) {
 
+        //Offen für alles, falls event sich ändert, erweitert wird etc... daher generischer Konstruktor ohne fest definierte Werte
         function AdminEvent(eventData) {
             if (eventData) {
                 this.setData(eventData);
@@ -25,23 +26,6 @@
             },
 
             load: function (id) {
-                /*
-                var scope = this;
-
-                return $http({
-                    method: "GET",
-                    url: "http://docker-backend.test/api/events/" + id
-                }).then(function mySuccess(response) {
-   //                 console.log('AdminEvent-Model: receive data');
-                    scope.setData(response.data);
-                    return response.data;
-  //                  console.log('AdminEvent-Model: ' + response.data["title"]);
-                }, function myError(response) {
-                    console.log(response);
-                    throw response;
-                });
-                */
-
                 var scope = this;
                 return $http({
                     method: "GET",
@@ -54,42 +38,57 @@
                     throw response;
                 });
             },
-
+/*
             delete: function () {
-                $http({
+                return $http({
                     method: "DELETE",
                     url: 'http://docker-backend.test/api/admin/events/' + id,
-
                     headers: {
                         'Content-Type': 'application/json'
                     }
                 }).then(function mySuccess() {
                     return true;
                 }, function myError(response) {
-                    return false;
+                    throw response;
                 });
             },
-
+*/
             update: function () {
-                $http({
-                    method: "PUT",
-                    url: 'http://docker-backend.test/api/admin/events/' + id,
 
+                console.log(this + " \n" + this.id);
+
+                return $http({
+                    method: "PUT",
+                    url: 'http://docker-backend.test/api/admin/events/' + this.id,
                     headers: {
                         'Content-Type': 'application/json'
                     },
                     data: this
-                }).then(function mySuccess() {
-                    return true;
+                }).then(function mySuccess(response) {
+                    scope.setData(response.data);
+                    return response.data
                 }, function myError(response) {
-                    return false;
+                    console.log(response);
+                    throw response;
                 });
+
+                /*
+                                $http({
+                                    method: "PUT",
+                                    url: 'http://docker-backend.test/api/admin/events/' + id,
+
+                                    headers: {
+                                        'Content-Type': 'application/json'
+                                    },
+                                    data: this
+                                }).then(function mySuccess() {
+                                    return true;
+                                }, function myError(response) {
+                                    return false;
+                                });
+                */
             },
 
-
-
-
-            //TODO: wie variablen global in klasse machen????
             getTitle: function(){
                 return this.title;
             },
@@ -104,19 +103,16 @@
 
             getEndDate: function(){
                 return this.endDate;
+            },
+
+            getData: function (){
+                console.log(this);
+                //return this.data;
             }
 
         };
 
-
         return AdminEvent;
-
-
     }
-
-
-
-
-
 
 }());

@@ -94,7 +94,7 @@ class EventController extends FOSRestController {
 
     /**
      * updates a events resource
-     * @Rest\Put("/admin/events/{eventsID}")
+     * @Rest\Put("/admin/events/{eventID}")
      * @ParamConverter("eventDTO", converter="fos_rest.request_body")
      * @param EventDTO $eventDTO
      * @throws \Doctrine\ORM\EntityNotFoundException

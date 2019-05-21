@@ -43,6 +43,15 @@
                  controller:'Admin.EventController as vm'
             })
 
+            .state('admin.events.edit', {
+                url: '/edit',
+                params: {
+                    eventId: null
+                },
+                templateUrl: 'modules/admin/events/views/event/edit.html',
+                controller:'Admin.EventController as vm'
+            })
+
             .state('admin.events.done', {
                 url: '/create',
                 templateUrl: 'modules/admin/events/views/event/done.html',
