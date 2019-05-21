@@ -15,9 +15,11 @@ class srcApp_KernelDevDebugContainerUrlMatcher extends Symfony\Bundle\FrameworkB
     {
         $this->context = $context;
         $this->staticRoutes = array(
-            '/api/events/list' => array(array(array('_route' => 'app_rest_event_getevens', '_controller' => 'App\\Controller\\Rest\\EventController::getEvens'), null, array('GET' => 0), null, false, null)),
+            '/api/events' => array(
+                array(array('_route' => 'app_rest_event_getevens', '_controller' => 'App\\Controller\\Rest\\EventController::getEvens'), null, array('GET' => 0), null, false, null),
+                array(array('_route' => 'app_rest_event_options', '_controller' => 'App\\Controller\\Rest\\EventController::options'), null, array('OPTIONS' => 0), null, false, null),
+            ),
             '/api/admin/events' => array(array(array('_route' => 'app_rest_event_addevent', '_controller' => 'App\\Controller\\Rest\\EventController::addEvent'), null, array('POST' => 0), null, false, null)),
-            '/api/events' => array(array(array('_route' => 'app_rest_event_options', '_controller' => 'App\\Controller\\Rest\\EventController::options'), null, array('OPTIONS' => 0), null, false, null)),
             '/_profiler' => array(array(array('_route' => '_profiler_home', '_controller' => 'web_profiler.controller.profiler::homeAction'), null, null, null, true, null)),
             '/_profiler/search' => array(array(array('_route' => '_profiler_search', '_controller' => 'web_profiler.controller.profiler::searchAction'), null, null, null, false, null)),
             '/_profiler/search_bar' => array(array(array('_route' => '_profiler_search_bar', '_controller' => 'web_profiler.controller.profiler::searchBarAction'), null, null, null, false, null)),
@@ -28,40 +30,40 @@ class srcApp_KernelDevDebugContainerUrlMatcher extends Symfony\Bundle\FrameworkB
         $this->regexpList = array(
             0 => '{^(?'
                     .'|/api/(?'
-                        .'|events/list/([^/]++)(*:35)'
+                        .'|events/([^/]++)(*:30)'
                         .'|admin/events/([^/]++)(?'
-                            .'|(*:66)'
-                            .'|(*:73)'
+                            .'|(*:61)'
+                            .'|(*:68)'
                         .')'
                     .')'
                     .'|/_(?'
-                        .'|error/(\\d+)(?:\\.([^/]++))?(*:113)'
-                        .'|wdt/([^/]++)(*:133)'
+                        .'|error/(\\d+)(?:\\.([^/]++))?(*:108)'
+                        .'|wdt/([^/]++)(*:128)'
                         .'|profiler/([^/]++)(?'
                             .'|/(?'
-                                .'|search/results(*:179)'
-                                .'|router(*:193)'
+                                .'|search/results(*:174)'
+                                .'|router(*:188)'
                                 .'|exception(?'
-                                    .'|(*:213)'
-                                    .'|\\.css(*:226)'
+                                    .'|(*:208)'
+                                    .'|\\.css(*:221)'
                                 .')'
                             .')'
-                            .'|(*:236)'
+                            .'|(*:231)'
                         .')'
                     .')'
                 .')(?:/?)$}sDu',
         );
         $this->dynamicRoutes = array(
-            35 => array(array(array('_route' => 'app_rest_event_getevent', '_controller' => 'App\\Controller\\Rest\\EventController::getEvent'), array('eventID'), array('GET' => 0), null, false, null)),
-            66 => array(array(array('_route' => 'app_rest_event_updateevent', '_controller' => 'App\\Controller\\Rest\\EventController::updateEvent'), array('eventsID'), array('PUT' => 0), null, false, null)),
-            73 => array(array(array('_route' => 'app_rest_event_deleteevent', '_controller' => 'App\\Controller\\Rest\\EventController::deleteEvent'), array('eventID'), array('DELETE' => 0), null, false, null)),
-            113 => array(array(array('_route' => '_twig_error_test', '_controller' => 'twig.controller.preview_error::previewErrorPageAction', '_format' => 'html'), array('code', '_format'), null, null, false, null)),
-            133 => array(array(array('_route' => '_wdt', '_controller' => 'web_profiler.controller.profiler::toolbarAction'), array('token'), null, null, false, null)),
-            179 => array(array(array('_route' => '_profiler_search_results', '_controller' => 'web_profiler.controller.profiler::searchResultsAction'), array('token'), null, null, false, null)),
-            193 => array(array(array('_route' => '_profiler_router', '_controller' => 'web_profiler.controller.router::panelAction'), array('token'), null, null, false, null)),
-            213 => array(array(array('_route' => '_profiler_exception', '_controller' => 'web_profiler.controller.exception::showAction'), array('token'), null, null, false, null)),
-            226 => array(array(array('_route' => '_profiler_exception_css', '_controller' => 'web_profiler.controller.exception::cssAction'), array('token'), null, null, false, null)),
-            236 => array(array(array('_route' => '_profiler', '_controller' => 'web_profiler.controller.profiler::panelAction'), array('token'), null, null, false, null)),
+            30 => array(array(array('_route' => 'app_rest_event_getevent', '_controller' => 'App\\Controller\\Rest\\EventController::getEvent'), array('eventID'), array('GET' => 0), null, false, null)),
+            61 => array(array(array('_route' => 'app_rest_event_updateevent', '_controller' => 'App\\Controller\\Rest\\EventController::updateEvent'), array('eventsID'), array('PUT' => 0), null, false, null)),
+            68 => array(array(array('_route' => 'app_rest_event_deleteevent', '_controller' => 'App\\Controller\\Rest\\EventController::deleteEvent'), array('eventID'), array('DELETE' => 0), null, false, null)),
+            108 => array(array(array('_route' => '_twig_error_test', '_controller' => 'twig.controller.preview_error::previewErrorPageAction', '_format' => 'html'), array('code', '_format'), null, null, false, null)),
+            128 => array(array(array('_route' => '_wdt', '_controller' => 'web_profiler.controller.profiler::toolbarAction'), array('token'), null, null, false, null)),
+            174 => array(array(array('_route' => '_profiler_search_results', '_controller' => 'web_profiler.controller.profiler::searchResultsAction'), array('token'), null, null, false, null)),
+            188 => array(array(array('_route' => '_profiler_router', '_controller' => 'web_profiler.controller.router::panelAction'), array('token'), null, null, false, null)),
+            208 => array(array(array('_route' => '_profiler_exception', '_controller' => 'web_profiler.controller.exception::showAction'), array('token'), null, null, false, null)),
+            221 => array(array(array('_route' => '_profiler_exception_css', '_controller' => 'web_profiler.controller.exception::cssAction'), array('token'), null, null, false, null)),
+            231 => array(array(array('_route' => '_profiler', '_controller' => 'web_profiler.controller.profiler::panelAction'), array('token'), null, null, false, null)),
         );
     }
 }

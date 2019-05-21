@@ -34,7 +34,7 @@
             */
             $http({
                 method: "GET",
-                url: "http://docker-backend.test/api/events/list"
+                url: "http://docker-backend.test/api/events"
             }).then(function mySuccess(response) {
                 console.log('receive data');
                 $scope.events = response.data;

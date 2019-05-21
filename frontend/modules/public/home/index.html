@@ -1,6 +1,7 @@
 <div class="jumbotron text-center">
     <h1> Home </h1>
-    <p> Willkommen im öffentlichen Bereich der Anwendung! Was möchten Sie tun?</p>
+
+    <p> <span ng-if="vm.currentUser.username">Hallo <strong>{{vm.currentUser.username}}</strong></br></span> Willkommen im öffentlichen Bereich der Anwendung! Was möchten Sie tun?</p>
 
     <a class="btn btn-primary"
        ui-sref="public.events.list"

@@ -15,10 +15,10 @@
             'toaster',
             'ngStorage',
 
-
             //modules
             'app.public',
-            'app.admin'
+            'app.admin',
+
         ])
 
 }());

@@ -44,7 +44,7 @@ class EventController extends FOSRestController {
 
     /**
      * Retrieves an Event resource
-     * @Rest\Get("/events/list/{eventID}")
+     * @Rest\Get("/events/{eventID}")
      * @param int $eventId
      * @return View
      * @throws \Doctrine\ORM\EntityNotFoundException
@@ -61,7 +61,7 @@ class EventController extends FOSRestController {
 
         /**
          * Retrieves a collection of Event resource
-         * @Rest\Get("/events/list")
+         * @Rest\Get("/events")
          * @return view
          */
         public function getEvens(): View

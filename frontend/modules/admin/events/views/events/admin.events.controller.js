@@ -8,7 +8,7 @@
         .controller('Admin.EventsController', AdminEventsController);
 
     /** @ngInject */
-    function AdminEventsController($state, $scope, $http, $localStorage, toaster) {
+    function AdminEventsController($state, $scope, $http, $localStorage, toaster, AdminEventFactory) {
         var vm = this;
 
         vm.currentUser = $localStorage.currentUser;
@@ -29,14 +29,14 @@
         }
 
         function showEvents() {
+            //TODO: ins admin.event model integrieren?
             /*
             console.log('show Events');
-
             console.log($localStorage.currentUser);
             */
             $http({
                 method: "GET",
-                url: "http://docker-backend.test/api/events/list"
+                url: "http://docker-backend.test/api/events"
             }).then(function mySuccess(response) {
                 console.log('receive data');
                 $scope.events = response.data;
@@ -94,6 +94,41 @@
         //Go to add some events
         function editEvent($eventId) {
 
+            /*
+            var event = new AdminEventFactory();
+           event.load($eventId);
+
+            for(var key in event.setData) {
+                if(event.setData.hasOwnProperty(key)) {
+                    console.log(data[key]);
+                }
+            }
+            console.log(event);
+
+            event.getTitle();
+*/
+
+
+            var event = new AdminEventFactory();
+            /*
+            event.load($eventId);
+            console.log(event);
+            console.log(event.getTitle());
+            $scope.event = event;
+            */
+
+            var event = new AdminEventFactory();
+            var promise = event.load($eventId);
+            promise.then(function(data) {
+                //console.log(data);
+                //console.log(event);
+                //console.log(event.getTitle() + event.getDescription() + event.getStartDate() + event.getEndDate()); //undefined
+            });
+            $scope.event = event;
+
+            //TODO: Weiterreichen des events an edit.html whatever
+
+            /*
             $http({
                 method: "GET",
                 url: "http://docker-backend.test/api/events/list/" + $eventId
@@ -108,6 +143,7 @@
             });
 
             $state.go('events.create');
+            */
         }
 
 

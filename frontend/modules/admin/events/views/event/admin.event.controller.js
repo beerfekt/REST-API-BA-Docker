@@ -7,7 +7,7 @@
 
 
     /** @ngInject */
-    function AdminEventController($state, $scope, $http, toaster, messageService) {
+    function AdminEventController($state, $scope, $http, toaster, messageService, AdminEventFactory) {
         var vm = this;
 
         vm.addEvent = addEvent;
@@ -38,6 +38,7 @@
 
             console.log(JSON.stringify(data));
 
+            //TODO: http methode in model admin.event auslagern?
             $http({
                 method: "POST",
                 url: 'http://docker-backend.test/api/admin/events',
