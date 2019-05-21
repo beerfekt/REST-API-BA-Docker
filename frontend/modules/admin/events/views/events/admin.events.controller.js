@@ -115,6 +115,7 @@
 */
 
             //TODO:        DOKU das: Promise Ansatz
+            /*
             var event = new AdminEventFactory();
             var promise = event.load($eventId);
             promise.then(function(data) {
@@ -123,6 +124,7 @@
                 //console.log(event.getTitle() + event.getDescription() + event.getStartDate() + event.getEndDate()); //undefined
 
             });
+            */
             //$scope.event = event;
 
             //TODO: Weiterreichen des events an edit.html whatever

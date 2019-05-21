@@ -38,11 +38,11 @@
                     throw response;
                 });
             },
-/*
+
             delete: function () {
                 return $http({
                     method: "DELETE",
-                    url: 'http://docker-backend.test/api/admin/events/' + id,
+                    url: 'http://docker-backend.test/api/admin/events/' + this.id,
                     headers: {
                         'Content-Type': 'application/json'
                     }
@@ -52,11 +52,9 @@
                     throw response;
                 });
             },
-*/
+
             update: function () {
-
-                console.log(this + " \n" + this.id);
-
+                var scope = this;
                 return $http({
                     method: "PUT",
                     url: 'http://docker-backend.test/api/admin/events/' + this.id,
@@ -71,24 +69,9 @@
                     console.log(response);
                     throw response;
                 });
-
-                /*
-                                $http({
-                                    method: "PUT",
-                                    url: 'http://docker-backend.test/api/admin/events/' + id,
-
-                                    headers: {
-                                        'Content-Type': 'application/json'
-                                    },
-                                    data: this
-                                }).then(function mySuccess() {
-                                    return true;
-                                }, function myError(response) {
-                                    return false;
-                                });
-                */
             },
 
+            //nicht gut weil festgefahren
             getTitle: function(){
                 return this.title;
             },
@@ -105,6 +88,7 @@
                 return this.endDate;
             },
 
+            //besser da generisch
             getData: function (){
                 console.log(this);
                 //return this.data;

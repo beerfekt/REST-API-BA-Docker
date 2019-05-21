@@ -83,11 +83,12 @@
 
             let event = new AdminEventFactory(eventJSON);
             var promise = event.update();
-            /*
+
             promise.then(function(data) {
                 console.log("Editevent()" + data);
+                $state.go('admin.events.done');
+                messageService.setMessage('Veranstaltung: " ' + $title + ' " erfolgreich geändert');
             });
-            */
 
         }
 
