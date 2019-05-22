@@ -1,50 +1,55 @@
 <!-- extends  events/index.html -->
 
-<section ng-if="vm.event">
-    <div class="content-header">
-        <h2>Fortbildung <strong>{{vm.event.title}}</strong> editieren:</h2>
-    </div>
-    <div class="content-body">
-        <form>
-            <div class="form-group">
-                <label for="inputTitle">Fortbildungsname</label>
-                <input ng-model="vm.event.title" type="text" class="form-control" id="inputTitle" aria-describedby="titleHelp"  required>
-                <small id="titleHelp" class="form-text text-muted">Neuen Fortbildungstitel eingeben</small>
-            </div>
-            <div class="form-row">
-                <div class="col-sm">
-                    <div class="form-group">
-                        <label for="startDatepicker">Fortbildungsbeginn:</label>
-                        <input id="startDatepicker" ng-model="vm.event.startDate"  width="100%" required/>
+<section id="event">
+        <div class="content-header">
+            <h2>Fortbildung editieren:</h2>
+        </div>
+        <div class="content-body" ng-show="vm.event"> <!-- ng-show weil bei ng-if datepicker ausfällt -->
+            <form>
+                <div class="form-group">
+                    <label for="inputTitle">Fortbildungsname</label>
+                    <input ng-model="vm.event.title" type="text" class="form-control" id="inputTitle" aria-describedby="titleHelp"  required>
+                    <small id="titleHelp" class="form-text text-muted">Neuen Fortbildungstitel eingeben</small>
+                </div>
+                <div class="form-row">
+                    <div class="col-sm">
+                        <div class="form-group">
+                            <label for="startDatepicker">Fortbildungsbeginn:</label>
+                            <input id="startDatepicker" ng-model="vm.event.startDate"  width="100%" required/>
+                        </div>
+                    </div>
+                    <div class="col-sm">
+                        <div class="form-group">
+                            <label for="endDatepicker">Fortbildungsende:</label>
+                            <input id="endDatepicker" ng-model="vm.event.endDate"  width="100%" required/>
+                        </div>
                     </div>
                 </div>
-                <div class="col-sm">
-                    <div class="form-group">
-                        <label for="endDatepicker">Fortbildungsende:</label>
-                        <input id="endDatepicker" ng-model="vm.event.endDate"  width="100%" required/>
-                    </div>
+                <div class="form-group">
+                    <label for="inputDescription">Beschreibung</label>
+                    <textarea  id="inputDescription" class="form-control" ng-model="vm.event.description" rows="3"></textarea>
+                </div>
+                <button type="submit" value="Eintragen" ng-click="vm.editEvent()" class="btn btn-primary" >Eintragen</button>
+            </form>
+        </div>
+        <div class="content-body" ng-if="!vm.event">
+            <div class="row">
+                <div class="col-12"></div>
+                <div class="alert alert-warning" role="alert">
+                    Keine Event ausgewählt!
                 </div>
             </div>
-            <div class="form-group">
-                <label for="inputDescription">Beschreibung</label>
-                <textarea  id="inputDescription" class="form-control" ng-model="vm.event.description" rows="3"></textarea>
-            </div>
-            <button type="submit" value="Eintragen" ng-click="vm.editEvent()" class="btn btn-primary" >Eintragen</button>
-        </form>
-    </div>
+        </div>
+
 </section>
 
 
 
-<toaster-container></toaster-container>
+
+<toaster-container toaster-options="{'position-class':'toast-bottom-right'}"></toaster-container>
 
 <script>
     $('#startDatepicker').datepicker({ format: 'dd.mm.yyyy' });
     $('#endDatepicker').datepicker({ format: 'dd.mm.yyyy' });
 </script>
 
-<style>
-    .align-left {
-        test-align: left;
-    }
-</style>

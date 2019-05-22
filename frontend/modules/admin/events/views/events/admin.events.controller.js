@@ -66,9 +66,7 @@
                 toaster.pop('error', "title", 'Fortbildung " ' + $eventTitle +  ' " konnte nicht gelöscht werden');
             });
 
-
         }
-
 
 
         function toggleIcon($elementID) {

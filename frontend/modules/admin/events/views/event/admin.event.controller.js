@@ -18,6 +18,7 @@
         vm.currentEventId = $state.params.eventId;
         vm.event = null;
 
+
         init();
 
         function init(){
@@ -81,6 +82,14 @@
         function editEvent() {
             //let eventJSON = createData(vm.currentEventId, $title, $description, $startDateString,$endDateString);
             //console.log(eventJSON);
+
+
+
+            if (parseInt(vm.event.startDate) > parseInt(vm.event.endDate)) {
+                toaster.pop('error', 'Falsche Datumseingabe', 'Startdatum muss vor dem Enddatum liegen!');
+                return;
+            }
+
             vm.event.startDate = convertDateStringToSeconds(vm.event.startDate);
             vm.event.endDate = convertDateStringToSeconds(vm.event.endDate);
 
