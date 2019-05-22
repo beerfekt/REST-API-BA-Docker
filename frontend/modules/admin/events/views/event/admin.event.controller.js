@@ -16,17 +16,19 @@
 
         vm.messageService = messageService;
         vm.currentEventId = $state.params.eventId;
+        vm.event = null;
 
         init();
 
         function init(){
-            console.log("init():");
             if (vm.currentEventId){
                 let event = new AdminEventFactory();
                 var promise = event.load(vm.currentEventId);
                 promise.then(function(data) {
                     event.getData();
-                    $scope.event = data;
+                    vm.event = data;
+                    vm.event.startDate = formatUTCDate(vm.event.startDate);
+                    vm.event.endDate = formatUTCDate(vm.event.endDate);
                 });
             }
         }
@@ -76,18 +78,19 @@
         }
 
 
-        function editEvent($title, $description, $startDateString,$endDateString) {
+        function editEvent() {
+            //let eventJSON = createData(vm.currentEventId, $title, $description, $startDateString,$endDateString);
+            //console.log(eventJSON);
+            vm.event.startDate = convertDateStringToSeconds(vm.event.startDate);
+            vm.event.endDate = convertDateStringToSeconds(vm.event.endDate);
 
-            let eventJSON = createData(vm.currentEventId, $title, $description, $startDateString,$endDateString);
-            console.log(eventJSON);
-
-            let event = new AdminEventFactory(eventJSON);
+            let event = new AdminEventFactory(vm.event);
             var promise = event.update();
 
             promise.then(function(data) {
                 console.log("Editevent()" + data);
                 $state.go('admin.events.done');
-                messageService.setMessage('Veranstaltung: " ' + $title + ' " erfolgreich geändert');
+                messageService.setMessage('Veranstaltung: " ' + event.title + ' " erfolgreich geändert');
             });
 
         }
@@ -114,9 +117,21 @@
             var parts = $dateAsString.split('.');
             var date = new Date(parts[2], parts[1] - 1, parts[0]);
             //seconds
+            console.log(date.getTime() /1000);
             return date.getTime() / 1000;
         }
 
+
+        function formatUTCDate(d)
+        {
+            let date = new Date(d)
+            var dd = date.getDate();
+            var mm = date.getMonth()+1;
+            var yyyy = date.getFullYear();
+            if(dd<10){dd='0'+dd}
+            if(mm<10){mm='0'+mm};
+            return d = dd+'.'+mm+'.'+yyyy
+        }
 
     }
 

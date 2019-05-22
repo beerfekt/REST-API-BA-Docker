@@ -1,53 +1,39 @@
 <!-- extends  events/index.html -->
 
+<section ng-if="vm.event">
+    <div class="content-header">
+        <h2>Fortbildung <strong>{{vm.event.title}}</strong> editieren:</h2>
+    </div>
+    <div class="content-body">
+        <form>
+            <div class="form-group">
+                <label for="inputTitle">Fortbildungsname</label>
+                <input ng-model="vm.event.title" type="text" class="form-control" id="inputTitle" aria-describedby="titleHelp"  required>
+                <small id="titleHelp" class="form-text text-muted">Neuen Fortbildungstitel eingeben</small>
+            </div>
+            <div class="form-row">
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="startDatepicker">Fortbildungsbeginn:</label>
+                        <input id="startDatepicker" ng-model="vm.event.startDate"  width="100%" required/>
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="endDatepicker">Fortbildungsende:</label>
+                        <input id="endDatepicker" ng-model="vm.event.endDate"  width="100%" required/>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="inputDescription">Beschreibung</label>
+                <textarea  id="inputDescription" class="form-control" ng-model="vm.event.description" rows="3"></textarea>
+            </div>
+            <button type="submit" value="Eintragen" ng-click="vm.editEvent()" class="btn btn-primary" >Eintragen</button>
+        </form>
+    </div>
+</section>
 
-<div class="content-header">
-    <h2>Fortbildung <strong>{{event.title}}</strong> editieren:</h2>
-</div>
-<div class="content-body">
-    <form>
-        <div class="form-group">
-            <label for="inputTitle">Fortbildungsname</label>
-            <input ng-model="title" type="text" class="form-control" id="inputTitle" aria-describedby="titleHelp" placeholder="{{ event.title }}" required>
-            <small id="titleHelp" class="form-text text-muted">Neuen Fortbildungstitel eingeben</small>
-        </div>
-        <div class="form-row">
-            <div class="col-sm">
-                <div class="form-group">
-                    <label for="startDatepicker">Fortbildungsbeginn:</label>
-                    <input id="startDatepicker" ng-model="startDateString"  placeholder="{{event.startDate}}" width="100%" required/>
-                </div>
-            </div>
-            <!--TODO: UHRZEIT
-            <div class="col-sm align-left">
-                <div class="form-group  ">
-                    <label for="startTime">Uhrzeit:</label><br>
-                    <input type="time" id="startTime" ng-model="startTimeString"  placeholder="Uhrzeit auswählen" width="100%" required/>
-                </div>
-            </div>
-            -->
-            <div class="col-sm">
-                <div class="form-group">
-                    <label for="endDatepicker">Fortbildungsende:</label>
-                    <input id="endDatepicker" ng-model="endDateString"  placeholder="{{event.endDate}}" width="100%" required/>
-                </div>
-            </div>
-            <!-- TODO UHRZEIT
-            <div class="col-sm align-left">
-                <div class="form-group ">
-                    <label for="endTimePicker">Uhrzeit :</label><br>
-                    <input type="time" id="endTimePicker" ng-model="endTimeString"  placeholder="Uhrzeit auswählen" width="100%" required/>
-                </div>
-            </div>
-            -->
-        </div>
-        <div class="form-group">
-            <label for="inputDescription">Beschreibung</label>
-            <textarea  id="inputDescription" class="form-control" ng-model="description" rows="3" placeholder="{{event.description}}"></textarea>
-        </div>
-        <button type="submit" value="Eintragen" ng-click="vm.editEvent(title, description, startDateString,endDateString)" class="btn btn-primary" >Eintragen</button>
-    </form>
-</div>
 
 
 <toaster-container></toaster-container>
