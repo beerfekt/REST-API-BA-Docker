@@ -26,7 +26,6 @@
                 let event = new AdminEventFactory();
                 var promise = event.load(vm.currentEventId);
                 promise.then(function(data) {
-                    event.getData();
                     vm.event = data;
                     vm.event.startDate = formatUTCDate(vm.event.startDate);
                     vm.event.endDate = formatUTCDate(vm.event.endDate);
@@ -48,18 +47,24 @@
                 return;
             }
 
-            //TODO: Uhrzeit fehlt noch
-
-            var data = {
+            let data = {
                 "title": $title,
                 "startDate": convertDateStringToSeconds($startDateString),
                 "endDate": convertDateStringToSeconds($endDateString),
                 "description": $description
             };
+           // console.log(JSON.stringify(data));
 
-            console.log(JSON.stringify(data));
+            let event = new AdminEventFactory(data);
+            let promise = event.create();
+            promise.then(function(data){
+                messageService.setMessage('Veranstaltung: " ' + event.title + ' " erfolgreich eingetragen');
+                $state.go('admin.events.done');
+            });
+
 
             //TODO: http methode in model admin.event auslagern?
+/*
             $http({
                 method: "POST",
                 url: 'http://docker-backend.test/api/admin/events',
@@ -74,16 +79,13 @@
             }, function myError(response) {
                 toaster.pop('error', "title", 'Fortbildung konnte nicht eingetragen werden');
             });
+            */
             // Möglichkeit eine aktuelle Ansicht der Artikeldetails
             // showEventDetails() (mit verzögerung, sodass Änderungen übernommen werden)
         }
 
 
         function editEvent() {
-            //let eventJSON = createData(vm.currentEventId, $title, $description, $startDateString,$endDateString);
-            //console.log(eventJSON);
-
-
 
             if (parseInt(vm.event.startDate) > parseInt(vm.event.endDate)) {
                 toaster.pop('error', 'Falsche Datumseingabe', 'Startdatum muss vor dem Enddatum liegen!');
@@ -94,25 +96,13 @@
             vm.event.endDate = convertDateStringToSeconds(vm.event.endDate);
 
             let event = new AdminEventFactory(vm.event);
-            var promise = event.update();
-
+            let promise = event.update();
             promise.then(function(data) {
-                console.log("Editevent()" + data);
+                //console.log("Editevent()" + data);
                 $state.go('admin.events.done');
                 messageService.setMessage('Veranstaltung: " ' + event.title + ' " erfolgreich geändert');
             });
 
-        }
-
-
-        function  createData($id, $title, $description, $startDateString,$endDateString){
-            return {
-                "id" : $id,
-                "title": $title,
-                "startDate": convertDateStringToSeconds($startDateString),
-                "endDate": convertDateStringToSeconds($endDateString),
-                "description": $description
-            };
         }
 
         function goToEvents() {
@@ -122,11 +112,10 @@
 
         function convertDateStringToSeconds($dateAsString) {
             if (!$dateAsString) return;
-
-            var parts = $dateAsString.split('.');
-            var date = new Date(parts[2], parts[1] - 1, parts[0]);
+            let parts = $dateAsString.split('.');
+            let date = new Date(parts[2], parts[1] - 1, parts[0]);
             //seconds
-            console.log(date.getTime() /1000);
+            //console.log(date.getTime() /1000);
             return date.getTime() / 1000;
         }
 
@@ -134,9 +123,9 @@
         function formatUTCDate(d)
         {
             let date = new Date(d)
-            var dd = date.getDate();
-            var mm = date.getMonth()+1;
-            var yyyy = date.getFullYear();
+            let dd = date.getDate();
+            let mm = date.getMonth()+1;
+            let yyyy = date.getFullYear();
             if(dd<10){dd='0'+dd}
             if(mm<10){mm='0'+mm};
             return d = dd+'.'+mm+'.'+yyyy

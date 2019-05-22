@@ -25,6 +25,21 @@
                 angular.extend(this, eventData);
             },
 
+            create: function(){
+                return $http({
+                    method: "POST",
+                    url: 'http://docker-backend.test/api/admin/events',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    data: this
+                }).then(function mySuccess(response) {
+                    return response.data;
+                }, function myError(response) {
+                    throw response;
+                });
+            },
+
             load: function (id) {
                 var scope = this;
                 return $http({
@@ -39,15 +54,15 @@
                 });
             },
 
-            delete: function () {
+            delete: function (id) {
                 return $http({
                     method: "DELETE",
-                    url: 'http://docker-backend.test/api/admin/events/' + this.id,
+                    url: 'http://docker-backend.test/api/admin/events/' + id,
                     headers: {
                         'Content-Type': 'application/json'
                     }
-                }).then(function mySuccess() {
-                    return true;
+                }).then(function mySuccess(response) {
+                    return response.data;
                 }, function myError(response) {
                     throw response;
                 });
@@ -64,14 +79,13 @@
                     data: this
                 }).then(function mySuccess(response) {
                     scope.setData(response.data);
-                    return response.data
+                    return response.data;
                 }, function myError(response) {
-                    console.log(response);
                     throw response;
                 });
             },
 
-            //nicht gut weil festgefahren
+            //TODO: DOKU nicht gut weil festgefahren
             getTitle: function(){
                 return this.title;
             },
@@ -87,11 +101,11 @@
             getEndDate: function(){
                 return this.endDate;
             },
+            //TODO : -------------------
 
-            //besser da generisch
+            //TODO: DOKU besser da generisch
             getData: function (){
-                console.log(this);
-                //return this.data;
+                return this.data;
             }
 
         };

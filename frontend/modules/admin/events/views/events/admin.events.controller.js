@@ -52,6 +52,16 @@
 
         function removeEvent($eventId, $eventTitle){
 
+            let event = new AdminEventFactory();
+            let promise = event.delete($eventId);
+            promise.then(function(data){
+                toaster.pop('success','Erfolgreich entfernt!','Veranstaltung: " ' + $eventTitle + ' " wurde erfolgreich gelöscht');
+                setTimeout(showEvents(), 3000);
+            });
+
+            //toaster.pop('error', "title", 'Fortbildung " ' + $eventTitle +  ' " konnte nicht gelöscht werden');
+
+/*
             $http({
                 method: "DELETE",
                 url: 'http://docker-backend.test/api/admin/events/' + $eventId,
@@ -65,13 +75,13 @@
             }, function myError(response) {
                 toaster.pop('error', "title", 'Fortbildung " ' + $eventTitle +  ' " konnte nicht gelöscht werden');
             });
+*/
 
         }
 
 
         function toggleIcon($elementID) {
             $scope.expandedValue = !$scope.expandedValue; //Wert abgreifen und Rückschreiben in Scope
-            let switcher = $scope.expandedValue;
             let icon = document.getElementById('icon' + $elementID);
             let elementToShow = document.getElementById('collapse' + $elementID);
             if (elementToShow.className == "collapse show" && icon.className == 'fa fa-minus') {
