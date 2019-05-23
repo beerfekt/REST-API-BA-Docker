@@ -1,13 +1,11 @@
 (function () {
     "use strict";
 
-
-    //TODO: Wo kommt id her???
     angular
         .module('app.admin')
         .factory('AdminEventFactory', AdminEventFactory);
 
-
+    
     /** @ngInject */
     function  AdminEventFactory($http) {
 

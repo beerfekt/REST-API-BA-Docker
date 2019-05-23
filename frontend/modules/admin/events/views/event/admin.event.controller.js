@@ -13,11 +13,12 @@
         vm.addEvent = addEvent;
         vm.editEvent = editEvent;
         vm.goToEvents = goToEvents;
+        vm.validateDates = validateDates;
+
 
         vm.messageService = messageService;
         vm.currentEventId = $state.params.eventId;
         vm.event = null;
-
 
         init();
 
@@ -38,14 +39,14 @@
             // curl -i -X POST -H 'Content-Type: application/json' -d '{"title": "new Title", "content": "new Content"}' http://rest-tutorial.test/api/events
 
             if (!$title || !$description || !$startDateString || !$endDateString) {
-                toaster.pop('error', 'title', 'Bitte alle Felder ausfuellen!');
+                toaster.pop('error', 'Fehlende Felder!', 'Bitte alle Felder ausfuellen!');
                 return;
             }
 
-            if (parseInt($startDateString) > parseInt($endDateString)) {
-                toaster.pop('error', 'title', 'Startdatum muss vor dem Enddatum liegen!');
+            if (!validateDates($startDateString,$endDateString)) {
                 return;
             }
+
 
             let data = {
                 "title": $title,
@@ -87,8 +88,7 @@
 
         function editEvent() {
 
-            if (parseInt(vm.event.startDate) > parseInt(vm.event.endDate)) {
-                toaster.pop('error', 'Falsche Datumseingabe', 'Startdatum muss vor dem Enddatum liegen!');
+            if (!validateDates(vm.event.startDate, vm.event.endDate)) {
                 return;
             }
 
@@ -109,16 +109,29 @@
             $state.go('admin.events.list');
         }
 
+        function validateDates(startDateString, endDateString){
+            if (startDateString && endDateString) {
+
+                let startDateinSeconds = convertDateStringToSeconds(startDateString);
+                let endDateinSeconds = convertDateStringToSeconds(endDateString);
+
+                if (startDateinSeconds <= endDateinSeconds) {
+                    return true;
+                } else {
+                    toaster.pop('error', 'Falsche Datumseingabe', 'Startdatum muss vor dem Enddatum liegen!');
+                    return false;
+                }
+            }
+            return false;
+        }
 
         function convertDateStringToSeconds($dateAsString) {
             if (!$dateAsString) return;
             let parts = $dateAsString.split('.');
             let date = new Date(parts[2], parts[1] - 1, parts[0]);
-            //seconds
-            //console.log(date.getTime() /1000);
+            //compute seconds
             return date.getTime() / 1000;
         }
-
 
         function formatUTCDate(d)
         {
@@ -130,7 +143,6 @@
             if(mm<10){mm='0'+mm};
             return d = dd+'.'+mm+'.'+yyyy
         }
-
     }
 
 }());
