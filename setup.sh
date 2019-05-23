@@ -71,7 +71,10 @@ docker-compose exec frontend-server npm install --save-dev @fortawesome/fontawes
 docker-compose exec frontend-server npm install ngstorage
 echo "DONE! \n \n"
 
-echo "You could access the Website at following URLs : \n
+#da Container backend an sich reisst: (777 Nur für DEV Zwecke!!)
+sudo chmod -R 777 backend
+
+echo "The Page should be accessible at following URLs : \n
         Frontend: $URLFRONTEND \n
         Backend: $URLBACKEND  \n "
 
