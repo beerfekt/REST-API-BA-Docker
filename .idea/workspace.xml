@@ -2,15 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a80c4c59-88e8-4169-adb3-71fa4e6d3270" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/var/cache/dev/profiler/index.csv" beforeDir="false" afterPath="$PROJECT_DIR$/backend/var/cache/dev/profiler/index.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/var/log/dev.log" beforeDir="false" afterPath="$PROJECT_DIR$/backend/var/log/dev.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/modules/admin/events/models/admin.event.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/modules/admin/events/models/admin.event.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/modules/admin/events/views/event/admin.event.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/modules/admin/events/views/event/admin.event.controller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/modules/admin/events/views/event/create.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/modules/admin/events/views/event/create.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/modules/admin/events/views/event/edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/modules/admin/events/views/event/edit.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/modules/admin/events/views/events/admin.events.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/modules/admin/events/views/events/admin.events.controller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/modules/admin/events/views/events/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/modules/admin/events/views/events/list.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -78,7 +71,7 @@
             <entry file="file://$PROJECT_DIR$/frontend/modules/admin/events/views/event/edit.html">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="300">
-                  <caret line="20" column="40" lean-forward="true" selection-start-line="20" selection-start-column="40" selection-end-line="20" selection-end-column="40" />
+                  <caret line="20" column="40" selection-start-line="20" selection-start-column="40" selection-end-line="20" selection-end-column="40" />
                 </state>
               </provider>
             </entry>
@@ -856,12 +849,12 @@
       <workItem from="1558509256022" duration="13872000" />
       <workItem from="1558537517157" duration="7696000" />
       <workItem from="1558550838150" duration="1021000" />
-      <workItem from="1558589562046" duration="3511000" />
+      <workItem from="1558589562046" duration="4112000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="244833000" />
+    <option name="totallyTimeSpent" value="245434000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="-11" width="1602" height="912" extended-state="6" />
@@ -1201,7 +1194,7 @@
     <entry file="file://$PROJECT_DIR$/frontend/modules/admin/events/views/event/edit.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
-          <caret line="20" column="40" lean-forward="true" selection-start-line="20" selection-start-column="40" selection-end-line="20" selection-end-column="40" />
+          <caret line="20" column="40" selection-start-line="20" selection-start-column="40" selection-end-line="20" selection-end-column="40" />
         </state>
       </provider>
     </entry>
