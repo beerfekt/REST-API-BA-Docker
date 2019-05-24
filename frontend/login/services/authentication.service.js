@@ -5,7 +5,7 @@
         .module('app')
         .factory('AuthenticationService', Service);
 
-    function Service($http, $localStorage) {
+    function Service($http, $state, $localStorage, toaster) {
         var service = {};
 
         service.Login = Login;
@@ -49,8 +49,9 @@
                 }
 
             }, function myError(response) {
-
+                toaster.pop('error', "Login Fehlgeschlagen!", 'Bitte überprüfen Sie ihre Eingaben!');
                 console.log('logged in ERROR');
+                setTimeout( function(){location.reload(); }, 2000);
 
             });
 
@@ -65,10 +66,10 @@
         function getCurrentUser(){
             return $localStorage.currentUser;
         }
-/*
+
         $rootScope.isSessionActive = function () {
             return $localStorage.currentUser ? true : false;
         }
-*/
+
     }
 })();

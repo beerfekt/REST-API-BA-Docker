@@ -59,7 +59,7 @@ return array(
     '.service_locator.yGlIcI7' => true,
     '.service_locator.yQVjGlt' => true,
     'App\\DTO\\Event\\EventAssembler' => true,
-    'App\\DTO\\Event\\EventDTO' => true,
+    'App\\DTO\\Event\\UserDTO' => true,
     'App\\DataFixtures\\AppFixtures' => true,
     'App\\Repository\\EventRepository' => true,
     'App\\Repository\\RoomRepository' => true,

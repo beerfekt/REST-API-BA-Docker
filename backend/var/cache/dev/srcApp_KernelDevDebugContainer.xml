@@ -453,6 +453,10 @@
       <tag name="controller.service_arguments"/>
       <argument type="service" id="App\Services\EventService"/>
     </service>
+    <service id="App\Controller\Rest\UserController" class="App\Controller\Rest\UserController" public="true" autowire="true" autoconfigure="true">
+      <tag name="controller.service_arguments"/>
+      <argument type="service" id="App\Services\UserService"/>
+    </service>
     <service id="App\DataFixtures\AppFixtures" class="App\DataFixtures\AppFixtures" public="false" autowire="true" autoconfigure="true">
       <tag name="doctrine.fixture.orm"/>
       <argument type="service" id="security.user_password_encoder.generic"/>
@@ -474,8 +478,15 @@
       <argument type="service" id="App\Repository\EventRepository"/>
       <argument type="service" id="App\DTO\Event\EventAssembler"/>
     </service>
+    <service id="App\Services\UserService" class="App\Services\UserService" public="false" autowire="true" autoconfigure="true">
+      <argument type="service" id="doctrine.orm.default_entity_manager"/>
+      <argument type="service" id="App\Repository\UserRepository"/>
+      <argument type="service" id="App\DTO\User\UserAssembler"/>
+    </service>
     <service id="App\DTO\Event\EventAssembler" class="App\DTO\Event\EventAssembler" public="false" autoconfigure="true"/>
     <service id="App\DTO\Event\EventDTO" class="App\DTO\Event\EventDTO" public="false" autoconfigure="true"/>
+    <service id="App\DTO\User\UserAssembler" class="App\DTO\User\UserAssembler" public="false" autoconfigure="true"/>
+    <service id="App\DTO\User\UserDTO" class="App\DTO\User\UserDTO" public="false" autoconfigure="true"/>
     <service id="controller_name_converter" class="Symfony\Bundle\FrameworkBundle\Controller\ControllerNameParser" public="false">
       <tag name="monolog.logger" channel="request"/>
       <argument type="service" id="kernel"/>
@@ -2039,14 +2050,6 @@
       </call>
       <call method="addListener">
         <argument>kernel.request</argument>
-        <argument type="collection">
-          <argument type="service" id="debug.debug_handlers_listener"/>
-          <argument>configure</argument>
-        </argument>
-        <argument>2048</argument>
-      </call>
-      <call method="addListener">
-        <argument>console.command</argument>
         <argument type="collection">
           <argument type="service" id="debug.debug_handlers_listener"/>
           <argument>configure</argument>
@@ -4916,6 +4919,8 @@
     </service>
     <service id=".instanceof.Symfony\Bundle\FrameworkBundle\Controller\Controller.0.App\Controller\Rest\EventController" class="App\Controller\Rest\EventController" public="false" autowire="true" abstract="true"/>
     <service id=".abstract.instanceof.App\Controller\Rest\EventController" class="App\Controller\Rest\EventController" public="false" autowire="true" autoconfigure="true" abstract="true"/>
+    <service id=".instanceof.Symfony\Bundle\FrameworkBundle\Controller\Controller.0.App\Controller\Rest\UserController" class="App\Controller\Rest\UserController" public="false" autowire="true" abstract="true"/>
+    <service id=".abstract.instanceof.App\Controller\Rest\UserController" class="App\Controller\Rest\UserController" public="false" autowire="true" autoconfigure="true" abstract="true"/>
     <service id=".instanceof.Doctrine\Bundle\FixturesBundle\ORMFixtureInterface.0.App\DataFixtures\AppFixtures" class="App\DataFixtures\AppFixtures" public="false" autowire="true" abstract="true"/>
     <service id=".abstract.instanceof.App\DataFixtures\AppFixtures" class="App\DataFixtures\AppFixtures" public="false" autowire="true" autoconfigure="true" abstract="true"/>
     <service id=".instanceof.Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepositoryInterface.0.App\Repository\EventRepository" class="App\Repository\EventRepository" public="false" autowire="true" abstract="true"/>
@@ -5098,15 +5103,27 @@
         <argument key="viewhandler" type="service" id="fos_rest.view_handler.default"/>
       </argument>
     </service>
-    <service id=".service_locator.eAXsVTy" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
+    <service id=".service_locator.mcJyH0X" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
+      <tag name="container.service_locator"/>
+      <argument type="collection">
+        <argument key="userDTO" type="service" id="App\DTO\User\UserDTO"/>
+      </argument>
+    </service>
+    <service id=".service_locator.S3IH.Qu" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
       <tag name="container.service_locator"/>
       <argument type="collection">
         <argument key="App\Controller\Rest\EventController::addEvent" type="service" id=".service_locator.tcrnKcu"/>
         <argument key="App\Controller\Rest\EventController::setViewHandler" type="service" id=".service_locator.l2alLEu"/>
         <argument key="App\Controller\Rest\EventController::updateEvent" type="service" id=".service_locator.tcrnKcu"/>
+        <argument key="App\Controller\Rest\UserController::addUser" type="service" id=".service_locator.mcJyH0X"/>
+        <argument key="App\Controller\Rest\UserController::setViewHandler" type="service" id=".service_locator.l2alLEu"/>
+        <argument key="App\Controller\Rest\UserController::updateUser" type="service" id=".service_locator.mcJyH0X"/>
         <argument key="App\Controller\Rest\EventController:addEvent" type="service" id=".service_locator.tcrnKcu"/>
         <argument key="App\Controller\Rest\EventController:setViewHandler" type="service" id=".service_locator.l2alLEu"/>
         <argument key="App\Controller\Rest\EventController:updateEvent" type="service" id=".service_locator.tcrnKcu"/>
+        <argument key="App\Controller\Rest\UserController:addUser" type="service" id=".service_locator.mcJyH0X"/>
+        <argument key="App\Controller\Rest\UserController:setViewHandler" type="service" id=".service_locator.l2alLEu"/>
+        <argument key="App\Controller\Rest\UserController:updateUser" type="service" id=".service_locator.mcJyH0X"/>
       </argument>
     </service>
     <service id=".service_locator.yQVjGlt" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
@@ -5398,7 +5415,7 @@
       <argument type="service" id="security.token_storage"/>
     </service>
     <service id="debug.argument_resolver.service.inner" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\ServiceValueResolver" public="false">
-      <argument type="service" id=".service_locator.eAXsVTy"/>
+      <argument type="service" id=".service_locator.S3IH.Qu"/>
     </service>
     <service id="debug.argument_resolver.default.inner" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\DefaultValueResolver" public="false"/>
     <service id="debug.argument_resolver.variadic.inner" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\VariadicValueResolver" public="false"/>
@@ -5830,7 +5847,7 @@
     <service id="lexik_jwt_authentication.encoder" alias="lexik_jwt_authentication.encoder.lcobucci" public="true"/>
     <service id="Lexik\Bundle\JWTAuthenticationBundle\Encoder\JWTEncoderInterface" alias="lexik_jwt_authentication.encoder.lcobucci"/>
     <service id="lexik_jwt_authentication.key_loader" alias="lexik_jwt_authentication.key_loader.raw" public="true"/>
-    <service id="argument_resolver.controller_locator" alias=".service_locator.eAXsVTy"/>
+    <service id="argument_resolver.controller_locator" alias=".service_locator.S3IH.Qu"/>
     <service id="twig.loader.filesystem" alias="twig.loader.native_filesystem" public="false"/>
     <service id="twig.loader" alias="twig.loader.native_filesystem"/>
     <service id="fos_rest.serializer" alias="fos_rest.serializer.symfony"/>

@@ -7,5 +7,5 @@ use Symfony\Component\DependencyInjection\Exception\RuntimeException;
 // Returns the private '.service_locator.tcrnKcu' shared service.
 
 return $this->privates['.service_locator.tcrnKcu'] = new \Symfony\Component\DependencyInjection\Argument\ServiceLocator($this->getService, array(
-    'eventDTO' => array('privates', 'App\\DTO\\Event\\EventDTO', 'getEventDTOService.php', true),
+    'eventDTO' => array('privates', 'App\\DTO\\Event\\UserDTO', 'getEventDTOService.php', true),
 ));
