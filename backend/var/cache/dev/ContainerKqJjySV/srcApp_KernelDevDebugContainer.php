@@ -1,6 +1,6 @@
 <?php
 
-namespace ContainerRX4guK9;
+namespace ContainerKqJjySV;
 
 use Symfony\Component\DependencyInjection\Argument\RewindableGenerator;
 use Symfony\Component\DependencyInjection\ContainerInterface;
@@ -264,6 +264,9 @@ class srcApp_KernelDevDebugContainer extends Container
             return ($this->privates['data_collector.request'] ?? ($this->privates['data_collector.request'] = new \Symfony\Component\HttpKernel\DataCollector\RequestDataCollector()));
         }, 1 => 'onKernelResponse'), 0);
         $instance->addListener('kernel.request', array(0 => function () {
+            return ($this->privates['debug.debug_handlers_listener'] ?? $this->getDebug_DebugHandlersListenerService());
+        }, 1 => 'configure'), 2048);
+        $instance->addListener('console.command', array(0 => function () {
             return ($this->privates['debug.debug_handlers_listener'] ?? $this->getDebug_DebugHandlersListenerService());
         }, 1 => 'configure'), 2048);
         $instance->addListener('kernel.request', array(0 => function () {
@@ -1010,7 +1013,7 @@ class srcApp_KernelDevDebugContainer extends Container
         )), new RewindableGenerator(function () {
             yield 'security.firewall.map.context.dev' => ($this->privates['.security.request_matcher.Iy.T22O'] ?? ($this->privates['.security.request_matcher.Iy.T22O'] = new \Symfony\Component\HttpFoundation\RequestMatcher('^/(_(profiler|wdt)|css|images|js)/')));
             yield 'security.firewall.map.context.login' => ($this->privates['.security.request_matcher.HeUdK73'] ?? ($this->privates['.security.request_matcher.HeUdK73'] = new \Symfony\Component\HttpFoundation\RequestMatcher('^/api/login')));
-            yield 'security.firewall.map.context.api' => ($this->privates['.security.request_matcher.B3ldH_a'] ?? ($this->privates['.security.request_matcher.B3ldH_a'] = new \Symfony\Component\HttpFoundation\RequestMatcher('^/admin')));
+            yield 'security.firewall.map.context.api' => ($this->privates['.security.request_matcher.ZNlbc2a'] ?? ($this->privates['.security.request_matcher.ZNlbc2a'] = new \Symfony\Component\HttpFoundation\RequestMatcher('^/api/admin/')));
             yield 'security.firewall.map.context.main' => NULL;
         }, 4));
     }

@@ -9,6 +9,6 @@ use Symfony\Component\DependencyInjection\Exception\RuntimeException;
 $this->privates['security.access_map'] = $instance = new \Symfony\Component\Security\Http\AccessMap();
 
 $instance->add(new \Symfony\Component\HttpFoundation\RequestMatcher('^/login'), array(0 => 'IS_AUTHENTICATED_ANONYMOUSLY'), NULL);
-$instance->add(new \Symfony\Component\HttpFoundation\RequestMatcher('^/admin'), array(0 => 'IS_AUTHENTICATED_FULLY'), NULL);
+$instance->add(new \Symfony\Component\HttpFoundation\RequestMatcher('^/admin'), array(0 => 'ROLE_USER'), NULL);
 
 return $instance;

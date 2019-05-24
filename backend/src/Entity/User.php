@@ -23,6 +23,11 @@ class User implements UserInterface
     private $email;
 
     /**
+     * @ORM\Column(type="string", length=40)
+     */
+    private $firstName;
+
+    /**
      * @ORM\Column(type="json")
      */
     private $roles = [];
@@ -38,6 +43,8 @@ class User implements UserInterface
         return $this->id;
     }
 
+
+
     public function getEmail(): ?string
     {
         return $this->email;
@@ -47,6 +54,17 @@ class User implements UserInterface
     {
         $this->email = $email;
 
+        return $this;
+    }
+
+    public function getFirstName(): ?string
+    {
+        return $this->firstName;
+    }
+
+    public function setFirstName(string $firstName): self
+    {
+        $this->firstName = $firstName;
         return $this;
     }
 
