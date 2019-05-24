@@ -12,12 +12,13 @@ Development-Enviroment: Docker.
   
   run docker-compose up  
 
-2. wait for the end of build-process 
+2. wait for the end of build-process !
   
 3. if database container is fully build up:  
   1. go into the root of the local repo folder and run following commands:
   2. chmod +x setup.sh
   3. ./setup.sh  
+  4. when asked: set password: pass (its defined and used in the backend/.env file)
  
 4. your project should be available at these urls:  
   
