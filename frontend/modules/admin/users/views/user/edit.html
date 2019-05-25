@@ -1,0 +1,53 @@
+<!-- extends  events/index.html -->
+
+<section id="user">
+        <div class="content-header">
+            <h2>Nutzer editieren:</h2>
+        </div>
+        <div class="content-body" ng-show="vm.user"> <!-- ng-show weil bei ng-if datepicker ausfällt -->
+            <form>
+                <div class="form-row">
+                    <div class="col-sm">
+                        <label for="email">Email:</label>
+                        <input ng-model="vm.user.email" ng-change="vm.validateEmail(email)"   type="text"  class="form-control" id="email" aria-describedby="emailHelp" placeholder="Email eintragen!">
+                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                    </div>
+                    <div class="col-sm">
+                        <label for="exampleInputEmail1">Name:</label>
+                        <input ng-model="vm.user.firstName" ng-change="vm.validateName(firstName)" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="firstNameHelp" placeholder="Name eintragen!">
+                        <small id="firstNameHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="col-sm">
+                        <label  for="inputPassword1">Password</label>
+                        <input ng-model="password"  type="password" class="form-control" id="inputPassword1" placeholder="Bitte neues Passwort eingeben" >
+                    </div>
+                    <div class="col-sm">
+                        <label for="inputPassword2">Password wiederholen</label>
+                        <input ng-model="passwordRepeated"  type="password" class="form-control" id="inputPassword2" >
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary" ng-click="vm.addUser(email, firstName, password, passwordRepeated)" >Nutzer eintragen!</button>
+            </form>
+        </div>
+        <div class="content-body" ng-if="!vm.user">
+            <div class="row">
+                <div class="col-12"></div>
+                <div class="alert alert-warning" role="alert">
+                    Keinen User ausgewählt!
+                </div>
+            </div>
+        </div>
+</section>
+
+
+
+
+<toaster-container toaster-options="{'position-class':'toast-bottom-right'}"></toaster-container>
+
+<script>
+    $('#startDatepicker').datepicker({ format: 'dd.mm.yyyy' });
+    $('#endDatepicker').datepicker({ format: 'dd.mm.yyyy' });
+</script>
+

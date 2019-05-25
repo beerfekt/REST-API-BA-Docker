@@ -16,7 +16,7 @@ final class UserDTO
     public function __construct(string $email,
                                 string $firstName,
                                 array $roles,
-                                int $password)
+                                string $password)
     {
         $this->email = $email;
         $this->firstName = $firstName;
@@ -39,7 +39,7 @@ final class UserDTO
         return $this->roles;
     }
 
-    public function getPassword(): int
+    public function getPassword(): string
     {
         return $this->password;
     }

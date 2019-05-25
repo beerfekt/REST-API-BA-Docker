@@ -8,7 +8,7 @@ namespace App\DTO\User;
 
 use App\Entity\User;
 use Symfony\Component\Validator\Constraints\DateTime;
-
+use Symfony\Component\Security\Core\Encoder\EncoderFactoryInterface;
 
 final class UserAssembler
 {
@@ -22,7 +22,7 @@ final class UserAssembler
         $user->setEmail($userDTO->getEmail());
         $user->setFirstName($userDTO->getFirstName());
         $user->setRoles($userDTO->getRoles());
-        $user->setPassword($userDTO->getPassword());
+        $user->setPassword($userDTO->getPassword() );
         return $user;
     }
 
@@ -38,5 +38,6 @@ final class UserAssembler
     {
         return $this->readDTO($userDTO);
     }
+
 
 }

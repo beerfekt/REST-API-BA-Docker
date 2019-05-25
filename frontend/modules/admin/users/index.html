@@ -1,0 +1,14 @@
+<!-- extends modules/admin/index.html -->
+
+<div class="jumbotron text-center">
+    <h1> Userverwaltung<small>[intern]</small> </h1>
+    <p> Hier können die User bearbeitet werden</p>
+    <a class="btn btn-primary" ui-sref="admin.users.list" >User anzeigen</a>
+    <div class="btn btn-primary" ng-click="vm.createNewUser()"  >User Hinzufügen</div>
+    <!--ng-click="vm.goToEvents()" -->
+</div>
+
+
+<div id="events">
+    <div ui-view></div>
+</div>

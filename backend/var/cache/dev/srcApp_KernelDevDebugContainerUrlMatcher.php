@@ -21,7 +21,7 @@ class srcApp_KernelDevDebugContainerUrlMatcher extends Symfony\Bundle\FrameworkB
             ),
             '/api/admin/events' => array(array(array('_route' => 'app_rest_event_addevent', '_controller' => 'App\\Controller\\Rest\\EventController::addEvent'), null, array('POST' => 0), null, false, null)),
             '/api/users' => array(
-                array(array('_route' => 'app_rest_user_getevens', '_controller' => 'App\\Controller\\Rest\\UserController::getEvens'), null, array('GET' => 0), null, false, null),
+                array(array('_route' => 'app_rest_user_getusers', '_controller' => 'App\\Controller\\Rest\\UserController::getUsers'), null, array('GET' => 0), null, false, null),
                 array(array('_route' => 'app_rest_user_options', '_controller' => 'App\\Controller\\Rest\\UserController::options'), null, array('OPTIONS' => 0), null, false, null),
             ),
             '/api/admin/users' => array(array(array('_route' => 'app_rest_user_adduser', '_controller' => 'App\\Controller\\Rest\\UserController::addUser'), null, array('POST' => 0), null, false, null)),

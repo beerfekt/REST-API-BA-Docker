@@ -13,6 +13,7 @@ use FOS\RestBundle\View\View;
 use App\DTO\User\UserDTO;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\ParamConverter;
 use App\Entity\User;
+use Symfony\Component\Security\Core\Encoder\UserPasswordEncoderInterface;
 
 class UserController extends FOSRestController {
 
@@ -22,13 +23,22 @@ class UserController extends FOSRestController {
      */
     private $userService;
 
+
+
+    //encoder could not be passed directly to the load() function (Because the Fixture class doesnt implement it),
+    //but you can pass it to the constructor and the global $encoder
+    private $encoder;
+
+
     /**
      * UserController constructor.
      * @param UserService $userService
      */
-    public function __construct(UserService $userService)
+    public function __construct(UserService $userService, UserPasswordEncoderInterface $encoder)
     {
         $this->userService = $userService;
+        $this->encoder = $encoder;
+
     }
 
 
@@ -57,7 +67,7 @@ class UserController extends FOSRestController {
      * @Rest\Get("/users")
      * @return view
      */
-    public function getEvens(): View
+    public function getUsers(): View
     {
         $users = $this->userService->getAll();
         return View::create($users, Response::HTTP_OK);
@@ -73,6 +83,10 @@ class UserController extends FOSRestController {
     public function addUser (UserDTO $userDTO): View
     {
         $user = $this->userService->create($userDTO);
+        $user->setPassword(
+        //encode the password
+            $this->encoder->encodePassword($user, $user->getPassword())
+        );
         $this->userService->persist($user);
         return View::create($user, Response::HTTP_CREATED);
     }

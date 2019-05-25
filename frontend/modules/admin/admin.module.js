@@ -25,6 +25,8 @@
                 controller: 'Admin.HomeController as vm'
             })
 
+            //Events
+
             .state('admin.events', {
                 url: '/events',
                 templateUrl: 'modules/admin/events/index.html',
@@ -56,6 +58,41 @@
                 url: '/create',
                 templateUrl: 'modules/admin/events/views/event/done.html',
                 controller:'Admin.EventController as vm'
+            })
+
+            //Users
+
+            .state('admin.users', {
+                url: '/users',
+                templateUrl: 'modules/admin/users/index.html',
+                controller:'Admin.UsersController as vm'
+            })
+
+            .state('admin.users.list', {
+                url: '/list',
+                templateUrl: 'modules/admin/users/views/users/list.html',
+                controller:'Admin.UsersController as vm'
+            })
+
+            .state('admin.users.create', {
+                url: '/create',
+                templateUrl: 'modules/admin/users/views/user/create.html',
+                controller:'Admin.UserController as vm'
+            })
+
+            .state('admin.users.edit', {
+                url: '/edit',
+                params: {
+                    userId: null
+                },
+                templateUrl: 'modules/admin/users/views/user/edit.html',
+                controller:'Admin.UserController as vm'
+            })
+
+            .state('admin.users.done', {
+                url: '/done',
+                templateUrl: 'modules/admin/users/views/user/done.html',
+                controller:'Admin.UserController as vm'
             })
 
 

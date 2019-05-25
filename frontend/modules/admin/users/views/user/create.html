@@ -1,0 +1,49 @@
+<!-- extends  events/index.html -->
+
+
+<div class="content-header">
+    <h2>Benutzer eintragen:</h2>
+</div>
+<div class="content-body">
+
+    <form>
+        <div class="form-row">
+            <div class="col-sm">
+                <label for="email">Email:</label>
+                <input ng-model="email" ng-change="vm.validateEmail(email)"   type="text"  class="form-control" id="email" aria-describedby="emailHelp" placeholder="Email eintragen!">
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            <div class="col-sm">
+                <label for="exampleInputEmail1">Name:</label>
+                <input ng-model="firstName" ng-change="vm.validateName(firstName)" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="firstNameHelp" placeholder="Name eintragen!">
+                <small id="firstNameHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="col-sm">
+                <label  for="inputPassword1">Password</label>
+                <input ng-model="password"  type="password" class="form-control" id="inputPassword1" placeholder="Password des Nutzers!">
+            </div>
+            <div class="col-sm">
+                <label for="inputPassword2">Password wiederholen</label>
+                <input ng-model="passwordRepeated"  type="password" class="form-control" id="inputPassword2" placeholder="Passwort wiederholen !">
+            </div>
+        </div>
+        <button type="submit" class="btn btn-primary" ng-click="vm.addUser(email, firstName, password, passwordRepeated)" >Nutzer eintragen!</button>
+    </form>
+
+</div>
+
+
+<toaster-container toaster-options="{'position-class':'toast-bottom-right'}" ></toaster-container>
+
+<script>
+    $('#startDatepicker').datepicker({ format: 'dd.mm.yyyy' });
+    $('#endDatepicker').datepicker({ format: 'dd.mm.yyyy' });
+</script>
+
+<style>
+    .align-left {
+        test-align: left;
+    }
+</style>

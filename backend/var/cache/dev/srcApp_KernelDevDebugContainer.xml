@@ -456,6 +456,7 @@
     <service id="App\Controller\Rest\UserController" class="App\Controller\Rest\UserController" public="true" autowire="true" autoconfigure="true">
       <tag name="controller.service_arguments"/>
       <argument type="service" id="App\Services\UserService"/>
+      <argument type="service" id="security.user_password_encoder.generic"/>
     </service>
     <service id="App\DataFixtures\AppFixtures" class="App\DataFixtures\AppFixtures" public="false" autowire="true" autoconfigure="true">
       <tag name="doctrine.fixture.orm"/>

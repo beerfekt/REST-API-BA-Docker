@@ -1,0 +1,92 @@
+<!-- extends  users/index.html -->
+
+    <div class="content-header">
+        <h2>Benutzer <small ng-if="vm.users.length > 0">( Gesamt{{ vm.users.length}})</small></h2>
+    </div>
+    <div class="content-body" ng-if="vm.users.length > 0">
+        <!-- HEADLINE -->
+        <div class="list-group" >
+            <div class="row fit">
+                <div class="col-sm mx-auto">
+                    <strong>Name</strong>
+                </div>
+                <div class="col-sm mx-auto">
+                    <strong>Email</strong>
+                </div>
+                <div class="col-sm-1"></div>
+                <div class="col-sm-1"></div>
+                <div class="col-sm-1"></div>
+            </div>
+        </div>
+
+        <!-- EIGENES ACCORDION  -->
+        <div class="card"  dir-paginate="user in vm.users | itemsPerPage: 5">  <!-- class="card" -->
+            <div class="card-header">                                   <!-- class="card-header" -->
+                <div class="row">
+                    <div class="col-sm ">
+                        {{ user.firstName }}
+                    </div>
+                    <div class="col-sm ">
+                        {{ user.email }}
+                    </div>
+
+                    <div class="col-sm-1 align-right ">
+                        <button class="btn btn-primary"
+                                type="button"
+                                data-toggle="collapse"
+                                data-target="#collapse{{user.id}}"
+                                aria-expanded="false"
+                                aria-controls="collapse{{user.id}}"
+                                ng-click="vm.editUser(user.id)" >
+                            <i id="icon-edit-{{user.id}}" class="fa fa-edit"></i>
+                        </button>
+                    </div>
+
+                    <div class="col-sm-1 align-right ">
+                        <button class="btn btn-danger"
+                                type="button"
+                                ng-click="vm.removeUser(user.id, user.firstName)" >
+                            <i id="icon-delete-{{user.id}}" class="fa fa-window-close"></i>
+                        </button>
+                    </div>
+
+                    <div class="col-sm-1 align-right ">
+                        <button class="btn btn-primary"
+                                type="button"
+                                data-toggle="collapse"
+                                data-target="#collapse{{user.id}}"
+                                aria-expanded="false"
+                                aria-controls="collapse{{user.id}}"
+                                ng-click="vm.toggleIcon(user.id)" >
+                            <i id="icon{{user.id}}" class="fas fa-plus"></i>
+                        </button>
+                    </div>
+
+                </div><!-- row -->
+            </div><!-- card-header -->
+
+            <div class="collapse" id="collapse{{user.id}}">
+                <div class="card card-body">
+                    <div clas="row">
+                        <h4>{{user.firstName }} - Roles:</h4>
+                        <ul>
+                            <li ng-repeat="role in user.roles" > {{ role }}</li>
+                        </ul>
+                    </div>
+                </div>
+            </div><!-- collapse -->
+        </div> <!-- card -->
+
+        <dir-pagination-controls></dir-pagination-controls>
+
+        <toaster-container toaster-options="{'position-class':'toast-bottom-right'}"></toaster-container>
+    </div><!-- ng if users.length > 0 -->
+    <div class="content-body">
+        {{ error }}
+    </div>
+
+
+
+
+
+
