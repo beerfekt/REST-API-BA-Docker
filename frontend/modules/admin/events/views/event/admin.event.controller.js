@@ -14,6 +14,7 @@
         vm.editEvent = editEvent;
         vm.goToEvents = goToEvents;
         vm.validateDates = validateDates;
+        vm.validateDescription = validateDescription;
 
 
         vm.messageService = messageService;
@@ -47,6 +48,10 @@
                 return;
             }
 
+            if (!validateDescription($description, {"method":"create"})){
+                toaster.pop('error', 'Beschreibung zu kurz!', 'Beschreibung muss mehr als 10 Zeichen beinhalten!');
+                return;
+            }
 
             let data = {
                 "title": $title,
@@ -92,6 +97,11 @@
                 return;
             }
 
+            if ( !validateDescription(vm.event.description, {"method":"edit"}) ) {
+                toaster.pop('error', 'Beschreibung zu kurz!', 'Beschreibung muss mehr als 10 Zeichen beinhalten!');
+                return;
+            }
+
             vm.event.startDate = convertDateStringToSeconds(vm.event.startDate);
             vm.event.endDate = convertDateStringToSeconds(vm.event.endDate);
 
@@ -104,6 +114,7 @@
             });
 
         }
+
 
         function goToEvents() {
             $state.go('admin.events.list');
@@ -125,6 +136,28 @@
             return false;
         }
 
+
+        //Function overloading
+        //https://stackoverflow.com/questions/456177/function-overloading-in-javascript-best-practices
+
+        function validateDescription($description, opts){
+
+            if (opts['method'] == "edit") {
+                if (vm.event.description.length > 10) {
+                    return true;
+                }
+            }
+
+            if (opts['method'] == "create") {
+                if ($description.length > 10) {
+                    return true;
+                }
+            }
+
+            return false;
+        }
+
+
         function convertDateStringToSeconds($dateAsString) {
             if (!$dateAsString) return;
             let parts = $dateAsString.split('.');
@@ -132,6 +165,7 @@
             //compute seconds
             return date.getTime() / 1000;
         }
+
 
         function formatUTCDate(d)
         {
