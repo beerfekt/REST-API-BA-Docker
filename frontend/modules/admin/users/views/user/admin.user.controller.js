@@ -52,7 +52,7 @@
             // curl -i -X POST -H 'Content-Type: application/json' -d '{"title": "new Title", "content": "new Content"}' http://rest-tutorial.test/api/users
 
             if ( !( $email && $firstName && /*$roles,*/ $password && $passwordRepeated) ) {
-                toaster.pop('error', 'Fehlende Felder!', 'Bitte alle Felder ausfuellen!');
+                toaster.pop('error', 'adduser() - Fehlende Felder!', 'Bitte alle Felder ausfuellen!');
                 return;
             }
 
@@ -83,8 +83,30 @@
 
 
         //TODO: FERTIGMACHEN und quatsch mit passwort überlegen
-        function editUser($password) {
-            let user = new AdminUserFactory(vm.user);
+        function editUser($password, $passwordRepeated) {
+
+            if (!$password){
+                return;
+            }
+
+            if ( !comparePasswords($password,$passwordRepeated) ) {
+                toaster.pop('error', 'Passwoerter !', 'adduser() Passwoerter stimmen nicht ueberein!');
+                return;
+            }
+
+            if ( validateEmail(vm.user.email) && validateName(vm.user.firstName) ) {
+                return;
+            }
+
+            let userData = {
+                "id":  $state.params.userId,
+                "email": vm.user.email,
+                "firstName": vm.user.firstName,
+                "roles" : ['ROLE_USER'],
+                "password": $password,
+            };
+
+            let user = new AdminUserFactory(userData);
             let promise = user.update();
             promise.then(function(data) {
                 $state.go('admin.users.done');

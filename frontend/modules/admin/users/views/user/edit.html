@@ -9,26 +9,26 @@
                 <div class="form-row">
                     <div class="col-sm">
                         <label for="email">Email:</label>
-                        <input ng-model="vm.user.email" ng-change="vm.validateEmail(email)"   type="text"  class="form-control" id="email" aria-describedby="emailHelp" placeholder="Email eintragen!">
+                        <input ng-model="vm.user.email" ng-change="vm.validateEmail(vm.user.email)"   type="text"  class="form-control" id="email" aria-describedby="emailHelp" placeholder="Email eintragen!">
                         <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
                     </div>
                     <div class="col-sm">
                         <label for="exampleInputEmail1">Name:</label>
-                        <input ng-model="vm.user.firstName" ng-change="vm.validateName(firstName)" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="firstNameHelp" placeholder="Name eintragen!">
+                        <input ng-model="vm.user.firstName" ng-change="vm.validateName(vm.user.firstName)" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="firstNameHelp" placeholder="Name eintragen!">
                         <small id="firstNameHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
                     </div>
                 </div>
                 <div class="form-row">
                     <div class="col-sm">
                         <label  for="inputPassword1">Password</label>
-                        <input ng-model="password"  type="password" class="form-control" id="inputPassword1" placeholder="Bitte neues Passwort eingeben" >
+                        <input ng-model="password"  type="password" class="form-control" id="inputPassword1" placeholder="Bitte neues Passwort eingeben" required>
                     </div>
                     <div class="col-sm">
                         <label for="inputPassword2">Password wiederholen</label>
-                        <input ng-model="passwordRepeated"  type="password" class="form-control" id="inputPassword2" >
+                        <input ng-model="passwordRepeated"  type="password" class="form-control" id="inputPassword2" required>
                     </div>
                 </div>
-                <button type="submit" class="btn btn-primary" ng-click="vm.addUser(email, firstName, password, passwordRepeated)" >Nutzer eintragen!</button>
+                <button type="submit" class="btn btn-primary" ng-click="vm.editUser(password, passwordRepeated)" >Nutzer eintragen!</button>
             </form>
         </div>
         <div class="content-body" ng-if="!vm.user">

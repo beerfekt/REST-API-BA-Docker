@@ -105,6 +105,10 @@ class UserController extends FOSRestController {
     public function updateUser(UserDTO $userDTO, int $userID): View
     {
         $user = $this->userService->update($userDTO,$userID);
+        $user->setPassword(
+        //encode the password
+            $this->encoder->encodePassword($user, $user->getPassword())
+        );
         $this->userService->persist($user);
         return View::create($user, Response::HTTP_OK);
     }
