@@ -67,16 +67,16 @@ docker-compose start
 
 ```  
 
-4. Delete Project  
+## Delete Project  
 
-  4.1 run  
+  1. run  
 ```
 //stop and delete containers:
 docker-compose down
 
 ```
-  4.1 Remove Folders from disk  
-  4.2 Remove Entries from the host file  
+  2. Remove Folders from disk  
+  3. Remove Entries from the host file  
 ```
   127.0.3.2 docker-backend.test  
   127.0.3.1 docker-frontend.test  
