@@ -67,14 +67,13 @@ docker-compose start
 
 ```  
 
-4. Delete Project
+4. Delete Project  
 
-Remove Folders from disk and rund following Commands:
-
+  4.1 run  
 ```
 //stop and delete containers:
 docker-compose down
-//clean disk
-cleandocker.sh
 
 ```
+  4.1.Remove Folders from disk  
+
