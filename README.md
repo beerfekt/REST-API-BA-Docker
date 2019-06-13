@@ -3,7 +3,19 @@
 REST-API, Frontend (AngularJS) and Backend (Symfony4 + FOSREST-Bundle).  
 Communication goes via JSON.  
 
-Development-Enviroment: Docker. 
+### Development-Enviroment:  
+Docker.  
+  
+### Tested on Linux Distributions:  
+Ubuntu 16.04  
+Ubuntu 18.04  
+
+
+## Prerequisites
+
+1. Docker Enviroment 18.x <https://www.docker.com/>  
+2. Docker Compose Tool  <https://docs.docker.com/compose/install/>
+3. 
   
 
 ## SET UP THE PROJECT (Tested on Ubuntu(Linux))
