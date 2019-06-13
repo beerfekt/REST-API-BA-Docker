@@ -56,9 +56,9 @@ Ubuntu 18.04
    ```  
    docker-compose restart
    ```  
-3. Have a break in the development:
-  
-   ```  
+3. Have a break in the development:  
+ 
+```  
 //stop containers:
 docker-compose stop
 
