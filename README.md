@@ -27,10 +27,10 @@ Ubuntu 18.04
   
 3. if database container is fully build up:  
   1. go into the root of the local repo folder and run following commands:
-  2. ```
-     chmod +x setup.sh
+  ```  
+   chmod +x setup.sh
      ```  
-  3. ```
+   ```
       ./setup.sh  
      ```  
 
@@ -53,11 +53,12 @@ Ubuntu 18.04
    (Only for Development Purposes!)
 
 2. If you Change the Settings (docker-compose.yaml, setup.sh etc.), run:  
-   ```   
+   ```  
    docker-compose restart
-  ```
+   ```  
 3. Have a break in the development:
-  ```
+  
+   ```  
     //root of homestead 
     
     //stop box  
