@@ -68,11 +68,6 @@ Ubuntu 18.04
     vagrant up  
    ```
 
-
-##3 put angularjs frontend into folder ./frontend
-
-##4 put symfony4 backend into folder ./backend
-
 //stop containers:
 docker-compose stop
 
