@@ -37,10 +37,10 @@ Ubuntu 18.04
 4. when asked: set password: pass (its defined and used in the backend/.env file)
  
 4. your project should be available at these urls:  
-  
+  ```  
   127.0.3.2  - docker-backend.test  
   127.0.3.1 - docker-frontend.test  
-
+  ```  
 
 
 ## Use 
