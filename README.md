@@ -14,6 +14,9 @@ Ubuntu 18.04
 ## Prerequisites
 
 1. Docker Enviroment 18.x <https://www.docker.com/>  
+   Note: Please take care of the installation of docker. Don't install it as root.  
+   The commands have to work without using sudo.
+
 2. Docker Compose Tool  <https://docs.docker.com/compose/install/>
 
 
