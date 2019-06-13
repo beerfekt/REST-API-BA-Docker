@@ -17,7 +17,7 @@ Ubuntu 18.04
 2. Docker Compose Tool  <https://docs.docker.com/compose/install/>
 
 
-## SET UP THE PROJECT (Tested on Ubuntu(Linux))
+## SET UP THE PROJECT
 
 1. build the containers, run:  
   ```
