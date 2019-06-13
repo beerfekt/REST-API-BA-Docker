@@ -4,7 +4,7 @@ REST-API, Frontend (AngularJS) and Backend (Symfony4 + FOSREST-Bundle).
 Communication goes via JSON.  
 
 ### Development-Enviroment:  
-Docker.  
+Docker
   
 ### Tested on Linux Distributions:  
 Ubuntu 16.04  
