@@ -75,5 +75,10 @@ docker-compose start
 docker-compose down
 
 ```
-  4.1.Remove Folders from disk  
+  4.1 Remove Folders from disk  
+  4.2 Remove Entries from the host file  
+```
+  127.0.3.2 docker-backend.test  
+  127.0.3.1 docker-frontend.test  
+```
 
