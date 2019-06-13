@@ -59,21 +59,22 @@ Ubuntu 18.04
 3. Have a break in the development:
   
    ```  
-    //root of homestead 
-    
-    //stop box  
-    vagrant halt
-    
-    //continue developing  
-    vagrant up  
-   ```
-
 //stop containers:
 docker-compose stop
 
 //start/restart containers:
 docker-compose start
 
-//delete project and containers:
+```  
+
+4. Delete Project
+
+Remove Folders from disk and rund following Commands:
+
+```
+//stop and delete containers:
 docker-compose down
+//clean disk
 cleandocker.sh
+
+```
