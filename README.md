@@ -19,17 +19,22 @@ Ubuntu 18.04
 
 ## SET UP THE PROJECT (Tested on Ubuntu(Linux))
 
-1. build the containers:  
-  
-  run docker-compose up  
-
+1. build the containers, run:  
+  ```
+  docker-compose up  
+  ```
 2. wait for the end of build-process !
   
 3. if database container is fully build up:  
   1. go into the root of the local repo folder and run following commands:
-  2. chmod +x setup.sh
-  3. ./setup.sh  
-  4. when asked: set password: pass (its defined and used in the backend/.env file)
+  2. ```
+     chmod +x setup.sh
+     ```  
+  3. ```
+      ./setup.sh  
+     ```  
+
+4. when asked: set password: pass (its defined and used in the backend/.env file)
  
 4. your project should be available at these urls:  
   
@@ -48,11 +53,11 @@ Ubuntu 18.04
    (Only for Development Purposes!)
 
 2. If you Change the Settings (docker-compose.yaml, setup.sh etc.), run:  
-   
+   ```   
    docker-compose restart
-
+  ```
 3. Have a break in the development:
-  
+  ```
     //root of homestead 
     
     //stop box  
@@ -60,20 +65,19 @@ Ubuntu 18.04
     
     //continue developing  
     vagrant up  
-
+   ```
 
 
 ##3 put angularjs frontend into folder ./frontend
 
 ##4 put symfony4 backend into folder ./backend
 
-PROJEKT ANHALTEN:
+//stop containers:
 docker-compose stop
 
-PROJEKT WEITERMACHEN:
+//start/restart containers:
 docker-compose start
 
-
-PROJEKT ENTFERNEN:
+//delete project and containers:
 docker-compose down
 cleandocker.sh
