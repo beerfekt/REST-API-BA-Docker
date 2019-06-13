@@ -15,8 +15,7 @@ Ubuntu 18.04
 
 1. Docker Enviroment 18.x <https://www.docker.com/>  
 2. Docker Compose Tool  <https://docs.docker.com/compose/install/>
-3. 
-  
+
 
 ## SET UP THE PROJECT (Tested on Ubuntu(Linux))
 
